@@ -1,0 +1,56 @@
+{% comment %}{% raw %}<!--
+Includes a snippet from an include file
+
+Usage:
+  {% include include_partial filename=PATH startstring=STRING endstring=STRING [startoffset=INT] [endoffset=INT] %}
+
+  filename: path to file under _includes
+  startstring: string to match to mark the start of the snippet
+  endstring: string to match to mark the end of the snippet
+  startoffset: number of lines to include before (positive) or exclude 
+               (negative) from the start of the snippet
+  endoffset: number of lines to include after (positive) or exclude before
+             (negative) from the start of the snippet
+
+  The snippet will include the line that contains startstring but does not 
+  include the line containing endstring.  The startoffset / endoffset arguments
+  can be used to include/exclude further lines.
+
+Example:
+
+  {% include include_partial filename='src/README.md' startstring='## License' endstring='## Thanks' startoffset='1' endoffset='-1' %}
+
+Adapted from https://github.com/hblok/rememberjava/blob/master/_includes/includemethod
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->{% endraw %}{% endcomment %}{% capture unused %}
+
+{% capture filecontent %}
+    {% include {{include.filename}} %}
+{% endcapture %}
+
+{% assign startline = 0 %}
+{% assign endline = 0 %}
+
+{% assign lines = filecontent | newline_to_br | split: '<br />' %}
+{% for line in lines %}
+    {% if startline == 0 %}
+        {% if line contains {{include.startstring}} %}
+            {% assign startline = forloop.index | minus: 1 %}
+        {% endif %}
+    {% elsif endline == 0 %}
+        {% if line contains {{include.endstring}} %}
+           {% assign endline = forloop.index | minus: 1 %}
+        {% endif %}
+    {% endif %}
+{% endfor %}
+
+{% if include.startoffset %}
+   {% assign startline = startline | plus: include.startoffset %}
+{% endif %}
+{% if include.endoffset %}
+   {% assign endline = endline | plus: include.endoffset %}
+{% endif %}
+
+{% assign countline = endline | minus: startline %}
+{% endcapture %}{% assign unused = nil %}{% for line in lines offset:startline limit:countline %}{{ line }}{% endfor %}

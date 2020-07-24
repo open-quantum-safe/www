@@ -6,3 +6,9 @@ nav_order: 5
 ---
 
 # License
+
+{% include include_partial filename='liboqs/README.md' startstring='## License' endstring='## Acknowledgements' startoffset='+2' %}
+
+## MIT License
+
+{% include liboqs/LICENSE.txt %}

@@ -1,8 +1,9 @@
 ---
 layout: default
-parent: liboqs
+parent: Documentation
+grand_parent: liboqs
 title: Example code
-nav_order: 3
+nav_order: 1
 ---
 
 # Example code

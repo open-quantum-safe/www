@@ -55,6 +55,8 @@ plugins:
 
 # just-the-docs theme configuration
 search_enabled: true
+search:
+  heading_level: 4
 
 heading_anchors: true
 

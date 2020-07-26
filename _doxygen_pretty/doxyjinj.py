@@ -13,6 +13,9 @@ def render_text_and_children(element):
     elif child.tag == 'computeroutput': s += env.get_template('base/computeroutput').render(t = child.text)
     elif child.tag == 'para': s += env.get_template('base/para').render(t = render_text_and_children(child))
     elif child.tag == 'verbatim': s += env.get_template('base/verbatim').render(t = render_text_and_children(child))
+    elif child.tag == 'parameterlist': pass
+    elif child.tag == 'simplesect': pass
+    else: raise NotImplementedError("Unknown node type: " + child.tag)
     if child.tail: s += child.tail
   return s
 

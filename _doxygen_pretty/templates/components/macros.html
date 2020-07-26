@@ -8,15 +8,14 @@
         {% if m.args()|length > 0 %}
           ({% for arg in m.args() %}{{ arg.tostring() }}{% if not(loop.last) %}, {% endif %}{% endfor %})
         {% endif %}
-        {% if m.initializer()|length <= 100 %}
+        {% if m.initializer()|length <= 100 and not('\n' in m.initializer()) %}
           <span class="text-muted">{{ m.initializer() }}</span>
         {% endif %}
       </code></p>
       {{ m.description_detailed() }}
-      {% if m.initializer()|length > 100 %}
-        <div class="border pl-3 pt-3">
-          <samp><pre class="text-secondary">{{ m.initializer() }}</pre></samp>
-        </div>
+      {% if m.initializer()|length > 100 or '\n' in m.initializer() %}
+        {% set t = m.initializer() %}
+        {% include "base/verbatim" %}
       {% endif %}
     </td></tr>
   {%- endfor %}

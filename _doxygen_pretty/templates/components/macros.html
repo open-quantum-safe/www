@@ -1,0 +1,23 @@
+<table class="table"><tbody>
+  {%- for m in file.defines() %}
+    <tr><td>
+      <div class="float-right"><small><a href="{{ srcbaseurl }}{{ m.src_filename() }}#L{{ m.src_linenumber() }}" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>{{ m.name() }}</b> 
+        {% if m.args()|length > 0 %}
+          ({% for arg in m.args() %}{{ arg.tostring() }}{% if not(loop.last) %}, {% endif %}{% endfor %})
+        {% endif %}
+        {% if m.initializer()|length <= 100 %}
+          <span class="text-muted">{{ m.initializer() }}</span>
+        {% endif %}
+      </code></p>
+      {{ m.description_detailed() }}
+      {% if m.initializer()|length > 100 %}
+        <div class="border pl-3 pt-3">
+          <samp><pre class="text-secondary">{{ m.initializer() }}</pre></samp>
+        </div>
+      {% endif %}
+    </td></tr>
+  {%- endfor %}
+</tbody></table>

@@ -61,8 +61,14 @@ class DXFunctionParam(object):
     return (self.type() + ' ' + self.declname() + ' ' + self.defname()).strip()
 
 class DXCompound(object):
-  def __init__(self, element):
-    self.element = element
+  @staticmethod
+  def factory(element):
+    kind = attribute_or_empty(element, 'compounddef/@kind')
+    if kind == 'file': return DXFile(element)
+    elif kind == 'struct': return DXStruct(element)
+    raise TypeError('Unknown kind: ' + kind)
+  def compoundname(self):
+    return element_text_or_empty(self.element, 'compounddef/compoundname')
   def name(self):
     return element_text_or_empty(self.element, 'name')
   def uniqid(self):
@@ -98,7 +104,22 @@ class DXDefine(DXCompound):
   def initializer(self):
     return render_text_and_children_or_empty(self.element, 'initializer')
 
-class DXFile(object):
+class DXIncludes(DXCompound):
+  def __init__(self, element):
+    self.element = element
+  def local(self):
+    a = attribute_or_empty(self.element, '@local')
+    return not(a == '' or a == 'no')
+  def filename(self):
+    return self.element.text
+
+class DXTypedef(DXCompound):
+  def __init__(self, element):
+    self.element = element
+  def definition(self):
+    return render_text_and_children_or_empty(self.element, 'definition')
+
+class DXFile(DXCompound):
   def __init__(self, element):
     self.element = element
   def filename(self):
@@ -112,10 +133,18 @@ class DXFile(object):
     return render_text_and_children_or_empty(self.element, 'compounddef/briefdescription')
   def description_detailed(self):
     return render_text_and_children_or_empty(self.element, 'compounddef/detaileddescription')
-  def functions(self):
-    return [DXFunction(f) for f in self.element.xpath('//memberdef[@kind="function"]')]
   def defines(self):
     return [DXDefine(f) for f in self.element.xpath('//memberdef[@kind="define"]')]
+  def functions(self):
+    return [DXFunction(f) for f in self.element.xpath('//memberdef[@kind="function"]')]
+  def includes(self):
+    return [DXIncludes(f) for f in self.element.xpath('compounddef/includes')]
+  def typedefs(self):
+    return [DXTypedef(f) for f in self.element.xpath('//memberdef[@kind="typedef"]')]
+
+class DXStruct(DXCompound):
+  def __init__(self, element):
+    self.element = element
 
 def render(templatefilename, xmlfilename, srcbaseurl=''):
   global env
@@ -124,7 +153,7 @@ def render(templatefilename, xmlfilename, srcbaseurl=''):
   )
   template = env.get_template(templatefilename)
   tree = etree.parse(xmlfilename)
-  return template.render(file = DXFile(tree), srcbaseurl=srcbaseurl)
+  return template.render(file = DXCompound.factory(tree), srcbaseurl=srcbaseurl)
 
 if __name__ == "__main__":
   if len(sys.argv) < 3 or len(sys.argv) > 4:

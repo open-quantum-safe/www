@@ -1,0 +1,8 @@
+<table class="table">
+  {% for f in file.functions() %}
+    <tr>
+      <td class="text-right">{{ f.type() }}</td>
+      <td><b><a href="#{{ f.uniqid() }}">{{ f.name() }}</a></b>{{ f.argsstring() }}</td>
+    </tr>
+  {% endfor %}
+</table>

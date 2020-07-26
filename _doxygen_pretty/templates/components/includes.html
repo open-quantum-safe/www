@@ -1,0 +1,6 @@
+{%- for i in file.includes() %}
+  <code>
+    <span class="text-muted">#include {{ '"' if i.local() else '<' }}</span><b>{{ i.filename() }}</b><span class="text-muted">{{ '"' if i.local() else '>' }}</span>
+  </code>
+  {% if not(loop.last) %}<br>{% endif %}
+{%- endfor %}

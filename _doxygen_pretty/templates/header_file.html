@@ -1,103 +1,40 @@
-{%- import "doxygen_helpers.jinja" as doxy with context -%}
+{% extends "html.html" %}
 
-<!doctype html>
-<html lang="en">
+{% block content %}
+<h1><span class="text-muted">{{ file.path() }}</span><b>{{ file.filename() }}</b></h1>
 
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<div class="lead">
+  {{ file.description_brief() }}
+</div>
+{{ file.description_detailed() }}
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+{% if file.includes()|length > 0 %}
+  <br><br>
+  <h2>Includes</h2>
+  <hr>
+  {% include "components/includes.html" %}
+{% endif %}
 
-    <title>{{ doxy.base_filename() }}</title>
-  </head>
+{% if file.typedefs()|length > 0 %}
+  <br><br>
+  <h2>Typedefs</h2>
+  {% include "components/typedefs.html" %}
+{% endif %}
 
-  <body>
+{% if file.functions()|length > 0 %}
+  <br><br>
+  <h2>Functions</h2>
+  {% include "components/functions_table.html" %}
+  {%- for f in file.functions() %}
+    {% include "components/functions_card.html" %}
+    <br>
+  {%- endfor %}
+{% endif %}
 
-    <div class="container">
-      
-      <h1><span class="text-muted">{{ doxy.base_path() }}</span><b>{{ doxy.base_filename() }}</b></h1>
-      
-      <div class="lead">
-        {{ doxy.base_description_brief() }}
-      </div>
-      
-      {{ doxy.base_description_detailed() }}
+{% if file.defines()|length > 0 %}
+  <br><br>
+  <h2>Macros</h2>
+  {% include "components/macros.html" %}
+{% endif %}
 
-      {% if doc.functions|length > 0 %}
-
-        <br><br>
-        
-        <h2>Functions</h2>
-        
-        <table class="table">
-          {% for f in doc.functions %}
-            <tr>
-              <td class="text-right">{{ doxy.function_type(f) }}</td>
-              <td><b><a href="#{{ doxy.function_uniqid(f) }}">{{ doxy.function_name(f) }}</a></b>({{ doxy.function_params(f) }})</td>
-            </tr>
-          {% endfor %}
-        </table>
-
-        {%- for f in doc.functions %}
-          <div class="card">
-            <div class="card-body">
-              <div class="float-right"><small><a href="{{ srcbaseurl }}{{ doxy.function_src_url(f) }}" target="_blank">[src]</a></small></div>
-              <h5 class="card-title" id="{{ doxy.function_uniqid(f) }}">{{ doxy.function_name(f) }}</h5>
-              <h6 class="card-subtitle mb-2"><code>{{ doxy.function_type(f) }} <b>{{ doxy.function_name(f) }}</b>({{ doxy.function_params(f) }})</code></h6>
-              <div class="card-text">
-                {{ doxy.function_description_detailed(f) }}
-              </div>
-              {% if a_function_desc_parameterlist(f)|length > 0 %}
-                <h6>Parameters</h6>
-                <table class="table mb-0">
-                  {% for param in a_function_desc_parameterlist(f) %}
-                    <tr>
-                      <td><code>{{ doxy.function_desc_param_name(param) }}</code></td>
-                      <td>{{ doxy.function_desc_param_description(param) }}</td>
-                    </tr>
-                  {% endfor %}
-                </table>
-              {% endif %}
-              {% if doxy.function_return_description(f)|length > 0 %}
-                <h6>Returns</h6>
-                <div class="ml-5">{{ doxy.function_return_description(f) }}</div>
-              {% endif %}
-            </div>
-          </div>
-          <br>
-        {%- endfor %}
-      
-      {% endif %}
-
-      {% if doc.defines|length > 0 %}
-      
-        <br><br>
-
-        <h2>Macros</h2>
-
-        <table class="table"><tbody>
-          {%- for m in doc.defines %}
-            <tr><td>
-              <div class="float-right"><small><a href="{{ srcbaseurl }}{{ doxy.macro_src_url(m) }}" target="_blank">[src]</a></small></div>
-              <code><span class="text-muted">#define</span> <b>{{ doxy.macro_name(m) }}</b> <span class="text-muted">{{ doxy.macro_initializer(m) }}</span></code>
-              {{ doxy.macro_description_detailed(m) }}
-            </td></tr>
-          {%- endfor %}
-        </tbody></table>
-      
-      {% endif %}
-      
-    </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-  </body>
-
-</html>
+{% endblock %}

@@ -1,7 +1,9 @@
 {% extends "html.html" %}
 
+{% block title %}{{ file.name() }}{% endblock %}
+
 {% block content %}
-<h1><span class="text-muted">{{ file.path() }}</span><b>{{ file.filename() }}</b></h1>
+<h1><span class="text-muted">{{ file.path() }}</span><b>{{ file.name() }}</b></h1>
 
 <div class="lead">
   {{ file.description_brief() }}

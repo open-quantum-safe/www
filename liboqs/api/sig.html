@@ -1,0 +1,1497 @@
+---
+layout: default
+parent: API documentation
+grand_parent: liboqs
+title: sig.h
+---
+      
+<h1><span class="text-muted">src/sig/</span><b>sig.h</b></h1>
+
+<div class="lead">
+  
+<p>Signature schemes. </p>
+    
+</div>
+
+<p>The file <code>src/sig/example_sig.c</code> contains two examples on using the OQS_SIG API.</p>
+<p>The first example uses the individual scheme's algorithms directly and uses no dynamic memory allocation – all buffers are allocated on the stack, with sizes indicated using preprocessor macros. Since algorithms can be disabled at compile-time, the programmer should wrap the code in #ifdefs.</p>
+<p>The second example uses an OQS_SIG object to use an algorithm specified at runtime. Therefore it uses dynamic memory allocation – all buffers must be malloc'ed by the programmer, with sizes indicated using the corresponding length member of the OQS_SIG object in question. Since algorithms can be disabled at compile-time, the programmer should check that the OQS_SIG object is not <code>NULL</code>.</p>
+<p>SPDX-License-Identifier: MIT </p>
+    
+
+
+  <br><br>
+  <h2>Includes</h2>
+  <hr>
+  
+  <code>
+    <span class="text-muted">#include <</span><b>stdbool.h</b><span class="text-muted">></span>
+  </code>
+  <br>
+  <code>
+    <span class="text-muted">#include <</span><b>stddef.h</b><span class="text-muted">></span>
+  </code>
+  <br>
+  <code>
+    <span class="text-muted">#include <</span><b>stdint.h</b><span class="text-muted">></span>
+  </code>
+  <br>
+  <code>
+    <span class="text-muted">#include <</span><b>oqs/oqs.h</b><span class="text-muted">></span>
+  </code>
+  
+
+
+
+  <br><br>
+  <h2>Typedefs</h2>
+  <table class="table"><tbody>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L275" target="_blank">[src]</a></small></div>
+      <p><code><span class="text-muted">typedef struct OQS_SIG</span> <b>OQS_SIG</b></code></p>
+      
+<p>Signature schemes object </p>
+        
+    </td></tr>
+</tbody></table>
+
+
+
+
+
+  <br><br>
+  <h2>Functions</h2>
+  
+    <table class="table">
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">OQS_API const char *</span></code></td>
+      <td><code><b><a href="#sig_8h_1a8993468789c74b3073357abfb45e822a">OQS_SIG_alg_identifier</a></b><span class="text-muted">(size_t i)</span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">OQS_API int</span></code></td>
+      <td><code><b><a href="#sig_8h_1a26f926d5c6177a536ad696785aef1710">OQS_SIG_alg_count</a></b><span class="text-muted">(void)</span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">OQS_API int</span></code></td>
+      <td><code><b><a href="#sig_8h_1aa6a66d4a02d8e3fb81691ef4a7db9402">OQS_SIG_alg_is_enabled</a></b><span class="text-muted">(const char *method_name)</span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">OQS_API OQS_SIG *</span></code></td>
+      <td><code><b><a href="#sig_8h_1a10ec2481e3694260adccbf74835ab9b5">OQS_SIG_new</a></b><span class="text-muted">(const char *method_name)</span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">OQS_API OQS_STATUS</span></code></td>
+      <td><code><b><a href="#sig_8h_1ac5c527513c5c353ba90a1a9ee386458e">OQS_SIG_keypair</a></b><span class="text-muted">(const OQS_SIG *sig, uint8_t *public_key, uint8_t *secret_key)</span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">OQS_API OQS_STATUS</span></code></td>
+      <td><code><b><a href="#sig_8h_1ab6fa805ef48e554fcbf6bbe5a92136da">OQS_SIG_sign</a></b><span class="text-muted">(const OQS_SIG *sig, uint8_t *signature, size_t *signature_len, const uint8_t *message, size_t message_len, const uint8_t *secret_key)</span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">OQS_API OQS_STATUS</span></code></td>
+      <td><code><b><a href="#sig_8h_1ada769c1d40aa64bb33e88938212a1711">OQS_SIG_verify</a></b><span class="text-muted">(const OQS_SIG *sig, const uint8_t *message, size_t message_len, const uint8_t *signature, size_t signature_len, const uint8_t *public_key)</span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">OQS_API void</span></code></td>
+      <td><code><b><a href="#sig_8h_1a3ab9ceb4859a721bec0b718c6b468685">OQS_SIG_free</a></b><span class="text-muted">(OQS_SIG *sig)</span></code></td>
+    </tr>
+  
+</table>
+  
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L185" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="sig_8h_1a8993468789c74b3073357abfb45e822a">OQS_SIG_alg_identifier</h3>
+    <div class="card-subtitle mb-2"><code>OQS_API const char * <b>OQS_SIG_alg_identifier</b>(size_t i)</code></div>
+    <div class="card-text">
+      
+<p>Returns identifiers for available signature schemes in liboqs. Used with OQS_SIG_new.</p>
+<p>Note that algorithm identifiers are present in this list even when the algorithm is disabled at compile time.</p>
+<p>
+
+</p>
+        
+    </div>
+    
+      <h4>Parameters</h4>
+      <table class="table mb-0">
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">size_t</code></td>
+            <td><code>i</code></td>
+            <td class="pb-0">
+<p>Index of the algorithm identifier to return, 0 <= i < OQS_SIG_algs_length </p>
+</td>
+          </tr>
+        
+      </table>
+    
+    
+      <h4>Returns</h4>
+      <div class="ml-5"><p>Algorithm identifier as a string, or NULL. </p>
+</div>
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L195" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="sig_8h_1a26f926d5c6177a536ad696785aef1710">OQS_SIG_alg_count</h3>
+    <div class="card-subtitle mb-2"><code>OQS_API int <b>OQS_SIG_alg_count</b>(void)</code></div>
+    <div class="card-text">
+      
+<p>Returns the number of signature mechanisms in liboqs. They can be enumerated with OQS_SIG_alg_identifier.</p>
+<p>Note that some mechanisms may be disabled at compile time.</p>
+<p>
+</p>
+        
+    </div>
+    
+    
+      <h4>Returns</h4>
+      <div class="ml-5"><p>The number of signature mechanisms. </p>
+</div>
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L203" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="sig_8h_1aa6a66d4a02d8e3fb81691ef4a7db9402">OQS_SIG_alg_is_enabled</h3>
+    <div class="card-subtitle mb-2"><code>OQS_API int <b>OQS_SIG_alg_is_enabled</b>(const char *method_name)</code></div>
+    <div class="card-text">
+      
+<p>Indicates whether the specified algorithm was enabled at compile-time or not.</p>
+<p>
+
+</p>
+        
+    </div>
+    
+      <h4>Parameters</h4>
+      <table class="table mb-0">
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">const char *</code></td>
+            <td><code>method_name</code></td>
+            <td class="pb-0">
+<p>Name of the desired algorithm; one of the names in <code>OQS_SIG_algs</code>. </p>
+</td>
+          </tr>
+        
+      </table>
+    
+    
+      <h4>Returns</h4>
+      <div class="ml-5"><p>1 if enabled, 0 if disabled or not found </p>
+</div>
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L286" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="sig_8h_1a10ec2481e3694260adccbf74835ab9b5">OQS_SIG_new</h3>
+    <div class="card-subtitle mb-2"><code>OQS_API OQS_SIG * <b>OQS_SIG_new</b>(const char *method_name)</code></div>
+    <div class="card-text">
+      
+<p>Constructs an OQS_SIG object for a particular algorithm.</p>
+<p>Callers should always check whether the return value is <code>NULL</code>, which indicates either than an invalid algorithm name was provided, or that the requested algorithm was disabled at compile-time.</p>
+<p>
+
+</p>
+        
+    </div>
+    
+      <h4>Parameters</h4>
+      <table class="table mb-0">
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">const char *</code></td>
+            <td><code>method_name</code></td>
+            <td class="pb-0">
+<p>Name of the desired algorithm; one of the names in <code>OQS_SIG_algs</code>. </p>
+</td>
+          </tr>
+        
+      </table>
+    
+    
+      <h4>Returns</h4>
+      <div class="ml-5"><p>An OQS_SIG for the particular algorithm, or <code>NULL</code> if the algorithm has been disabled at compile-time. </p>
+</div>
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L300" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="sig_8h_1ac5c527513c5c353ba90a1a9ee386458e">OQS_SIG_keypair</h3>
+    <div class="card-subtitle mb-2"><code>OQS_API OQS_STATUS <b>OQS_SIG_keypair</b>(const OQS_SIG *sig, uint8_t *public_key, uint8_t *secret_key)</code></div>
+    <div class="card-text">
+      
+<p>Keypair generation algorithm.</p>
+<p>Caller is responsible for allocating sufficient memory for <code>public_key</code> and <code>secret_key</code>, based on the <code>length_*</code> members in this object or the per-scheme compile-time macros <code>OQS_SIG_*_length_*</code>.</p>
+<p>
+
+</p>
+        
+    </div>
+    
+      <h4>Parameters</h4>
+      <table class="table mb-0">
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">const OQS_SIG *</code></td>
+            <td><code>sig</code></td>
+            <td class="pb-0">
+<p>The OQS_SIG object representing the signature scheme. </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">uint8_t *</code></td>
+            <td><code>public_key</code></td>
+            <td class="pb-0">
+<p>The public key represented as a byte string. </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">uint8_t *</code></td>
+            <td><code>secret_key</code></td>
+            <td class="pb-0">
+<p>The secret key represented as a byte string. </p>
+</td>
+          </tr>
+        
+      </table>
+    
+    
+      <h4>Returns</h4>
+      <div class="ml-5"><p>OQS_SUCCESS or OQS_ERROR </p>
+</div>
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L317" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="sig_8h_1ab6fa805ef48e554fcbf6bbe5a92136da">OQS_SIG_sign</h3>
+    <div class="card-subtitle mb-2"><code>OQS_API OQS_STATUS <b>OQS_SIG_sign</b>(const OQS_SIG *sig, uint8_t *signature, size_t *signature_len, const uint8_t *message, size_t message_len, const uint8_t *secret_key)</code></div>
+    <div class="card-text">
+      
+<p>Signature generation algorithm.</p>
+<p>Caller is responsible for allocating sufficient memory for <code>signnature</code>, based on the <code>length_*</code> members in this object or the per-scheme compile-time macros <code>OQS_SIG_*_length_*</code>.</p>
+<p>
+
+</p>
+        
+    </div>
+    
+      <h4>Parameters</h4>
+      <table class="table mb-0">
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">const OQS_SIG *</code></td>
+            <td><code>sig</code></td>
+            <td class="pb-0">
+<p>The OQS_SIG object representing the signature scheme. </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">uint8_t *</code></td>
+            <td><code>signature</code></td>
+            <td class="pb-0">
+<p>The signature on the message represented as a byte string. </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">size_t *</code></td>
+            <td><code>signature_len</code></td>
+            <td class="pb-0">
+<p>The length of the signature. </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">const uint8_t *</code></td>
+            <td><code>message</code></td>
+            <td class="pb-0">
+<p>The message to sign represented as a byte string. </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">size_t</code></td>
+            <td><code>message_len</code></td>
+            <td class="pb-0">
+<p>The length of the message to sign. </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">const uint8_t *</code></td>
+            <td><code>secret_key</code></td>
+            <td class="pb-0">
+<p>The secret key represented as a byte string. </p>
+</td>
+          </tr>
+        
+      </table>
+    
+    
+      <h4>Returns</h4>
+      <div class="ml-5"><p>OQS_SUCCESS or OQS_ERROR </p>
+</div>
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L330" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="sig_8h_1ada769c1d40aa64bb33e88938212a1711">OQS_SIG_verify</h3>
+    <div class="card-subtitle mb-2"><code>OQS_API OQS_STATUS <b>OQS_SIG_verify</b>(const OQS_SIG *sig, const uint8_t *message, size_t message_len, const uint8_t *signature, size_t signature_len, const uint8_t *public_key)</code></div>
+    <div class="card-text">
+      
+<p>Signature verification algorithm.</p>
+<p>
+
+</p>
+        
+    </div>
+    
+      <h4>Parameters</h4>
+      <table class="table mb-0">
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">const OQS_SIG *</code></td>
+            <td><code>sig</code></td>
+            <td class="pb-0">
+<p>The OQS_SIG object representing the signature scheme. </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">const uint8_t *</code></td>
+            <td><code>message</code></td>
+            <td class="pb-0">
+<p>The message represented as a byte string. </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">size_t</code></td>
+            <td><code>message_len</code></td>
+            <td class="pb-0">
+<p>The length of the message. </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">const uint8_t *</code></td>
+            <td><code>signature</code></td>
+            <td class="pb-0">
+<p>The signature on the message represented as a byte string. </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">size_t</code></td>
+            <td><code>signature_len</code></td>
+            <td class="pb-0">
+<p>The length of the signature. </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">const uint8_t *</code></td>
+            <td><code>public_key</code></td>
+            <td class="pb-0">
+<p>The public key represented as a byte string. </p>
+</td>
+          </tr>
+        
+      </table>
+    
+    
+      <h4>Returns</h4>
+      <div class="ml-5"><p>OQS_SUCCESS or OQS_ERROR </p>
+</div>
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L337" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="sig_8h_1a3ab9ceb4859a721bec0b718c6b468685">OQS_SIG_free</h3>
+    <div class="card-subtitle mb-2"><code>OQS_API void <b>OQS_SIG_free</b>(OQS_SIG *sig)</code></div>
+    <div class="card-text">
+      
+<p>Frees an OQS_SIG object that was constructed by OQS_SIG_new.</p>
+<p>
+</p>
+        
+    </div>
+    
+      <h4>Parameters</h4>
+      <table class="table mb-0">
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">OQS_SIG *</code></td>
+            <td><code>sig</code></td>
+            <td class="pb-0">
+<p>The OQS_SIG object to free. </p>
+</td>
+          </tr>
+        
+      </table>
+    
+    
+  </div>
+</div>
+    <br>
+
+
+
+  <br><br>
+  <h2>Macros</h2>
+  <table class="table"><tbody>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L35" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_default</b> 
+        
+        
+          <span class="text-muted">"DEFAULT"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for default SIG algorithm. </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L37" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_picnic_L1_FS</b> 
+        
+        
+          <span class="text-muted">"picnic_L1_FS"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for picnic_L1_FS </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L39" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_picnic_L1_UR</b> 
+        
+        
+          <span class="text-muted">"picnic_L1_UR"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for picnic_L1_UR </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L41" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_picnic_L1_full</b> 
+        
+        
+          <span class="text-muted">"picnic_L1_full"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for picnic_L1_full </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L43" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_picnic_L3_FS</b> 
+        
+        
+          <span class="text-muted">"picnic_L3_FS"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for picnic_L3_FS </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L45" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_picnic_L3_UR</b> 
+        
+        
+          <span class="text-muted">"picnic_L3_UR"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for picnic_L3_UR </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L47" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_picnic_L3_full</b> 
+        
+        
+          <span class="text-muted">"picnic_L3_full"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for picnic_L3_full </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L49" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_picnic_L5_FS</b> 
+        
+        
+          <span class="text-muted">"picnic_L5_FS"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for picnic_L5_FS </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L51" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_picnic_L5_UR</b> 
+        
+        
+          <span class="text-muted">"picnic_L5_UR"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for picnic_L5_FS </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L53" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_picnic_L5_full</b> 
+        
+        
+          <span class="text-muted">"picnic_L5_full"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for picnic_L5_full </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L55" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_picnic3_L1</b> 
+        
+        
+          <span class="text-muted">"picnic3_L1"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for picnic3_L1 </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L57" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_picnic3_L3</b> 
+        
+        
+          <span class="text-muted">"picnic3_L3"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for picnic3_L3 </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L59" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_picnic3_L5</b> 
+        
+        
+          <span class="text-muted">"picnic3_L5"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for picnic3_L5 </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L61" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_qTesla_p_I</b> 
+        
+        
+          <span class="text-muted">"qTesla-p-I"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for qTesla-p-I </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L63" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_qTesla_p_III</b> 
+        
+        
+          <span class="text-muted">"qTesla-p-III"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for qTesla-p-III </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L66" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_dilithium_2</b> 
+        
+        
+          <span class="text-muted">"DILITHIUM_2"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for DILITHIUM_2 </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L68" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_dilithium_3</b> 
+        
+        
+          <span class="text-muted">"DILITHIUM_3"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for DILITHIUM_3 </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L70" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_dilithium_4</b> 
+        
+        
+          <span class="text-muted">"DILITHIUM_4"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for DILITHIUM_4 </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L72" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_falcon_512</b> 
+        
+        
+          <span class="text-muted">"Falcon-512"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for Falcon-512 </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L74" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_falcon_1024</b> 
+        
+        
+          <span class="text-muted">"Falcon-1024"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for Falcon-1024 </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L76" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_mqdss_31_48</b> 
+        
+        
+          <span class="text-muted">"MQDSS-31-48"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for MQDSS-31-48 </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L78" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_mqdss_31_64</b> 
+        
+        
+          <span class="text-muted">"MQDSS-31-64"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for MQDSS-31-64 </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L80" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_rainbow_Ia_classic</b> 
+        
+        
+          <span class="text-muted">"Rainbow-Ia-Classic"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for Rainbow-Ia-Classic </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L82" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_rainbow_Ia_cyclic</b> 
+        
+        
+          <span class="text-muted">"Rainbow-Ia-Cyclic"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for Rainbow-Ia-Cyclic </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L84" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_rainbow_Ia_cyclic_compressed</b> 
+        
+        
+          <span class="text-muted">"Rainbow-Ia-Cyclic-Compressed"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for Rainbow-Ia-Cyclic-Compressed </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L86" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_rainbow_IIIc_classic</b> 
+        
+        
+          <span class="text-muted">"Rainbow-IIIc-Classic"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for Rainbow-IIIc-Classic </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L88" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_rainbow_IIIc_cyclic</b> 
+        
+        
+          <span class="text-muted">"Rainbow-IIIc-Cyclic"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for Rainbow-IIIc-Cyclic </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L90" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_rainbow_IIIc_cyclic_compressed</b> 
+        
+        
+          <span class="text-muted">"Rainbow-IIIc-Cyclic-Compressed"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for Rainbow-IIIc-Cyclic-Compressed </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L92" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_rainbow_Vc_classic</b> 
+        
+        
+          <span class="text-muted">"Rainbow-Vc-Classic"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for Rainbow-Vc-Classic </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L94" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_rainbow_Vc_cyclic</b> 
+        
+        
+          <span class="text-muted">"Rainbow-Vc-Cyclic"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for Rainbow-Vc-Cyclic </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L96" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_rainbow_Vc_cyclic_compressed</b> 
+        
+        
+          <span class="text-muted">"Rainbow-Vc-Cyclic-Compressed"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for Rainbow-Vc-Cyclic-Compressed </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L98" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_haraka_128f_robust</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-Haraka-128f-robust"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-Haraka-128f-robust </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L100" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_haraka_128f_simple</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-Haraka-128f-simple"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-Haraka-128f-simple </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L102" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_haraka_128s_robust</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-Haraka-128s-robust"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-Haraka-128s-robust </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L104" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_haraka_128s_simple</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-Haraka-128s-simple"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-Haraka-128s-simple </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L106" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_haraka_192f_robust</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-Haraka-192f-robust"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-Haraka-192f-robust </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L108" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_haraka_192f_simple</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-Haraka-192f-simple"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-Haraka-192f-simple </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L110" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_haraka_192s_robust</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-Haraka-192s-robust"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-Haraka-192s-robust </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L112" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_haraka_192s_simple</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-Haraka-192s-simple"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-Haraka-192s-simple </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L114" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_haraka_256f_robust</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-Haraka-256f-robust"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-Haraka-256f-robust </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L116" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_haraka_256f_simple</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-Haraka-256f-simple"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-Haraka-256f-simple </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L118" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_haraka_256s_robust</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-Haraka-256s-robust"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-Haraka-256s-robust </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L120" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_haraka_256s_simple</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-Haraka-256s-simple"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-Haraka-256s-simple </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L122" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_sha256_128f_robust</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-SHA256-128f-robust"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-SHA256-128f-robust </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L124" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_sha256_128f_simple</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-SHA256-128f-simple"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-SHA256-128f-simple </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L126" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_sha256_128s_robust</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-SHA256-128s-robust"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-SHA256-128s-robust </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L128" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_sha256_128s_simple</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-SHA256-128s-simple"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-SHA256-128s-simple </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L130" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_sha256_192f_robust</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-SHA256-192f-robust"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-SHA256-192f-robust </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L132" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_sha256_192f_simple</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-SHA256-192f-simple"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-SHA256-192f-simple </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L134" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_sha256_192s_robust</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-SHA256-192s-robust"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-SHA256-192s-robust </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L136" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_sha256_192s_simple</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-SHA256-192s-simple"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-SHA256-192s-simple </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L138" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_sha256_256f_robust</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-SHA256-256f-robust"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-SHA256-256f-robust </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L140" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_sha256_256f_simple</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-SHA256-256f-simple"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-SHA256-256f-simple </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L142" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_sha256_256s_robust</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-SHA256-256s-robust"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-SHA256-256s-robust </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L144" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_sha256_256s_simple</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-SHA256-256s-simple"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-SHA256-256s-simple </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L146" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_shake256_128f_robust</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-SHAKE256-128f-robust"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-SHAKE256-128f-robust </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L148" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_shake256_128f_simple</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-SHAKE256-128f-simple"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-SHAKE256-128f-simple </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L150" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_shake256_128s_robust</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-SHAKE256-128s-robust"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-SHAKE256-128s-robust </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L152" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_shake256_128s_simple</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-SHAKE256-128s-simple"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-SHAKE256-128s-simple </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L154" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_shake256_192f_robust</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-SHAKE256-192f-robust"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-SHAKE256-192f-robust </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L156" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_shake256_192f_simple</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-SHAKE256-192f-simple"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-SHAKE256-192f-simple </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L158" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_shake256_192s_robust</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-SHAKE256-192s-robust"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-SHAKE256-192s-robust </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L160" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_shake256_192s_simple</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-SHAKE256-192s-simple"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-SHAKE256-192s-simple </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L162" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_shake256_256f_robust</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-SHAKE256-256f-robust"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-SHAKE256-256f-robust </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L164" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_shake256_256f_simple</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-SHAKE256-256f-simple"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-SHAKE256-256f-simple </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L166" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_shake256_256s_robust</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-SHAKE256-256s-robust"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-SHAKE256-256s-robust </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L168" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_sphincs_shake256_256s_simple</b> 
+        
+        
+          <span class="text-muted">"SPHINCS+-SHAKE256-256s-simple"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SPHINCS+-SHAKE256-256s-simple </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L173" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_algs_length</b> 
+        
+        
+          <span class="text-muted">67</span>
+        
+      </code></p>
+      
+<p>Number of algorithm identifiers above (including default). </p>
+        
+      
+    </td></tr>
+</tbody></table>

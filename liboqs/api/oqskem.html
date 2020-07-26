@@ -1,0 +1,359 @@
+---
+layout: default
+parent: API documentation
+grand_parent: liboqs
+title: OQS_KEM struct
+---
+      
+<h1><span class="text-muted">struct</span> <b>OQS_KEM</b></h1>
+
+<div class="lead">
+  
+    
+</div>
+
+<p>Key encapsulation mechanism object </p>
+    
+
+
+  <br><br>
+  <h2>Includes</h2>
+  <hr>
+  
+  <code>
+    <span class="text-muted">#include <</span><b>kem.h</b><span class="text-muted">></span>
+  </code>
+  
+
+
+
+  <br><br>
+  <h2>Members</h2>
+  <table class="table">
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">const char *</span></code></td>
+      <td><code><b><a href="#struct_o_q_s___k_e_m_1a05b0519549aa1c6ba4854e98ba7d4eda">method_name</a></b><span class="text-muted"></span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">const char *</span></code></td>
+      <td><code><b><a href="#struct_o_q_s___k_e_m_1a9e47e727de17dc76e287dd724544e647">alg_version</a></b><span class="text-muted"></span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">uint8_t</span></code></td>
+      <td><code><b><a href="#struct_o_q_s___k_e_m_1a6e447d9628c08bfe6e38689c6f8c0ed4">claimed_nist_level</a></b><span class="text-muted"></span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">bool</span></code></td>
+      <td><code><b><a href="#struct_o_q_s___k_e_m_1af7d1d10e2ad38d4454b7f8cd07786042">ind_cca</a></b><span class="text-muted"></span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">size_t</span></code></td>
+      <td><code><b><a href="#struct_o_q_s___k_e_m_1ab5117825a4adc8a02507c070d685f020">length_public_key</a></b><span class="text-muted"></span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">size_t</span></code></td>
+      <td><code><b><a href="#struct_o_q_s___k_e_m_1a6e05a35b4970bb9206da808739afec12">length_secret_key</a></b><span class="text-muted"></span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">size_t</span></code></td>
+      <td><code><b><a href="#struct_o_q_s___k_e_m_1a35353f8a763072d47eac6f522deb3b34">length_ciphertext</a></b><span class="text-muted"></span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">size_t</span></code></td>
+      <td><code><b><a href="#struct_o_q_s___k_e_m_1a2c4950cde0f80a1db2918a426ce44c13">length_shared_secret</a></b><span class="text-muted"></span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">OQS_STATUS(*</span></code></td>
+      <td><code><b><a href="#struct_o_q_s___k_e_m_1afcabcd83ecb1f34bca47aacc279e39c0">keypair</a></b><span class="text-muted">)(uint8_t *public_key, uint8_t *secret_key)</span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">OQS_STATUS(*</span></code></td>
+      <td><code><b><a href="#struct_o_q_s___k_e_m_1a8aaaaa79f1763d9113274d1f29a5f0aa">encaps</a></b><span class="text-muted">)(uint8_t *ciphertext, uint8_t *shared_secret, const uint8_t *public_key)</span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">OQS_STATUS(*</span></code></td>
+      <td><code><b><a href="#struct_o_q_s___k_e_m_1a597ea93c3ecdd2e67eaf02a28eece337">decaps</a></b><span class="text-muted">)(uint8_t *shared_secret, const unsigned char *ciphertext, const uint8_t *secret_key)</span></code></td>
+    </tr>
+  
+</table>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L193" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="struct_o_q_s___k_e_m_1a05b0519549aa1c6ba4854e98ba7d4eda">method_name</h3>
+    <div class="card-subtitle mb-2"><code>const char * <b>method_name</b></code></div>
+    <div class="card-text">
+      
+<p>Printable string representing the name of the key encapsulation mechanism. </p>
+        
+    </div>
+    
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L201" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="struct_o_q_s___k_e_m_1a9e47e727de17dc76e287dd724544e647">alg_version</h3>
+    <div class="card-subtitle mb-2"><code>const char * <b>alg_version</b></code></div>
+    <div class="card-text">
+      
+<p>Printable string representing the version of the cryptographic algorithm.</p>
+<p>Implementations with the same method_name and same alg_version will be interoperable. See README.md for information about algorithm compatibility. </p>
+        
+    </div>
+    
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L204" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="struct_o_q_s___k_e_m_1a6e447d9628c08bfe6e38689c6f8c0ed4">claimed_nist_level</h3>
+    <div class="card-subtitle mb-2"><code>uint8_t <b>claimed_nist_level</b></code></div>
+    <div class="card-text">
+      
+<p>The NIST security level (1, 2, 3, 4, 5) claimed in this algorithm's original NIST submission. </p>
+        
+    </div>
+    
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L207" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="struct_o_q_s___k_e_m_1af7d1d10e2ad38d4454b7f8cd07786042">ind_cca</h3>
+    <div class="card-subtitle mb-2"><code>bool <b>ind_cca</b></code></div>
+    <div class="card-text">
+      
+<p>Whether the KEM offers IND-CCA security (TRUE) or IND-CPA security (FALSE). </p>
+        
+    </div>
+    
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L210" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="struct_o_q_s___k_e_m_1ab5117825a4adc8a02507c070d685f020">length_public_key</h3>
+    <div class="card-subtitle mb-2"><code>size_t <b>length_public_key</b></code></div>
+    <div class="card-text">
+      
+<p>The (maximum) length, in bytes, of public keys for this KEM. </p>
+        
+    </div>
+    
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L212" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="struct_o_q_s___k_e_m_1a6e05a35b4970bb9206da808739afec12">length_secret_key</h3>
+    <div class="card-subtitle mb-2"><code>size_t <b>length_secret_key</b></code></div>
+    <div class="card-text">
+      
+<p>The (maximum) length, in bytes, of secret keys for this KEM. </p>
+        
+    </div>
+    
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L214" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="struct_o_q_s___k_e_m_1a35353f8a763072d47eac6f522deb3b34">length_ciphertext</h3>
+    <div class="card-subtitle mb-2"><code>size_t <b>length_ciphertext</b></code></div>
+    <div class="card-text">
+      
+<p>The (maximum) length, in bytes, of ciphertexts for this KEM. </p>
+        
+    </div>
+    
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L216" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="struct_o_q_s___k_e_m_1a2c4950cde0f80a1db2918a426ce44c13">length_shared_secret</h3>
+    <div class="card-subtitle mb-2"><code>size_t <b>length_shared_secret</b></code></div>
+    <div class="card-text">
+      
+<p>The (maximum) length, in bytes, of shared secrets for this KEM. </p>
+        
+    </div>
+    
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L229" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="struct_o_q_s___k_e_m_1afcabcd83ecb1f34bca47aacc279e39c0">keypair</h3>
+    <div class="card-subtitle mb-2"><code>OQS_STATUS(* <b>keypair</b>)(uint8_t *public_key, uint8_t *secret_key)</code></div>
+    <div class="card-text">
+      
+<p>Keypair generation algorithm.</p>
+<p>Caller is responsible for allocating sufficient memory for <code>public_key</code> and <code>secret_key</code>, based on the <code>length_*</code> members in this object or the per-scheme compile-time macros <code>OQS_KEM_*_length_*</code>.</p>
+<p>
+
+</p>
+        
+    </div>
+    
+      <h4>Parameters</h4>
+      <table class="table mb-0">
+        
+          <tr>
+            <td class="text-right"><code class="text-muted"></code></td>
+            <td><code>public_key</code></td>
+            <td class="pb-0">
+<p>The public key represented as a byte string. </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted"></code></td>
+            <td><code>secret_key</code></td>
+            <td class="pb-0">
+<p>The secret key represented as a byte string. </p>
+</td>
+          </tr>
+        
+      </table>
+    
+    
+      <h4>Returns</h4>
+      <div class="ml-5"><p>OQS_SUCCESS or OQS_ERROR </p>
+</div>
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L243" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="struct_o_q_s___k_e_m_1a8aaaaa79f1763d9113274d1f29a5f0aa">encaps</h3>
+    <div class="card-subtitle mb-2"><code>OQS_STATUS(* <b>encaps</b>)(uint8_t *ciphertext, uint8_t *shared_secret, const uint8_t *public_key)</code></div>
+    <div class="card-text">
+      
+<p>Encapsulation algorithm.</p>
+<p>Caller is responsible for allocating sufficient memory for <code>ciphertext</code> and <code>shared_secret</code>, based on the <code>length_*</code> members in this object or the per-scheme compile-time macros <code>OQS_KEM_*_length_*</code>.</p>
+<p>
+
+</p>
+        
+    </div>
+    
+      <h4>Parameters</h4>
+      <table class="table mb-0">
+        
+          <tr>
+            <td class="text-right"><code class="text-muted"></code></td>
+            <td><code>ciphertext</code></td>
+            <td class="pb-0">
+<p>The ciphertext (encapsulation) represented as a byte string. </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted"></code></td>
+            <td><code>shared_secret</code></td>
+            <td class="pb-0">
+<p>The shared secret represented as a byte string. </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted"></code></td>
+            <td><code>public_key</code></td>
+            <td class="pb-0">
+<p>The public key represented as a byte string. </p>
+</td>
+          </tr>
+        
+      </table>
+    
+    
+      <h4>Returns</h4>
+      <div class="ml-5"><p>OQS_SUCCESS or OQS_ERROR </p>
+</div>
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L257" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="struct_o_q_s___k_e_m_1a597ea93c3ecdd2e67eaf02a28eece337">decaps</h3>
+    <div class="card-subtitle mb-2"><code>OQS_STATUS(* <b>decaps</b>)(uint8_t *shared_secret, const unsigned char *ciphertext, const uint8_t *secret_key)</code></div>
+    <div class="card-text">
+      
+<p>Decapsulation algorithm.</p>
+<p>Caller is responsible for allocating sufficient memory for <code>shared_secret</code>, based on the <code>length_*</code> members in this object or the per-scheme compile-time macros <code>OQS_KEM_*_length_*</code>.</p>
+<p>
+
+</p>
+        
+    </div>
+    
+      <h4>Parameters</h4>
+      <table class="table mb-0">
+        
+          <tr>
+            <td class="text-right"><code class="text-muted"></code></td>
+            <td><code>shared_secret</code></td>
+            <td class="pb-0">
+<p>The shared secret represented as a byte string. </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted"></code></td>
+            <td><code>ciphertext</code></td>
+            <td class="pb-0">
+<p>The ciphertext (encapsulation) represented as a byte string. </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted"></code></td>
+            <td><code>secret_key</code></td>
+            <td class="pb-0">
+<p>The secret key represented as a byte string. </p>
+</td>
+          </tr>
+        
+      </table>
+    
+    
+      <h4>Returns</h4>
+      <div class="ml-5"><p>OQS_SUCCESS or OQS_ERROR </p>
+</div>
+    
+  </div>
+</div>
+    <br>
+

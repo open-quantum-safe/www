@@ -1,0 +1,369 @@
+---
+layout: default
+parent: API documentation
+grand_parent: liboqs
+title: OQS_SIG struct
+---
+      
+<h1><span class="text-muted">struct</span> <b>OQS_SIG</b></h1>
+
+<div class="lead">
+  
+    
+</div>
+
+<p>Signature schemes object </p>
+    
+
+
+  <br><br>
+  <h2>Includes</h2>
+  <hr>
+  
+  <code>
+    <span class="text-muted">#include <</span><b>sig.h</b><span class="text-muted">></span>
+  </code>
+  
+
+
+
+  <br><br>
+  <h2>Members</h2>
+  <table class="table">
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">const char *</span></code></td>
+      <td><code><b><a href="#struct_o_q_s___s_i_g_1a322b3ab6dbb71cc4b46856b644714499">method_name</a></b><span class="text-muted"></span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">const char *</span></code></td>
+      <td><code><b><a href="#struct_o_q_s___s_i_g_1a7c1325fef5db857b5fcbb185addcfdcc">alg_version</a></b><span class="text-muted"></span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">uint8_t</span></code></td>
+      <td><code><b><a href="#struct_o_q_s___s_i_g_1af238a9d639b7dc14accfb60c2d530b9a">claimed_nist_level</a></b><span class="text-muted"></span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">bool</span></code></td>
+      <td><code><b><a href="#struct_o_q_s___s_i_g_1a23c206f5d72c8f94fdcebf9276456693">euf_cma</a></b><span class="text-muted"></span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">size_t</span></code></td>
+      <td><code><b><a href="#struct_o_q_s___s_i_g_1a3a59929903e56e4b30b9b5358d7afa67">length_public_key</a></b><span class="text-muted"></span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">size_t</span></code></td>
+      <td><code><b><a href="#struct_o_q_s___s_i_g_1a05466b7167722d6d94df8988e233112e">length_secret_key</a></b><span class="text-muted"></span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">size_t</span></code></td>
+      <td><code><b><a href="#struct_o_q_s___s_i_g_1a14fa2c5cf1e6521fbeadabdaba21fe53">length_signature</a></b><span class="text-muted"></span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">OQS_STATUS(*</span></code></td>
+      <td><code><b><a href="#struct_o_q_s___s_i_g_1a26135e78c43fd4d4c7a0cf69cd4fe74f">keypair</a></b><span class="text-muted">)(uint8_t *public_key, uint8_t *secret_key)</span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">OQS_STATUS(*</span></code></td>
+      <td><code><b><a href="#struct_o_q_s___s_i_g_1a8709c11b94fb3a16a7ef4e9b1b256b55">sign</a></b><span class="text-muted">)(uint8_t *signature, size_t *signature_len, const uint8_t *message, size_t message_len, const uint8_t *secret_key)</span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">OQS_STATUS(*</span></code></td>
+      <td><code><b><a href="#struct_o_q_s___s_i_g_1a8b02ae883d9793b52754050f2b684d1c">verify</a></b><span class="text-muted">)(const uint8_t *message, size_t message_len, const uint8_t *signature, size_t signature_len, const uint8_t *public_key)</span></code></td>
+    </tr>
+  
+</table>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L211" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="struct_o_q_s___s_i_g_1a322b3ab6dbb71cc4b46856b644714499">method_name</h3>
+    <div class="card-subtitle mb-2"><code>const char * <b>method_name</b></code></div>
+    <div class="card-text">
+      
+<p>Printable string representing the name of the signature scheme. </p>
+        
+    </div>
+    
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L219" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="struct_o_q_s___s_i_g_1a7c1325fef5db857b5fcbb185addcfdcc">alg_version</h3>
+    <div class="card-subtitle mb-2"><code>const char * <b>alg_version</b></code></div>
+    <div class="card-text">
+      
+<p>Printable string representing the version of the cryptographic algorithm.</p>
+<p>Implementations with the same method_name and same alg_version will be interoperable. See README.md for information about algorithm compatibility. </p>
+        
+    </div>
+    
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L222" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="struct_o_q_s___s_i_g_1af238a9d639b7dc14accfb60c2d530b9a">claimed_nist_level</h3>
+    <div class="card-subtitle mb-2"><code>uint8_t <b>claimed_nist_level</b></code></div>
+    <div class="card-text">
+      
+<p>The NIST security level (1, 2, 3, 4, 5) claimed in this algorithm's original NIST submission. </p>
+        
+    </div>
+    
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L225" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="struct_o_q_s___s_i_g_1a23c206f5d72c8f94fdcebf9276456693">euf_cma</h3>
+    <div class="card-subtitle mb-2"><code>bool <b>euf_cma</b></code></div>
+    <div class="card-text">
+      
+<p>Whether the signature offers EUF-CMA security (TRUE) or not (FALSE). </p>
+        
+    </div>
+    
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L228" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="struct_o_q_s___s_i_g_1a3a59929903e56e4b30b9b5358d7afa67">length_public_key</h3>
+    <div class="card-subtitle mb-2"><code>size_t <b>length_public_key</b></code></div>
+    <div class="card-text">
+      
+<p>The (maximum) length, in bytes, of public keys for this signature scheme. </p>
+        
+    </div>
+    
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L230" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="struct_o_q_s___s_i_g_1a05466b7167722d6d94df8988e233112e">length_secret_key</h3>
+    <div class="card-subtitle mb-2"><code>size_t <b>length_secret_key</b></code></div>
+    <div class="card-text">
+      
+<p>The (maximum) length, in bytes, of secret keys for this signature scheme. </p>
+        
+    </div>
+    
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L232" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="struct_o_q_s___s_i_g_1a14fa2c5cf1e6521fbeadabdaba21fe53">length_signature</h3>
+    <div class="card-subtitle mb-2"><code>size_t <b>length_signature</b></code></div>
+    <div class="card-text">
+      
+<p>The (maximum) length, in bytes, of signatures for this signature scheme. </p>
+        
+    </div>
+    
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L245" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="struct_o_q_s___s_i_g_1a26135e78c43fd4d4c7a0cf69cd4fe74f">keypair</h3>
+    <div class="card-subtitle mb-2"><code>OQS_STATUS(* <b>keypair</b>)(uint8_t *public_key, uint8_t *secret_key)</code></div>
+    <div class="card-text">
+      
+<p>Keypair generation algorithm.</p>
+<p>Caller is responsible for allocating sufficient memory for <code>public_key</code> and <code>secret_key</code>, based on the <code>length_*</code> members in this object or the per-scheme compile-time macros <code>OQS_SIG_*_length_*</code>.</p>
+<p>
+
+</p>
+        
+    </div>
+    
+      <h4>Parameters</h4>
+      <table class="table mb-0">
+        
+          <tr>
+            <td class="text-right"><code class="text-muted"></code></td>
+            <td><code>public_key</code></td>
+            <td class="pb-0">
+<p>The public key represented as a byte string. </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted"></code></td>
+            <td><code>secret_key</code></td>
+            <td class="pb-0">
+<p>The secret key represented as a byte string. </p>
+</td>
+          </tr>
+        
+      </table>
+    
+    
+      <h4>Returns</h4>
+      <div class="ml-5"><p>OQS_SUCCESS or OQS_ERROR </p>
+</div>
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L261" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="struct_o_q_s___s_i_g_1a8709c11b94fb3a16a7ef4e9b1b256b55">sign</h3>
+    <div class="card-subtitle mb-2"><code>OQS_STATUS(* <b>sign</b>)(uint8_t *signature, size_t *signature_len, const uint8_t *message, size_t message_len, const uint8_t *secret_key)</code></div>
+    <div class="card-text">
+      
+<p>Signature generation algorithm.</p>
+<p>Caller is responsible for allocating sufficient memory for <code>signature</code>, based on the <code>length_*</code> members in this object or the per-scheme compile-time macros <code>OQS_SIG_*_length_*</code>.</p>
+<p>
+
+</p>
+        
+    </div>
+    
+      <h4>Parameters</h4>
+      <table class="table mb-0">
+        
+          <tr>
+            <td class="text-right"><code class="text-muted"></code></td>
+            <td><code>signature</code></td>
+            <td class="pb-0">
+<p>The signature on the message represented as a byte string. </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted"></code></td>
+            <td><code>signature_len</code></td>
+            <td class="pb-0">
+<p>The length of the signature. </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted"></code></td>
+            <td><code>message</code></td>
+            <td class="pb-0">
+<p>The message to sign represented as a byte string. </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted"></code></td>
+            <td><code>message_len</code></td>
+            <td class="pb-0">
+<p>The length of the message to sign. </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted"></code></td>
+            <td><code>secret_key</code></td>
+            <td class="pb-0">
+<p>The secret key represented as a byte string. </p>
+</td>
+          </tr>
+        
+      </table>
+    
+    
+      <h4>Returns</h4>
+      <div class="ml-5"><p>OQS_SUCCESS or OQS_ERROR </p>
+</div>
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/sig/sig.h#L273" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="struct_o_q_s___s_i_g_1a8b02ae883d9793b52754050f2b684d1c">verify</h3>
+    <div class="card-subtitle mb-2"><code>OQS_STATUS(* <b>verify</b>)(const uint8_t *message, size_t message_len, const uint8_t *signature, size_t signature_len, const uint8_t *public_key)</code></div>
+    <div class="card-text">
+      
+<p>Signature verification algorithm.</p>
+<p>
+
+</p>
+        
+    </div>
+    
+      <h4>Parameters</h4>
+      <table class="table mb-0">
+        
+          <tr>
+            <td class="text-right"><code class="text-muted"></code></td>
+            <td><code>message</code></td>
+            <td class="pb-0">
+<p>The message represented as a byte string. </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted"></code></td>
+            <td><code>message_len</code></td>
+            <td class="pb-0">
+<p>The length of the message. </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted"></code></td>
+            <td><code>signature</code></td>
+            <td class="pb-0">
+<p>The signature on the message represented as a byte string. </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted"></code></td>
+            <td><code>signature_len</code></td>
+            <td class="pb-0">
+<p>The length of the signature. </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted"></code></td>
+            <td><code>public_key</code></td>
+            <td class="pb-0">
+<p>The public key represented as a byte string. </p>
+</td>
+          </tr>
+        
+      </table>
+    
+    
+      <h4>Returns</h4>
+      <div class="ml-5"><p>OQS_SUCCESS or OQS_ERROR </p>
+</div>
+    
+  </div>
+</div>
+    <br>

@@ -1,0 +1,365 @@
+---
+layout: default
+parent: API documentation
+grand_parent: liboqs
+title: common.h
+---
+      
+<h1><span class="text-muted">src/common/</span><b>common.h</b></h1>
+
+<div class="lead">
+  
+<p>Utility functions for use in liboqs. </p>
+    
+</div>
+
+<p>SPDX-License-Identifier: MIT </p>
+    
+
+
+  <br><br>
+  <h2>Includes</h2>
+  <hr>
+  
+  <code>
+    <span class="text-muted">#include <</span><b>limits.h</b><span class="text-muted">></span>
+  </code>
+  <br>
+  <code>
+    <span class="text-muted">#include <</span><b>stdint.h</b><span class="text-muted">></span>
+  </code>
+  <br>
+  <code>
+    <span class="text-muted">#include <</span><b>stdlib.h</b><span class="text-muted">></span>
+  </code>
+  <br>
+  <code>
+    <span class="text-muted">#include <</span><b>oqs/oqsconfig.h</b><span class="text-muted">></span>
+  </code>
+  
+
+
+
+
+
+  <br><br>
+  <br><br>
+  <h2>Enumeration Types</h2>
+  
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/common/common.h#L92" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="common_8h_1a7682cde206b02be2addea22bb31cf7fc"><code><span class="text-muted">enum</span> <b>OQS_STATUS</b></code></h3>
+    <div class="card-text">
+      
+<p>Represents return values from functions.</p>
+<p>Callers should compare with the symbol rather than the individual value. For example, <div class="ml-4 border p-2 bg-light">
+  <pre class="m-0">ret = OQS_KEM_encaps(...);
+if (ret == OQS_SUCCESS) { ... }
+</pre>
+</div></p>
+<p>rather than <div class="ml-4 border p-2 bg-light">
+  <pre class="m-0">if (!OQS_KEM_encaps(...) { ... }
+</pre>
+</div> </p>
+        
+    </div>
+    
+      <h4>Enumeration values</h4>
+      <table class="table mb-0">
+        
+          <tr>
+            <td><code>OQS_ERROR <span class="text-muted">= -1</span></code></td>
+            <td class="pb-0">
+<p>Used to indicate that some undefined error occurred. </p>
+          </td>
+          </tr>
+        
+          <tr>
+            <td><code>OQS_SUCCESS <span class="text-muted">= 0</span></code></td>
+            <td class="pb-0">
+<p>Used to indicate successful return from function. </p>
+          </td>
+          </tr>
+        
+          <tr>
+            <td><code>OQS_EXTERNAL_LIB_ERROR_OPENSSL <span class="text-muted">= 50</span></code></td>
+            <td class="pb-0">
+<p>Used to indicate failures in external libraries (e.g., OpenSSL). </p>
+          </td>
+          </tr>
+        
+      </table>
+    
+  </div>
+</div>
+    <br>
+
+
+
+  <br><br>
+  <h2>Functions</h2>
+  
+    <table class="table">
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">OQS_API void</span></code></td>
+      <td><code><b><a href="#common_8h_1a9a10aa531a4f9788f1e8b9994262cb2a">OQS_init</a></b><span class="text-muted">(void)</span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">OQS_API void</span></code></td>
+      <td><code><b><a href="#common_8h_1a2bd640141597d0775f803fecd5131c55">OQS_MEM_cleanse</a></b><span class="text-muted">(void *ptr, size_t len)</span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">OQS_API void</span></code></td>
+      <td><code><b><a href="#common_8h_1a4b230b209b2066a7e43dce6cc21ba211">OQS_MEM_secure_free</a></b><span class="text-muted">(void *ptr, size_t len)</span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">OQS_API void</span></code></td>
+      <td><code><b><a href="#common_8h_1aeb283601b868f9a7b6b732df4adbe624">OQS_MEM_insecure_free</a></b><span class="text-muted">(void *ptr)</span></code></td>
+    </tr>
+  
+</table>
+  
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/common/common.h#L148" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="common_8h_1a9a10aa531a4f9788f1e8b9994262cb2a">OQS_init</h3>
+    <div class="card-subtitle mb-2"><code>OQS_API void <b>OQS_init</b>(void)</code></div>
+    <div class="card-text">
+      
+<p>This currently only sets the values in the OQS_CPU_EXTENSIONS, and so has effect only when OQS_USE_CPU_EXTENSIONS and OQS_PORTABLE_BUILD are set. </p>
+        
+    </div>
+    
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/common/common.h#L160" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="common_8h_1a2bd640141597d0775f803fecd5131c55">OQS_MEM_cleanse</h3>
+    <div class="card-subtitle mb-2"><code>OQS_API void <b>OQS_MEM_cleanse</b>(void *ptr, size_t len)</code></div>
+    <div class="card-text">
+      
+<p>Zeros out <code>len</code> bytes of memory starting at <code>ptr</code>.</p>
+<p>Designed to be protected against optimizing compilers which try to remove "unnecessary" operations. Should be used for all buffers containing secret data.</p>
+<p>
+</p>
+        
+    </div>
+    
+      <h4>Parameters</h4>
+      <table class="table mb-0">
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">void *</code></td>
+            <td><code>ptr</code></td>
+            <td class="pb-0">
+<p>The start of the memory to zero out. </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">size_t</code></td>
+            <td><code>len</code></td>
+            <td class="pb-0">
+<p>The number of bytes to zero out. </p>
+</td>
+          </tr>
+        
+      </table>
+    
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/common/common.h#L174" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="common_8h_1a4b230b209b2066a7e43dce6cc21ba211">OQS_MEM_secure_free</h3>
+    <div class="card-subtitle mb-2"><code>OQS_API void <b>OQS_MEM_secure_free</b>(void *ptr, size_t len)</code></div>
+    <div class="card-text">
+      
+<p>Zeros out <code>len</code> bytes of memory starting at <code>ptr</code>, then frees <code>ptr</code>.</p>
+<p>Can be called with <code>ptr = NULL</code>, in which case no operation is performed.</p>
+<p>Designed to be protected against optimizing compilers which try to remove "unnecessary" operations. Should be used for all buffers containing secret data.</p>
+<p>
+</p>
+        
+    </div>
+    
+      <h4>Parameters</h4>
+      <table class="table mb-0">
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">void *</code></td>
+            <td><code>ptr</code></td>
+            <td class="pb-0">
+<p>The start of the memory to zero out and free. </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">size_t</code></td>
+            <td><code>len</code></td>
+            <td class="pb-0">
+<p>The number of bytes to zero out. </p>
+</td>
+          </tr>
+        
+      </table>
+    
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/common/common.h#L185" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="common_8h_1aeb283601b868f9a7b6b732df4adbe624">OQS_MEM_insecure_free</h3>
+    <div class="card-subtitle mb-2"><code>OQS_API void <b>OQS_MEM_insecure_free</b>(void *ptr)</code></div>
+    <div class="card-text">
+      
+<p>Frees <code>ptr</code>.</p>
+<p>Can be called with <code>ptr = NULL</code>, in which case no operation is performed.</p>
+<p>Should only be used on non-secret data.</p>
+<p>
+</p>
+        
+    </div>
+    
+      <h4>Parameters</h4>
+      <table class="table mb-0">
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">void *</code></td>
+            <td><code>ptr</code></td>
+            <td class="pb-0">
+<p>The start of the memory to free. </p>
+</td>
+          </tr>
+        
+      </table>
+    
+    
+  </div>
+</div>
+    <br>
+
+
+
+  <br><br>
+  <h2>Macros</h2>
+  <table class="table"><tbody>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/common/common.h#L26" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_EXIT_IF_NULLPTR</b> 
+        
+          (x)
+        
+        
+      </code></p>
+      
+<p>Macro for terminating the program if x is a null pointer. </p>
+        
+      
+        
+        <div class="ml-4 border p-2 bg-light">
+  <pre class="m-0">    do {                        \
+        if ( (x) == (void*)0 )  \
+            exit(EXIT_FAILURE); \
+    } while (0)</pre>
+</div>
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/common/common.h#L43" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_OPENSSL_GUARD</b> 
+        
+          (x)
+        
+        
+      </code></p>
+      
+<p>This macro is intended to replace those assert()s involving side-effecting statements in aes/aes_ossl.c.</p>
+<p>assert() becomes a no-op when -DNDEBUG is defined, which causes compilation failures when the statement being checked also results in side-effects.</p>
+<p>This is a temporary workaround until a better error handling strategy is developed. </p>
+        
+      
+        
+        <div class="ml-4 border p-2 bg-light">
+  <pre class="m-0">    do {                        \
+        if( 1 != (x) ) {        \
+            exit(EXIT_FAILURE); \
+        }                       \
+    } while (0)</pre>
+</div>
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/common/common.h#L56" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>SIZE_T_TO_INT_OR_EXIT</b> 
+        
+          (size_t_var_name, int_var_name)
+        
+        
+      </code></p>
+      
+<p>Certain functions (such as OQS_randombytes_openssl in src/rand/rand.c) take in a size_t parameter, but can only handle values up to INT_MAX for those parameters. This macro is a temporary workaround for such functions. </p>
+        
+      
+        
+        <div class="ml-4 border p-2 bg-light">
+  <pre class="m-0">    int int_var_name = 0;                                     \
+    if (size_t_var_name <= INT_MAX) {                         \
+        int_var_name = (int)size_t_var_name;                  \
+    } else {                                                  \
+        exit(EXIT_FAILURE);                                   \
+    }</pre>
+</div>
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/common/common.h#L75" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_API</b> 
+        
+        
+          <span class="text-muted">__attribute__((visibility("default")))</span>
+        
+      </code></p>
+      
+<p>Defines which functions should be exposed outside the LibOQS library</p>
+<p>By default the visibility of all the symbols is defined to "hidden" Only the library API should be marked as default</p>
+<p>Example: OQS_API return_value function_name(void); </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/common/common.h#L196" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>UNUSED</b> 
+        
+        
+          <span class="text-muted"></span>
+        
+      </code></p>
+      
+<p>Macros that indicates a function argument may be unused. Used to comply with an API specification but when an implementation doesn't actually use the argument and we'd get a compiler warning otherwise. </p>
+        
+      
+    </td></tr>
+</tbody></table>

@@ -23,10 +23,25 @@
   {% include "components/typedefs.html" %}
 {% endif %}
 
+{% if file.enums()|length > 0 %}
+  <br><br>
+  <br><br>
+  <h2>Enumeration Types</h2>
+  {% if file.enums()|length > 1 %}
+    {% include "components/enums_table.html" %}
+  {% endif %}
+  {%- for e in file.enums() %}
+    {% include "components/enums_card.html" %}
+    <br>
+  {%- endfor %}
+{% endif %}
+
 {% if file.functions()|length > 0 %}
   <br><br>
   <h2>Functions</h2>
-  {% include "components/functions_table.html" %}
+  {% if file.functions()|length > 1 %}
+    {% include "components/functions_table.html" %}
+  {% endif %}
   {%- for f in file.functions() %}
     {% include "components/functions_card.html" %}
     <br>

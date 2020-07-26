@@ -1,0 +1,20 @@
+<div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="{{ srcbaseurl }}{{ e.src_filename() }}#L{{ e.src_linenumber() }}" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="{{ e.uniqid() }}"><code><span class="text-muted">enum</span> <b>{{ e.name() }}</b></code></h3>
+    <div class="card-text">
+      {{ e.description_detailed() }}
+    </div>
+    {% if e.values()|length > 0 %}
+      <h4>Enumeration values</h4>
+      <table class="table mb-0">
+        {% for v in e.values() %}
+          <tr>
+            <td><code>{{ v.name() }} <span class="text-muted">{{ v.initializer() }}</span></code></td>
+            <td class="pb-0">{{ v.description_detailed() }}</td>
+          </tr>
+        {% endfor %}
+      </table>
+    {% endif %}
+  </div>
+</div>

@@ -12,6 +12,7 @@ def render_text_and_children(element):
     elif child.tag == 'ref': s += child.text
     elif child.tag == 'computeroutput': s += env.get_template('base/computeroutput').render(t = child.text)
     elif child.tag == 'para': s += env.get_template('base/para').render(t = render_text_and_children(child))
+    elif child.tag == 'verbatim': s += env.get_template('base/verbatim').render(t = render_text_and_children(child))
     if child.tail: s += child.tail
   return s
 
@@ -87,16 +88,26 @@ class DXMember(object):
     else: return [DXFunctionDescriptionParam(p, self) for p in a[0]]
   def return_description(self):
     return render_text_and_children_or_empty(self.element, 'detaileddescription//simplesect[@kind="return"]')
-
-class DXFunction(DXMember):
-  def __init__(self, element):
-    self.element = element
+  def initializer(self):
+    return render_text_and_children_or_empty(self.element, 'initializer')
 
 class DXDefine(DXMember):
   def __init__(self, element):
     self.element = element
-  def initializer(self):
-    return render_text_and_children_or_empty(self.element, 'initializer')
+
+class DXEnumValue(DXMember):
+  def __init__(self, element):
+    self.element = element
+
+class DXEnum(DXMember):
+  def __init__(self, element):
+    self.element = element
+  def values(self):
+    return [DXEnumValue(v) for v in self.element.xpath('enumvalue')]
+
+class DXFunction(DXMember):
+  def __init__(self, element):
+    self.element = element
 
 class DXIncludes(object):
   def __init__(self, element):
@@ -131,6 +142,8 @@ class DXCompound(object):
     if len(a) > 0:
       if len(os.path.dirname(a)) > 0: return os.path.dirname(a) + '/'
     return ''
+  def src_filename(self):
+    return attribute_or_empty(self.element, 'location/@file')
   def description_brief(self):
     return render_text_and_children_or_empty(self.element, 'compounddef/briefdescription')
   def description_detailed(self):
@@ -143,6 +156,8 @@ class DXFile(DXCompound):
     self.element = element
   def defines(self):
     return [DXDefine(f) for f in self.element.xpath('//memberdef[@kind="define"]')]
+  def enums(self):
+    return [DXEnum(f) for f in self.element.xpath('//memberdef[@kind="enum"]')]
   def functions(self):
     return [DXFunction(f) for f in self.element.xpath('//memberdef[@kind="function"]')]
   def typedefs(self):
@@ -151,8 +166,6 @@ class DXFile(DXCompound):
 class DXStruct(DXCompound):
   def __init__(self, element):
     self.element = element
-  def src_filename(self):
-    return attribute_or_empty(self.element, 'location/@file')
   def src_linenumber(self):
     return attribute_or_empty(self.element, 'location/@line')
   def variables(self):

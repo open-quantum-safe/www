@@ -1,8 +1,9 @@
 ---
 layout: default
-parent: API documentation
+parent: C API documentation
 grand_parent: liboqs
 title: kem.h
+nav_exclude: true
 ---
       
 <h1><span class="text-muted">src/kem/</span><b>kem.h</b></h1>
@@ -47,7 +48,7 @@ title: kem.h
   <h2>Typedefs</h2>
   <table class="table"><tbody>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L259" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L255" target="_blank">[src]</a></small></div>
       <p><code><span class="text-muted">typedef struct OQS_KEM</span> <b>OQS_KEM</b></code></p>
       
 <p>Key encapsulation mechanism object </p>
@@ -108,7 +109,7 @@ title: kem.h
   
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L167" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L163" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="kem_8h_1ade37093604bec9f79283d0cfb75f7167">OQS_KEM_alg_identifier</h3>
     <div class="card-subtitle mb-2"><code>OQS_API const char * <b>OQS_KEM_alg_identifier</b>(size_t i)</code></div>
     <div class="card-text">
@@ -144,7 +145,7 @@ title: kem.h
     <br>
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L177" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L173" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="kem_8h_1a925f2c21c243905610edd8d2afbc17a5">OQS_KEM_alg_count</h3>
     <div class="card-subtitle mb-2"><code>OQS_API int <b>OQS_KEM_alg_count</b>(void)</code></div>
     <div class="card-text">
@@ -166,7 +167,7 @@ title: kem.h
     <br>
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L185" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L181" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="kem_8h_1ab74d92eea10589998f1411d0ed1651e9">OQS_KEM_alg_is_enabled</h3>
     <div class="card-subtitle mb-2"><code>OQS_API int <b>OQS_KEM_alg_is_enabled</b>(const char *method_name)</code></div>
     <div class="card-text">
@@ -201,7 +202,7 @@ title: kem.h
     <br>
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L270" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L266" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="kem_8h_1a878be523d28a0f80a87b72910a7d7f73">OQS_KEM_new</h3>
     <div class="card-subtitle mb-2"><code>OQS_API OQS_KEM * <b>OQS_KEM_new</b>(const char *method_name)</code></div>
     <div class="card-text">
@@ -237,7 +238,7 @@ title: kem.h
     <br>
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L284" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L280" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="kem_8h_1a46d80a2217878ce76b251967f54f87cb">OQS_KEM_keypair</h3>
     <div class="card-subtitle mb-2"><code>OQS_API OQS_STATUS <b>OQS_KEM_keypair</b>(const OQS_KEM *kem, uint8_t *public_key, uint8_t *secret_key)</code></div>
     <div class="card-text">
@@ -289,7 +290,7 @@ title: kem.h
     <br>
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L299" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L295" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="kem_8h_1ab149d2d38207fd4a677331285f350cc5">OQS_KEM_encaps</h3>
     <div class="card-subtitle mb-2"><code>OQS_API OQS_STATUS <b>OQS_KEM_encaps</b>(const OQS_KEM *kem, uint8_t *ciphertext, uint8_t *shared_secret, const uint8_t *public_key)</code></div>
     <div class="card-text">
@@ -349,7 +350,7 @@ title: kem.h
     <br>
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L314" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L310" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="kem_8h_1acd09878070fdf0b57b657996cbe3e92d">OQS_KEM_decaps</h3>
     <div class="card-subtitle mb-2"><code>OQS_API OQS_STATUS <b>OQS_KEM_decaps</b>(const OQS_KEM *kem, uint8_t *shared_secret, const unsigned char *ciphertext, const uint8_t *secret_key)</code></div>
     <div class="card-text">
@@ -409,7 +410,7 @@ title: kem.h
     <br>
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L321" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L317" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="kem_8h_1abb8e09a53817e27bd5a302df3e4a12c4">OQS_KEM_free</h3>
     <div class="card-subtitle mb-2"><code>OQS_API void <b>OQS_KEM_free</b>(OQS_KEM *kem)</code></div>
     <div class="card-text">
@@ -672,6 +673,96 @@ title: kem.h
       <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L66" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
+        <b>OQS_KEM_alg_hqc_128_1_cca2</b> 
+        
+        
+          <span class="text-muted">"HQC-128-1-CCA2"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for HQC-128-1-CCA2 KEM. </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L68" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_KEM_alg_hqc_192_1_cca2</b> 
+        
+        
+          <span class="text-muted">"HQC-192-1-CCA2"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for HQC-192-1-CCA2 KEM. </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L70" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_KEM_alg_hqc_192_2_cca2</b> 
+        
+        
+          <span class="text-muted">"HQC-192-2-CCA2"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for HQC-192-2-CCA2 KEM. </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L72" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_KEM_alg_hqc_256_1_cca2</b> 
+        
+        
+          <span class="text-muted">"HQC-256-1-CCA2"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for HQC-256-1-CCA2 KEM. </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L74" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_KEM_alg_hqc_256_2_cca2</b> 
+        
+        
+          <span class="text-muted">"HQC-256-2-CCA2"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for HQC-256-2-CCA2 KEM. </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L76" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_KEM_alg_hqc_256_3_cca2</b> 
+        
+        
+          <span class="text-muted">"HQC-256-3-CCA2"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for HQC-256-3-CCA2 KEM. </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L78" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_kyber_512</b> 
         
         
@@ -684,7 +775,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L68" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L80" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_kyber_768</b> 
@@ -699,7 +790,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L70" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L82" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_kyber_1024</b> 
@@ -714,7 +805,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L72" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L84" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_kyber_512_90s</b> 
@@ -729,7 +820,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L74" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L86" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_kyber_768_90s</b> 
@@ -744,7 +835,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L76" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L88" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_kyber_1024_90s</b> 
@@ -759,37 +850,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L78" target="_blank">[src]</a></small></div>
-      <p><code>
-        <span class="text-muted">#define</span> 
-        <b>OQS_KEM_alg_newhope_512cca</b> 
-        
-        
-          <span class="text-muted">"NewHope-512-CCA"</span>
-        
-      </code></p>
-      
-<p>Algorithm identifier for NewHope-512-CCA KEM. </p>
-        
-      
-    </td></tr>
-    <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L80" target="_blank">[src]</a></small></div>
-      <p><code>
-        <span class="text-muted">#define</span> 
-        <b>OQS_KEM_alg_newhope_1024cca</b> 
-        
-        
-          <span class="text-muted">"NewHope-1024-CCA"</span>
-        
-      </code></p>
-      
-<p>Algorithm identifier for NewHope-1024-CCA KEM. </p>
-        
-      
-    </td></tr>
-    <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L82" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L90" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_ntru_hps2048509</b> 
@@ -804,7 +865,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L84" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L92" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_ntru_hps2048677</b> 
@@ -819,7 +880,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L86" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L94" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_ntru_hps4096821</b> 
@@ -834,7 +895,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L88" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L96" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_ntru_hrss701</b> 
@@ -849,7 +910,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L90" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L98" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_saber_lightsaber</b> 
@@ -864,7 +925,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L92" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L100" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_saber_saber</b> 
@@ -879,7 +940,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L94" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L102" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_saber_firesaber</b> 
@@ -894,97 +955,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L96" target="_blank">[src]</a></small></div>
-      <p><code>
-        <span class="text-muted">#define</span> 
-        <b>OQS_KEM_alg_threebears_babybear</b> 
-        
-        
-          <span class="text-muted">"BabyBear"</span>
-        
-      </code></p>
-      
-<p>Algorithm identifier for BabyBear KEM. </p>
-        
-      
-    </td></tr>
-    <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L98" target="_blank">[src]</a></small></div>
-      <p><code>
-        <span class="text-muted">#define</span> 
-        <b>OQS_KEM_alg_threebears_babybear_ephem</b> 
-        
-        
-          <span class="text-muted">"BabyBearEphem"</span>
-        
-      </code></p>
-      
-<p>Algorithm identifier for BabyBearEphem KEM. </p>
-        
-      
-    </td></tr>
-    <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L100" target="_blank">[src]</a></small></div>
-      <p><code>
-        <span class="text-muted">#define</span> 
-        <b>OQS_KEM_alg_threebears_mamabear</b> 
-        
-        
-          <span class="text-muted">"MamaBear"</span>
-        
-      </code></p>
-      
-<p>Algorithm identifier for MamaBear KEM. </p>
-        
-      
-    </td></tr>
-    <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L102" target="_blank">[src]</a></small></div>
-      <p><code>
-        <span class="text-muted">#define</span> 
-        <b>OQS_KEM_alg_threebears_mamabear_ephem</b> 
-        
-        
-          <span class="text-muted">"MamaBearEphem"</span>
-        
-      </code></p>
-      
-<p>Algorithm identifier for MamaBearEphem KEM. </p>
-        
-      
-    </td></tr>
-    <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L104" target="_blank">[src]</a></small></div>
-      <p><code>
-        <span class="text-muted">#define</span> 
-        <b>OQS_KEM_alg_threebears_papabear</b> 
-        
-        
-          <span class="text-muted">"PapaBear"</span>
-        
-      </code></p>
-      
-<p>Algorithm identifier for PapaBear KEM. </p>
-        
-      
-    </td></tr>
-    <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L106" target="_blank">[src]</a></small></div>
-      <p><code>
-        <span class="text-muted">#define</span> 
-        <b>OQS_KEM_alg_threebears_papabear_ephem</b> 
-        
-        
-          <span class="text-muted">"PapaBearEphem"</span>
-        
-      </code></p>
-      
-<p>Algorithm identifier for PapaBearEphem KEM. </p>
-        
-      
-    </td></tr>
-    <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L109" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L105" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_frodokem_640_aes</b> 
@@ -999,7 +970,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L111" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L107" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_frodokem_640_shake</b> 
@@ -1014,7 +985,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L113" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L109" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_frodokem_976_aes</b> 
@@ -1029,7 +1000,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L115" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L111" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_frodokem_976_shake</b> 
@@ -1044,7 +1015,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L117" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L113" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_frodokem_1344_aes</b> 
@@ -1059,7 +1030,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L119" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L115" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_frodokem_1344_shake</b> 
@@ -1074,7 +1045,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L121" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L117" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_sidh_p434</b> 
@@ -1089,7 +1060,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L123" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L119" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_sidh_p434_compressed</b> 
@@ -1104,7 +1075,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L125" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L121" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_sidh_p503</b> 
@@ -1119,7 +1090,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L127" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L123" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_sidh_p503_compressed</b> 
@@ -1134,7 +1105,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L129" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L125" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_sidh_p610</b> 
@@ -1149,7 +1120,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L131" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L127" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_sidh_p610_compressed</b> 
@@ -1164,7 +1135,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L133" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L129" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_sidh_p751</b> 
@@ -1179,7 +1150,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L135" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L131" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_sidh_p751_compressed</b> 
@@ -1194,7 +1165,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L137" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L133" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_sike_p434</b> 
@@ -1209,7 +1180,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L139" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L135" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_sike_p434_compressed</b> 
@@ -1224,7 +1195,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L141" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L137" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_sike_p503</b> 
@@ -1239,7 +1210,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L143" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L139" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_sike_p503_compressed</b> 
@@ -1254,7 +1225,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L145" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L141" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_sike_p610</b> 
@@ -1269,7 +1240,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L147" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L143" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_sike_p610_compressed</b> 
@@ -1284,7 +1255,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L149" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L145" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_sike_p751</b> 
@@ -1299,7 +1270,7 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L151" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L147" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_alg_sike_p751_compressed</b> 
@@ -1314,13 +1285,13 @@ title: kem.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L155" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/kem/kem.h#L151" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_KEM_algs_length</b> 
         
         
-          <span class="text-muted">58</span>
+          <span class="text-muted">56</span>
         
       </code></p>
       

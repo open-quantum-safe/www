@@ -2,7 +2,7 @@
 layout: default
 parent: Algorithms
 grand_parent: liboqs
-title: qTesla
+title: HQC
 ---
 
-{% include liboqs/docs/algorithms/sig/qtesla.md %}
+{% include liboqs/docs/algorithms/kem/hqc.md %}

@@ -1,0 +1,270 @@
+---
+layout: default
+parent: C API documentation
+grand_parent: liboqs
+title: rand.h
+nav_exclude: true
+---
+      
+<h1><span class="text-muted">src/common/rand/</span><b>rand.h</b></h1>
+
+<div class="lead">
+  
+<p>Random number generator. </p>
+    
+</div>
+
+<p>SPDX-License-Identifier: MIT </p>
+    
+
+
+  <br><br>
+  <h2>Includes</h2>
+  <hr>
+  
+  <code>
+    <span class="text-muted">#include <</span><b>stdbool.h</b><span class="text-muted">></span>
+  </code>
+  <br>
+  <code>
+    <span class="text-muted">#include <</span><b>stddef.h</b><span class="text-muted">></span>
+  </code>
+  <br>
+  <code>
+    <span class="text-muted">#include <</span><b>stdint.h</b><span class="text-muted">></span>
+  </code>
+  <br>
+  <code>
+    <span class="text-muted">#include <</span><b>oqs/common.h</b><span class="text-muted">></span>
+  </code>
+  
+
+
+
+
+
+
+
+  <br><br>
+  <h2>Functions</h2>
+  
+    <table class="table">
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">OQS_API OQS_STATUS</span></code></td>
+      <td><code><b><a href="#rand_8h_1a707cacdae3e726709080b1d5ffd5705c">OQS_randombytes_switch_algorithm</a></b><span class="text-muted">(const char *algorithm)</span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">OQS_API void</span></code></td>
+      <td><code><b><a href="#rand_8h_1af79c03032969d61e363467f6caf56412">OQS_randombytes_custom_algorithm</a></b><span class="text-muted">(void(*algorithm_ptr)(uint8_t *, size_t))</span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">OQS_API void</span></code></td>
+      <td><code><b><a href="#rand_8h_1a83a59ba98ad3d98845c0de945676696b">OQS_randombytes</a></b><span class="text-muted">(uint8_t *random_array, size_t bytes_to_read)</span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">OQS_API void</span></code></td>
+      <td><code><b><a href="#rand_8h_1a4d3612aef9b926ae876cdd5a6d3077fb">OQS_randombytes_nist_kat_init_256bit</a></b><span class="text-muted">(const uint8_t *entropy_input, const uint8_t *personalization_string)</span></code></td>
+    </tr>
+  
+</table>
+  
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/common/rand/rand.h#L34" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="rand_8h_1a707cacdae3e726709080b1d5ffd5705c">OQS_randombytes_switch_algorithm</h3>
+    <div class="card-subtitle mb-2"><code>OQS_API OQS_STATUS <b>OQS_randombytes_switch_algorithm</b>(const char *algorithm)</code></div>
+    <div class="card-text">
+      
+<p>Switches OQS_randombytes to use the specified algorithm.</p>
+<p>
+
+</p>
+        
+    </div>
+    
+      <h4>Parameters</h4>
+      <table class="table mb-0">
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">const char *</code></td>
+            <td><code>algorithm</code></td>
+            <td class="pb-0">
+<p>The name of the algorithm to use. </p>
+</td>
+          </tr>
+        
+      </table>
+    
+    
+      <h4>Returns</h4>
+      <div class="ml-5"><p>OQS_SUCCESS if <code>algorithm</code> is a supported algorithm name, OQS_ERROR otherwise. </p>
+</div>
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/common/rand/rand.h#L44" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="rand_8h_1af79c03032969d61e363467f6caf56412">OQS_randombytes_custom_algorithm</h3>
+    <div class="card-subtitle mb-2"><code>OQS_API void <b>OQS_randombytes_custom_algorithm</b>(void(*algorithm_ptr)(uint8_t *, size_t))</code></div>
+    <div class="card-text">
+      
+<p>Switches OQS_randombytes to use the given function.</p>
+<p>This allows additional custom RNGs besides the provided ones. The provided RNG function must have the same signature as <code>OQS_randombytes</code>.</p>
+<p>
+</p>
+        
+    </div>
+    
+      <h4>Parameters</h4>
+      <table class="table mb-0">
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">void(*)(uint8_t *, size_t)</code></td>
+            <td><code>algorithm_ptr</code></td>
+            <td class="pb-0">
+<p>Pointer to the RNG function to use. </p>
+</td>
+          </tr>
+        
+      </table>
+    
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/common/rand/rand.h#L58" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="rand_8h_1a83a59ba98ad3d98845c0de945676696b">OQS_randombytes</h3>
+    <div class="card-subtitle mb-2"><code>OQS_API void <b>OQS_randombytes</b>(uint8_t *random_array, size_t bytes_to_read)</code></div>
+    <div class="card-text">
+      
+<p>Fills the given memory with the requested number of (pseudo)random bytes.</p>
+<p>This implementation uses whichever algorithm has been selected by OQS_randombytes_switch_algorithm. The default is OQS_randombytes_system, which reads bytes directly from <code>/dev/urandom</code>.</p>
+<p>The caller is responsible for providing a buffer allocated with sufficient room.</p>
+<p>
+</p>
+        
+    </div>
+    
+      <h4>Parameters</h4>
+      <table class="table mb-0">
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">uint8_t *</code></td>
+            <td><code>random_array</code></td>
+            <td class="pb-0">
+<p>Pointer to the memory to fill with (pseudo)random bytes </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">size_t</code></td>
+            <td><code>bytes_to_read</code></td>
+            <td class="pb-0">
+<p>The number of random bytes to read into memory </p>
+</td>
+          </tr>
+        
+      </table>
+    
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/common/rand/rand.h#L67" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="rand_8h_1a4d3612aef9b926ae876cdd5a6d3077fb">OQS_randombytes_nist_kat_init_256bit</h3>
+    <div class="card-subtitle mb-2"><code>OQS_API void <b>OQS_randombytes_nist_kat_init_256bit</b>(const uint8_t *entropy_input, const uint8_t *personalization_string)</code></div>
+    <div class="card-text">
+      
+<p>Initializes the NIST DRBG with a given seed and with 256-bit security.</p>
+<p>
+</p>
+        
+    </div>
+    
+      <h4>Parameters</h4>
+      <table class="table mb-0">
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">const uint8_t *</code></td>
+            <td><code>entropy_input</code></td>
+            <td class="pb-0">
+<p>The seed; must be exactly 48 bytes </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">const uint8_t *</code></td>
+            <td><code>personalization_string</code></td>
+            <td class="pb-0">
+<p>An optional personalization string; may be NULL; if not NULL, must be at least 48 bytes long </p>
+</td>
+          </tr>
+        
+      </table>
+    
+    
+  </div>
+</div>
+    <br>
+
+
+
+  <br><br>
+  <h2>Macros</h2>
+  <table class="table"><tbody>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/common/rand/rand.h#L22" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_RAND_alg_system</b> 
+        
+        
+          <span class="text-muted">"system"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for system PRNG. </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/common/rand/rand.h#L24" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_RAND_alg_nist_kat</b> 
+        
+        
+          <span class="text-muted">"NIST-KAT"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for NIST deterministic RNG for KATs. </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/common/rand/rand.h#L26" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_RAND_alg_openssl</b> 
+        
+        
+          <span class="text-muted">"OpenSSL"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for using OpenSSL's PRNG. </p>
+        
+      
+    </td></tr>
+</tbody></table>

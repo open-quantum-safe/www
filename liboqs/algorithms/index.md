@@ -22,14 +22,10 @@ nav_order: 2
 
 - [**BIKE**](kem/bike): BIKE1-L1-CPA, BIKE1-L3-CPA, BIKE1-L1-FO, BIKE1-L3-FO
 - [**FrodoKEM**](kem/frodokem): FrodoKEM-640-AES, FrodoKEM-640-SHAKE, FrodoKEM-976-AES, FrodoKEM-976-SHAKE, FrodoKEM-1344-AES, FrodoKEM-1344-SHAKE
+- [**HQC**](kem/hqc): HQC-128-1-CCA2, HQC-192-1-CCA2, HQC-192-2-CCA2, HQC-256-1-CCA2†, HQC-256-2-CCA2†, HQC-256-3-CCA2†
 - [**SIKE**](kem/sike): SIDH-p434, SIDH-p503, SIDH-p610, SIDH-p751, SIKE-p434, SIKE-p503, SIKE-p610, SIKE-p751, SIDH-p434-compressed, SIDH-p503-compressed, SIDH-p610-compressed, SIDH-p751-compressed, SIKE-p434-compressed, SIKE-p503-compressed, SIKE-p610-compressed, SIKE-p751-compressed
 
-liboqs does not yet support the following Round 3 alternate candidates: HQC, NTRU Prime
-
-### Round 2 candidates
-
-- [**NewHope**](kem/newhope): NewHope-512-CCA, NewHope-1024-CCA
-- [**ThreeBears**](kem/threebears): BabyBearEphem, BabyBear, MamaBearEphem, MamaBear, PapaBearEphem, PapaBear
+liboqs does not yet support the following Round 3 alternate candidates: NTRU Prime.
 
 ## Signature schemes
 
@@ -50,9 +46,3 @@ liboqs does not yet support the following Round 3 alternate candidates: HQC, NTR
     - **SPHINCS+-SHAKE256**: SPHINCS+-SHAKE256-128f-robust, SPHINCS+-SHAKE256-128f-simple, SPHINCS+-SHAKE256-128s-robust, SPHINCS+-SHAKE256-128s-simple, SPHINCS+-SHAKE256-192f-robust, SPHINCS+-SHAKE256-192f-simple, SPHINCS+-SHAKE256-192s-robust, SPHINCS+-SHAKE256-192s-simple, SPHINCS+-SHAKE256-256f-robust, SPHINCS+-SHAKE256-256f-simple, SPHINCS+-SHAKE256-256s-robust, SPHINCS+-SHAKE256-256s-simple
 
 liboqs does not yet support the following Round 3 alternate candidates: GeMSS
-
-### Round 2 candidates
-
-- [**MQDSS**](sig/mqdss): MQDSS-31-48, MQDSS-31-64
-- [**qTesla**](sig/qtesla): qTesla-p-I, qTesla-p-III
-

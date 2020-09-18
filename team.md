@@ -69,7 +69,7 @@ We'd like to make a special acknowledgement to the companies who have dedicated 
         </a>
     </div>
     <div class="d-inline-block" style="height: 100px;">
-        <a href="https://www.zurich.ibm.com/securityprivacy/quantumsafecryptography.html/" style="background-image: none; vertical-align: middle;">
+        <a href="https://www.zurich.ibm.com/security/quantumsafecryptography.html" style="background-image: none; vertical-align: middle;">
             <img src="{{ site.baseurl }}/img/logos/ibm.jpg" alt="IBM Research" style="max-height: 100%;"/>
         </a>
     </div>

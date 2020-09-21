@@ -52,6 +52,10 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+exclude:
+  - README.md
+  - .git
+  - .jekyll-cache
 
 # just-the-docs theme configuration
 search_enabled: true

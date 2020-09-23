@@ -7,6 +7,13 @@ has_toc: false
 ---
 
 # About the Open Quantum Safe project
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 
 The goal of the Open Quantum Safe (OQS) project is to support the development and prototyping of quantum-resistant cryptography.
 
@@ -25,6 +32,8 @@ While at the time of this writing there are no vulnerabilities known in any of t
 We realize some parties may want to deploy quantum-safe cryptography prior to the conclusion of the NIST standardization project.  We strongly recommend such attempts make use of so-called **hybrid cryptography**, in which quantum-safe public-key algorithms are used alongside traditional public key algorithms (like RSA or elliptic curves) so that the solution is at least no less secure than existing traditional cryptography.
 
 **WE DO NOT CURRENTLY RECOMMEND RELYING ON LIBOQS OR OUR APPLICATION INTEGRATIONS IN A PRODUCTION ENVIRONMENT OR TO PROTECT ANY SENSITIVE DATA.** This project is meant to help with research and prototyping.  While we make a best-effort approach to avoid security bugs, software in our project has not received the level of auditing and analysis that would be necessary to rely on it for high security use.
+
+### Security policy
 
 For information about bug reporting, please see our [security policy](security).
 

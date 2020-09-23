@@ -82,17 +82,28 @@ The easiest way to get started with experimenting with post-quantum cryptography
 
 ### HTTP servers: Apache httpd and nginx
 
-TODO
+Using [our fork of OpenSSL](#oqs-openssl), we've enabled support for post-quantum and hybrid key exchange and authentication in the Apache httpd web server and the nginx web server.  There are links below to instructions on how to use the pre-built Docker images, or you can build your own.
+
+- **Apache httpd**
+    - [Getting and running the pre-built post-quantum enabled **Apache httpd** demo Docker image](https://github.com/open-quantum-safe/oqs-demos/blob/master/httpd/USAGE.md)
+    - [Building your own Apache httpd demo Docker image](https://github.com/open-quantum-safe/oqs-demos/tree/master/httpd)
+- **nginx**
+    - [Getting and running the pre-built post-quantum enabled **nignx** demo Docker image](https://github.com/open-quantum-safe/oqs-demos/blob/master/nginx/USAGE.md)
+    - [Building your own nginx demo Docker image](https://github.com/open-quantum-safe/oqs-demos/tree/master/nginx)
 
 ### HTTP clients: curl and Chromium
 
-TODO
+Using our forks of [OpenSSL](#oqs-openssl) and [BoringSSL](#oqs-boringssl), we've enabled support for post-quantum and hybrid key exchange and authentication in the curl command-line web client and the Chromium web browser.
+
+- **curl**
+    - [Getting and running the pre-built post-quantum enabled **curl** demo Docker image](https://github.com/open-quantum-safe/oqs-demos/blob/master/curl/USAGE.md)
+    - [Building your own curl demo Docker image](https://github.com/open-quantum-safe/oqs-demos/tree/master/curl)
+- **Chromium**
+    - [Pre-built Chromium binary for Ubuntu 18.04](https://github.com/open-quantum-safe/oqs-demos/releases/download/v0.4.0/chromium-ubuntu-0.4.0.tgz) (149 MB)
+    - [Building your own Chromium binary](https://github.com/open-quantum-safe/oqs-demos/tree/master/chromium) (warning: painful!)
 
 ### Test server
 
 We're interested in design and draft standards for hybrid authentication and key exchange as well as interoperability testing with other implementers. As an initial step to facilitate such testing we have set up a first iteration of such a demonstration and interoperability test server. All of the clients above can be used with this test server. Any usage and all feedback is very welcome.
 
 [Test server](https://test.openquantumsafe.org/){: .btn .btn-blue }
-
-
-

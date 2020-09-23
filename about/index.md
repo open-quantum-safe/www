@@ -15,6 +15,8 @@ has_toc: false
 1. TOC
 {:toc}
 
+## Overview
+
 The goal of the Open Quantum Safe (OQS) project is to support the development and prototyping of quantum-resistant cryptography.
 
 OQS consists of two main lines of work: [liboqs](liboqs), an open source C library for quantum-resistant cryptographic algorithms, and prototype [integrations](applications) into protocols and applications, including a fork of the widely used OpenSSL library.

@@ -6,3 +6,9 @@ nav_order: 4
 ---
 
 # CMS and S/MIME
+
+Our [fork of OpenSSL](tls/#oqs-openssl) can perform S/MIME and CMS signing operations using post-quantum and hybrid digital signatures.
+
+For instructions on doing post-quantum S/MIME operations, see the [OQS-OpenSSL README section "CMS demo"](https://github.com/open-quantum-safe/openssl/blob/OQS-OpenSSL_1_1_1-stable/README.md#cms-demo).
+
+Information on post-quantum X.509 certificates can be found [here](x509).

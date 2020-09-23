@@ -2,6 +2,8 @@
 layout: default
 title: About our project
 nav_order: 2
+has_children: true
+has_toc: false
 ---
 
 # About the Open Quantum Safe project
@@ -24,9 +26,13 @@ We realize some parties may want to deploy quantum-safe cryptography prior to th
 
 **WE DO NOT CURRENTLY RECOMMEND RELYING ON LIBOQS OR OUR APPLICATION INTEGRATIONS IN A PRODUCTION ENVIRONMENT OR TO PROTECT ANY SENSITIVE DATA.** This project is meant to help with research and prototyping.  While we make a best-effort approach to avoid security bugs, software in our project has not received the level of auditing and analysis that would be necessary to rely on it for high security use.
 
+For information about bug reporting, please see our [security policy](security).
+
 ## Getting started
 
 The easiest way to get started with experimenting with post-quantum cryptography is to use our pre-built Docker images containing post-quantum-enabled versions of OpenSSL/curl, Apache httpd, and nginx. See the [applications and protocols](applications) section for more information.
+
+For developers, there is also a [developer image](https://hub.docker.com/r/openquantumsafe/curl-dev) ready to support incremental development and code installations.
 
 ## Research
 

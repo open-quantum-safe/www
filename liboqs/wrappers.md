@@ -10,7 +10,7 @@ nav_order: 5
 You can use post-quantum algorithms from liboqs in the following languages via language-specific wrappers that we make available:
 
 - [C++](https://github.com/open-quantum-safe/liboqs-cpp)
-- [Go](https://github.com/open-quantum-safe/liboqs-gocpp)
+- [Go](https://github.com/open-quantum-safe/liboqs-go)
 - [Java](https://github.com/open-quantum-safe/liboqs-java)
 - [.Net](https://github.com/open-quantum-safe/liboqs-dotnet)
 - [Python](https://github.com/open-quantum-safe/liboqs-python)

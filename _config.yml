@@ -21,7 +21,7 @@
 title: Open&nbsp;Quantum&nbsp;Safe
 email: contact@openquantumsafe.org
 description: Open-source software for prototyping quantum-resistant cryptography
-baseurl: "/revamp" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://openquantumsafe.org" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  open-quantum-safe

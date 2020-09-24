@@ -2,7 +2,7 @@
 layout: default
 parent: liboqs
 title: License
-nav_order: 6
+nav_order: 7
 ---
 
 # License

@@ -2,7 +2,7 @@
 layout: default
 parent: liboqs
 title: Language wrappers
-nav_order: 5
+nav_order: 6
 ---
 
 # Language wrappers

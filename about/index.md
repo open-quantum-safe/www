@@ -37,7 +37,7 @@ We realize some parties may want to deploy quantum-safe cryptography prior to th
 
 ### Security policy
 
-For information about bug reporting, please see our [security policy](security).
+For information about bug reporting, please see our [security policy](../liboqs/security).
 
 ## Getting started
 

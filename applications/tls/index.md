@@ -34,7 +34,7 @@ See the [OQS-OpenSSL README](https://github.com/open-quantum-safe/openssl/blob/O
 ### Releases
 {: .no_toc }
 
-The OQS-OpenSSL-1.1.1 series provides post-quantum algorithms in TLS 1.3, X.509, and S/MIME and is actively maintained, incl. regular updates to follow/merge the upstream/main OpenSSL project releases:
+The OQS-OpenSSL-1.1.1 series provides post-quantum algorithms in TLS 1.3, X.509, and S/MIME and is actively maintained, including regular updates to follow/merge the upstream/main OpenSSL project releases:
 
 - [OQS-OpenSSL 1.1.1 snapshot 2020-08](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2020-08) aligned with liboqs 0.4.0 (August 11, 2020) <span class="label label-green">current version</span>
 - [OQS-OpenSSL 1.1.1 snapshot 2020-07](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2020-07) aligned with liboqs 0.3.0 (July 10, 2020)

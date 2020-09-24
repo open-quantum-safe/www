@@ -27,14 +27,14 @@ The goal of these integration is to provide easy prototyping of quantum-resistan
 
 <div class="float-right"><a class="btn btn-purple" href="https://github.com/open-quantum-safe/openssl">OQS-OpenSSL <br>on Github <img src="{{ site.baseurl }}/img/logos/GitHub-Mark-Light-64px.png" style="height: 1em; padding-left: 1em; margin-bottom: -2px;"></a></div>
 
-Our <a href="https://github.com/open-quantum-safe/openssl">OpenSSL fork</a> implements post-quantum and hybrid key exchange and post-quantum public key authentication in TLS 1.3, and also supports post-quantum algorithms in X.509 certificate generation and S/MIME / CMS message handling.
+Our <a href="https://github.com/open-quantum-safe/openssl">OpenSSL fork</a> implements post-quantum and hybrid key exchange and post-quantum public key authentication in TLS 1.3, and also supports post-quantum algorithms in X.509 certificate generation and S/MIME / CMS message handling. 
 
 See the [OQS-OpenSSL README](https://github.com/open-quantum-safe/openssl/blob/OQS-OpenSSL_1_1_1-stable/README.md) for the list of supported algorithms and usage instructions.
 
 ### Releases
 {: .no_toc }
 
-The OQS-OpenSSL-1.1.1 series provides post-quantum algorithms in TLS 1.3, X.509, and S/MIME:
+The OQS-OpenSSL-1.1.1 series provides post-quantum algorithms in TLS 1.3, X.509, and S/MIME and is actively maintained, incl. regular updates to follow/merge the upstream/main OpenSSL project releases:
 
 - [OQS-OpenSSL 1.1.1 snapshot 2020-08](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2020-08) aligned with liboqs 0.4.0 (August 11, 2020) <span class="label label-green">current version</span>
 - [OQS-OpenSSL 1.1.1 snapshot 2020-07](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2020-07) aligned with liboqs 0.3.0 (July 10, 2020)
@@ -42,7 +42,7 @@ The OQS-OpenSSL-1.1.1 series provides post-quantum algorithms in TLS 1.3, X.509,
 - [OQS-OpenSSL 1.1.1 snapshot 2018-11](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2018-11) aligned with liboqs 0.1.0 (November 13, 2018)
 - [all releases](https://github.com/open-quantum-safe/liboqs/releases)
 
-The OQS-OpenSSL-1.0.2 series provided post-quantum algorithms in TLS 1.2.  It is deprecated and no longer maintained.
+The OQS-OpenSSL-1.0.2 series provided post-quantum algorithms in TLS 1.2.  It is deprecated and no longer maintained. The archived releases are listed below (click on "OQS-OpenSSL 1.0.2 releases" below to see details).
 
 <details markdown="block">
 <summary>OQS-OpenSSL 1.0.2 releases</summary>
@@ -74,36 +74,46 @@ See the [OQS-BoringSSL README](https://github.com/open-quantum-safe/boringssl/bl
 
 We are grateful to <a href="https://www.senetas.com">Senetas</a> for contributing this ENGINE to the OQS project.  Hear about Senetas' work on the ENGINE for OQS in their interview on <a href="https://risky.biz/RB581/">episode 581 of the Risky Business podcast</a>.
 
-## Demos
+## Demo integrations
 
-The easiest way to get started with experimenting with post-quantum cryptography is to use our pre-built Docker images containing post-quantum-enabled versions of the web servers Apache httpd and nginx, or the command-line web client curl.  You can also download a pre-built binary of post-quantum-enabled Chromium.
+<div class="float-right"><a class="btn btn-purple" href="https://github.com/open-quantum-safe/oqs-demos">OQS-Demos <br> on Github <img src="{{ site.baseurl }}/img/logos/GitHub-Mark-Light-64px.png" style="height: 1em; padding-left: 1em; margin-bottom: -2px;"></a></div>
 
-[Demo Docker images](https://github.com/open-quantum-safe/oqs-demos/){: .btn .btn-blue }
+The easiest way to get started with experimenting with post-quantum cryptography is to use our pre-built Docker images containing post-quantum-enabled versions of the web servers [Apache httpd](#apache-httpd) and [nginx](#nginx), or the command-line web client [curl](#curl).  You can also download a pre-built binary of post-quantum-enabled [Chromium](#chromium).
 
-### HTTP servers: Apache httpd and nginx
+[OQS Docker images on Docker Hub](https://hub.docker.com/search?q=openquantumsafe&type=image){: .btn .btn-blue }
+
+### HTTP(s) servers
+{: .no_toc }
 
 Using [our fork of OpenSSL](#oqs-openssl), we've enabled support for post-quantum and hybrid key exchange and authentication in the Apache httpd web server and the nginx web server.  There are links below to instructions on how to use the pre-built Docker images, or you can build your own.
 
-- **Apache httpd**
-    - [Getting and running the pre-built post-quantum enabled **Apache httpd** demo Docker image](https://github.com/open-quantum-safe/oqs-demos/blob/master/httpd/USAGE.md)
-    - [Building your own Apache httpd demo Docker image](https://github.com/open-quantum-safe/oqs-demos/tree/master/httpd)
-- **nginx**
-    - [Getting and running the pre-built post-quantum enabled **nignx** demo Docker image](https://github.com/open-quantum-safe/oqs-demos/blob/master/nginx/USAGE.md)
-    - [Building your own nginx demo Docker image](https://github.com/open-quantum-safe/oqs-demos/tree/master/nginx)
+### Apache httpd
 
-### HTTP clients: curl and Chromium
+- [Getting and running the pre-built post-quantum enabled **Apache httpd** demo Docker image](https://hub.docker.com/r/openquantumsafe/httpd)
+- [Building your own Apache httpd demo Docker image](https://github.com/open-quantum-safe/oqs-demos/tree/master/httpd)
+
+### nginx
+
+- [Getting and running the pre-built post-quantum enabled **nginx** demo Docker image](https://hub.docker.com/r/openquantumsafe/nginx)
+- [Building your own nginx demo Docker image](https://github.com/open-quantum-safe/oqs-demos/tree/master/nginx)
+
+### HTTP(s) clients
+{: .no_toc }
 
 Using our forks of [OpenSSL](#oqs-openssl) and [BoringSSL](#oqs-boringssl), we've enabled support for post-quantum and hybrid key exchange and authentication in the curl command-line web client and the Chromium web browser.
 
-- **curl**
-    - [Getting and running the pre-built post-quantum enabled **curl** demo Docker image](https://github.com/open-quantum-safe/oqs-demos/blob/master/curl/USAGE.md)
-    - [Building your own curl demo Docker image](https://github.com/open-quantum-safe/oqs-demos/tree/master/curl)
-- **Chromium**
-    - [Pre-built Chromium binary for Ubuntu 18.04](https://github.com/open-quantum-safe/oqs-demos/releases/download/v0.4.0/chromium-ubuntu-0.4.0.tgz) (149 MB)
-    - [Building your own Chromium binary](https://github.com/open-quantum-safe/oqs-demos/tree/master/chromium) (warning: painful!)
+### curl
 
-### Test server
+- [Getting and running the pre-built post-quantum enabled **curl** demo Docker image](https://hub.docker.com/r/openquantumsafe/curl)
+- [Building your own curl demo Docker image](https://github.com/open-quantum-safe/oqs-demos/tree/master/curl)
 
-We're interested in design and draft standards for hybrid authentication and key exchange as well as interoperability testing with other implementers. As an initial step to facilitate such testing we have set up a first iteration of such a demonstration and interoperability test server. All of the clients above can be used with this test server. Any usage and all feedback is very welcome.
+### Chromium
+
+- [Pre-built Chromium binary for Ubuntu 18.04 (64bit x86)](https://github.com/open-quantum-safe/oqs-demos/releases/download/v0.4.0/chromium-ubuntu-0.4.0.tgz) (149 MB)
+- [Building your own Chromium binary](https://github.com/open-quantum-safe/oqs-demos/tree/master/chromium) (warning: painful!)
+
+### (Interoperability) Test server
+
+We're interested in design and draft standards for hybrid authentication and key exchange as well as interoperability testing with other implementers. As an initial step to facilitate such testing we have set up a first iteration of such a demonstration and interoperability test server. All of the clients above can be used with this test server using [the above post-quantum enabled nginx](#nginx). Any usage and all feedback is very welcome.
 
 [Test server](https://test.openquantumsafe.org/){: .btn .btn-blue }

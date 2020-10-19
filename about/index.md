@@ -41,13 +41,13 @@ For information about bug reporting, please see our [security policy](../liboqs/
 
 ## Getting started
 
-The easiest way to get started with experimenting with post-quantum cryptography is to use our pre-built Docker images containing post-quantum-enabled versions of OpenSSL/curl, Apache httpd, and nginx. See the [applications and protocols](applications) section for more information.
+The easiest way to get started with experimenting with post-quantum cryptography is to use our pre-built Docker images containing post-quantum-enabled versions of OpenSSL/curl, Apache httpd, and nginx. See the [applications and protocols](../applications) section for more information.
 
 For developers, there is also a [developer image](https://hub.docker.com/r/openquantumsafe/curl-dev) ready to support incremental development and code installations.
 
 ## Research
 
-See a list of [research papers and outcomes based on the OQS project](research).
+See a list of [research papers and outcomes based on the OQS project](../research).
 
 ## Citing OQS
 

@@ -22,6 +22,7 @@ OQS has been used to support research in the following papers and technical stan
 ### Proposed standards
 
 - [**Hybrid key exchange in TLS 1.3**](https://www.douglas.stebila.ca/research/papers/draft-ietf-tls-hybrid-design/), by Douglas Stebila, Scott Fluhrer, and Shay Gueron. *IETF Internet-Draft*, 2020.
+- [**Post-quantum public key algorithms for the Secure Shell (SSH) protocol**](draft-kampanakis-curdle-pq-ssh), by Panos Kampanakis, Douglas Stebila, Markus Friedl, Torben Hansen, and Dimitrios Sikeridis. *IETF Internet-Draft*, 2020.
 
 ## Other research using OQS tools
 

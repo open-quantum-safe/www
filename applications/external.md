@@ -16,5 +16,6 @@ liboqs has been used in the following external projects:
 - <a href="https://github.com/liesware/coherence/">Liesware Coherence Cryptographic Server</a>
 - Senetas/Thales High Speed Encryption: implementation of hybrid RSA/EC and QRA/QKD
 - <a href="https://blogs.cisco.com/security/tls-ssh-performance-pq-kem-auth">Cisco: Post-Quantum TLS 1.3 and SSH Performance (preliminary results)</a>
+- <a href="https://github.com/strongX509/docker/tree/master/pq-strongswan">strongSwan: Post-Quantum IKEv2 demo</a>
 
 If you're using liboqs, please get in touch and we'll add you to the list!

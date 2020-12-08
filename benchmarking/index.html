@@ -8,10 +8,12 @@ nav_order: 6
 <p>These pages visualize measurements taken by the <a href="https://github.com/open-quantum-safe/speed">OQS speed</a> project.</p>
 
 <ol>
-<li><a href="visualization/speed_kem_series.html" target="_blank">KEM algorithms timeseries</a> (liboqs speed_kem)</li>
-<li><a href="visualization/speed_sig_series.html" target="_blank">SIG algorithms timeseries</a> (liboqs speed_sig)</li>
-<li><a href="visualization/openssl_speed_series.html" target="_blank">KEM/SIG algorithms</a> (openssl speed)</li>
-<li><a href="visualization/handshakes_series.html" target="_blank">TLS handshakes</a> (openssl s_time)</li>
+<li><a href="visualization/speed_kem_series.html" target="_blank">KEM algorithms runtime</a> (liboqs speed_kem)</li>
+<li><a href="visualization/speed_sig_series.html" target="_blank">SIG algorithms runtime</a> (liboqs speed_sig)</li>
+<li><a href="visualization/mem_kem_series.html" target="_blank">KEM algorithms memory use</a> (liboqs test_kem)</li>
+<li><a href="visualization/mem_sig_series.html" target="_blank">SIG algorithms memory use</a> (liboqs test_mem_sig)</li>
+<li><a href="visualization/openssl_speed_series.html" target="_blank">KEM/SIG OpenSSL performance</a> (openssl speed)</li>
+<li><a href="visualization/handshakes_series.html" target="_blank">TLS handshakes performance</a> (openssl s_time)</li>
 </ol>
 
 <p>Measurements have been taken on an AWS c4 instance with <tt>-O3</tt> compile optimizations. Algorithms labelled <tt>-ref</tt> are reference (C-code only) implementations compiled without special CPU feature support. Algorithms without this moniker are compiled with all CPU extensions available to achieve best performance figures.</p>

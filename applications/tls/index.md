@@ -17,7 +17,7 @@ has_toc: false
 {:toc}
 
 
-We've integrated liboqs into forks of BoringSSL and OpenSSL to provide prototype post-quantum key exchange and authentication and ciphersuites in the TLS protocol.  Researchers looking to try additional post-quantum algorithms can easily add more algorithms that follow the OQS API.  You can use our modified implementations to prototype quantum-resistant cryptography in applications that rely on OpenSSL (such as <a href="https://github.com/open-quantum-safe/oqs-demos/tree/master/httpd">Apache httpd</a>, <a href="https://github.com/open-quantum-safe/oqs-demos/tree/master/nginx">nginx</a>, <a href="https://github.com/open-quantum-safe/oqs-demos/tree/master/curl">curl</a>, or <a href="https://www.microsoft.com/en-us/research/project/post-quantum-crypto-vpn/">OpenVPN</a>) or on BoringSSL (such as <a href="https://github.com/open-quantum-safe/oqs-demos/tree/master/chromium">Chromium</a>).  
+We've integrated liboqs into forks of BoringSSL and OpenSSL to provide prototype post-quantum key exchange and authentication and ciphersuites in the TLS protocol.  Researchers looking to try additional post-quantum algorithms can easily add more algorithms that follow the OQS API.  You can use our modified implementations to prototype quantum-resistant cryptography in applications that rely on OpenSSL (such as <a href="https://github.com/open-quantum-safe/oqs-demos/tree/main/httpd">Apache httpd</a>, <a href="https://github.com/open-quantum-safe/oqs-demos/tree/main/nginx">nginx</a>, <a href="https://github.com/open-quantum-safe/oqs-demos/tree/main/haproxy">haproxy</a>, <a href="https://github.com/open-quantum-safe/oqs-demos/tree/main/curl">curl</a>, or <a href="https://www.microsoft.com/en-us/research/project/post-quantum-crypto-vpn/">OpenVPN</a>) or on BoringSSL (such as <a href="https://github.com/open-quantum-safe/oqs-demos/tree/main/chromium">Chromium</a>).  
 
 An [Internet-Draft](https://tools.ietf.org/html/draft-ietf-tls-hybrid-design-00) is available describing how the TLS 1.3 protocol was adapted to include the hybrid PQ key exchange algorithms.
 
@@ -85,17 +85,22 @@ The easiest way to get started with experimenting with post-quantum cryptography
 ### HTTP(s) servers
 {: .no_toc }
 
-Using [our fork of OpenSSL](#oqs-openssl), we've enabled support for post-quantum and hybrid key exchange and authentication in the Apache httpd web server and the nginx web server.  There are links below to instructions on how to use the pre-built Docker images, or you can build your own.
+Using [our fork of OpenSSL](#oqs-openssl), we've enabled support for post-quantum and hybrid key exchange and authentication in the Apache httpd web server, the nginx web server and the haproxy load balancer.  There are links below to instructions on how to use the pre-built Docker images, or you can build your own.
 
 ### Apache httpd
 
 - [Getting and running the pre-built post-quantum enabled **Apache httpd** demo Docker image](https://hub.docker.com/r/openquantumsafe/httpd)
-- [Building your own Apache httpd demo Docker image](https://github.com/open-quantum-safe/oqs-demos/tree/master/httpd)
+- [Building your own Apache httpd demo Docker image](https://github.com/open-quantum-safe/oqs-demos/tree/main/httpd)
 
 ### nginx
 
 - [Getting and running the pre-built post-quantum enabled **nginx** demo Docker image](https://hub.docker.com/r/openquantumsafe/nginx)
-- [Building your own nginx demo Docker image](https://github.com/open-quantum-safe/oqs-demos/tree/master/nginx)
+- [Building your own nginx demo Docker image](https://github.com/open-quantum-safe/oqs-demos/tree/main/nginx)
+
+### haproxy
+
+- [Getting and running the pre-built post-quantum enabled **haproxy** demo Docker image](https://hub.docker.com/r/openquantumsafe/haproxy)
+- [Building your own haproxy demo Docker image](https://github.com/open-quantum-safe/oqs-demos/tree/main/haproxy)
 
 ### HTTP(s) clients
 {: .no_toc }
@@ -105,12 +110,12 @@ Using our forks of [OpenSSL](#oqs-openssl) and [BoringSSL](#oqs-boringssl), we'v
 ### curl
 
 - [Getting and running the pre-built post-quantum enabled **curl** demo Docker image](https://hub.docker.com/r/openquantumsafe/curl)
-- [Building your own curl demo Docker image](https://github.com/open-quantum-safe/oqs-demos/tree/master/curl)
+- [Building your own curl demo Docker image](https://github.com/open-quantum-safe/oqs-demos/tree/main/curl)
 
 ### Chromium
 
 - [Pre-built Chromium binary for Ubuntu 18.04 (64bit x86)](https://github.com/open-quantum-safe/oqs-demos/releases/download/v0.4.0/chromium-ubuntu-0.4.0.tgz) (149 MB)
-- [Building your own Chromium binary](https://github.com/open-quantum-safe/oqs-demos/tree/master/chromium) (warning: painful!)
+- [Building your own Chromium binary](https://github.com/open-quantum-safe/oqs-demos/tree/main/chromium) (warning: painful!)
 
 ### (Interoperability) Test server
 

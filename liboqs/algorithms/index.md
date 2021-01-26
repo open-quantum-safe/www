@@ -14,6 +14,7 @@ nav_order: 2
 - [**Classic McEliece**](kem/classic_mceliece): Classic-McEliece-348864†, Classic-McEliece-348864f†, Classic-McEliece-460896†, Classic-McEliece-460896f†, Classic-McEliece-6688128†, Classic-McEliece-6688128f†, Classic-McEliece-6960119†, Classic-McEliece-6960119f†, Classic-McEliece-8192128†, Classic-McEliece-8192128f†
 - [**Kyber**](kem/kyber): Kyber512, Kyber768, Kyber1024, Kyber512-90s, Kyber768-90s, Kyber1024-90s
 - [**NTRU**](kem/ntru): NTRU-HPS-2048-509, NTRU-HPS-2048-677, NTRU-HPS-4096-821, NTRU-HRSS-701
+- [**NTRU-Prime**](kem/ntruprime): ntrulpr653, ntrulpr761, ntrulpr857, sntrup653, sntrup761, sntrup857
 - [**SABER**](kem/saber): LightSaber-KEM, Saber-KEM, FireSaber-KEM
 
 <small>Note that algorithms marked with a dagger (†) have large stack usage and may cause failures when run on threads or in constrained environments.</small>
@@ -33,7 +34,7 @@ liboqs does not yet support the following Round 3 alternate candidates: NTRU Pri
 
 - [**Dilithium**](sig/dilithium): Dilithium2, Dilithium3, Dilithium4
 - [**Falcon**](sig/falcon): Falcon-512, Falcon-1024
-- [**Rainbow**](sig/rainbow): Rainbow-Ia-Classic, Rainbow-Ia-Cyclic, Rainbow-Ia-Cyclic-Compressed, Rainbow-IIIc-Classic†, Rainbow-IIIc-Cyclic†, Rainbow-IIIc-Cyclic-Compressed†, Rainbow-Vc-Classic†, Rainbow-Vc-Cyclic†, Rainbow-Vc-Cyclic-Compressed†
+- [**Rainbow**](sig/rainbow): Rainbow-I-Classic, Rainbow-I-Circumzenithal, Rainbow-I-Compressed, Rainbow-III-Classic†, Rainbow-III-Circumzenithal†, Rainbow-III-Compressed†, Rainbow-V-Classic†, Rainbow-V-Circumzenithal†, Rainbow-V-Compressed†
 
 <small>Note that algorithms marked with a dagger (†) have large stack usage and may cause failures when run on threads or in constrained environments.</small>
 

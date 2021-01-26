@@ -21,7 +21,7 @@ We've integrated liboqs into forks of BoringSSL and OpenSSL to provide prototype
 
 An [Internet-Draft](https://tools.ietf.org/html/draft-ietf-tls-hybrid-design-00) is available describing how the TLS 1.3 protocol was adapted to include the hybrid PQ key exchange algorithms.
 
-The goal of these integration is to provide easy prototyping of quantum-resistant cryptography and should not be considered "production quality".  Please see more about [limitations of our prototype software](../about).
+The goal of these integration is to provide easy prototyping of quantum-resistant cryptography and should not be considered "production quality".  Please see more about [limitations of our prototype software](../about#limitations).
 
 ## OQS-OpenSSL
 
@@ -78,7 +78,9 @@ We are grateful to <a href="https://www.senetas.com">Senetas</a> for contributin
 
 <div class="float-right"><a class="btn btn-purple" href="https://github.com/open-quantum-safe/oqs-demos">OQS-Demos <br> on Github <img src="{{ site.baseurl }}/img/logos/GitHub-Mark-Light-64px.png" style="height: 1em; padding-left: 1em; margin-bottom: -2px;"></a></div>
 
-The easiest way to get started with experimenting with post-quantum cryptography is to use our pre-built Docker images containing post-quantum-enabled versions of the web servers [Apache httpd](#apache-httpd) and [nginx](#nginx), or the command-line web client [curl](#curl).  You can also download a pre-built binary of post-quantum-enabled [Chromium](#chromium).
+The easiest way to get started with experimenting with post-quantum cryptography is to use our pre-built Docker images containing post-quantum-enabled versions of the web servers [Apache httpd](#apache-httpd) and [nginx](#nginx), the [high-availability web proxy haproxy](#haproxy) or the command-line web client [curl](#curl). You can also download a pre-built binary of post-quantum-enabled [Chromium](#chromium).
+
+There also exists a [post-quantum-enabled docker image for SSH](../ssh/#demo-integration).
 
 [OQS Docker images on Docker Hub](https://hub.docker.com/search?q=openquantumsafe&type=image){: .btn .btn-blue }
 

@@ -80,7 +80,7 @@ We are grateful to <a href="https://www.senetas.com">Senetas</a> for contributin
 
 The easiest way to get started with experimenting with post-quantum cryptography is to use our pre-built Docker images containing post-quantum-enabled versions of the web servers [Apache httpd](#apache-httpd) and [nginx](#nginx), the [high-availability web proxy haproxy](#haproxy) or the command-line web client [curl](#curl). You can also download a pre-built binary of post-quantum-enabled [Chromium](#chromium).
 
-There also exists a [post-quantum-enabled docker image for SSH](../ssh/#demo-integration).
+There also exists a [post-quantum-enabled docker image for SSH](../ssh#demo-integration).
 
 [OQS Docker images on Docker Hub](https://hub.docker.com/search?q=openquantumsafe&type=image){: .btn .btn-blue }
 

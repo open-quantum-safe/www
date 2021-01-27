@@ -28,7 +28,7 @@ The easiest way to get started with experimenting with post-quantum cryptography
 - [Getting and running the pre-built post-quantum enabled **openssh** demo Docker image](https://hub.docker.com/r/openquantumsafe/openssh)
 - [Building your own openssh demo Docker image](https://github.com/open-quantum-safe/oqs-demos/tree/main/openssh)
 
-There also exist [post-quantum-enabled docker images for TLS applications](../tls#demo-integrations).
+There also exist [post-quantum-enabled docker images for TLS applications](tls#demo-integrations).
 
 ### Releases
 

@@ -18,6 +18,7 @@ nav_order: 7
 - Michael Baentsch <span class="text-grey-dk-000">(baentsch.ch)</span>
 - Eric Crockett <span class="text-grey-dk-000">(Amazon Web Services)</span>
 - Vlad Gheorghiu <span class="text-grey-dk-000">(evolutionQ)</span>
+- Basil Hess <span class="text-grey-dk-000">(IBM Research)</span>
 - Christian Paquin <span class="text-grey-dk-000">(Microsoft Research)</span>
 - Goutam Tamvada <span class="text-grey-dk-000">(University of Waterloo)</span>
 

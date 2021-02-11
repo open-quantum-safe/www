@@ -32,6 +32,8 @@ color_scheme: oqs
 theme: just-the-docs
 plugins:
   - jekyll-feed
+  
+nav_sort: case_insensitive
 
 # Exclude from processing.
 # The following items will not be processed, by default.

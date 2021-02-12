@@ -62,7 +62,7 @@ In 2019 we were pleased to welcome some new partners:
 - **Cisco Systems** started contributing to OQS as well, leading to a research paper on PQ signatures (https://eprint.iacr.org/2019/1276).
 - Our friends at Radboud University in the Netherlands started a new open-source software project in 2019, **PQClean**, which collects together standalone C implementations of post-quantum algorithms.  We use some of the implementations from PQClean in liboqs.
 
-Financial support for OQS in 2019 came from Amazon Web Services and the Tutte Institute for Mathematics and Computing.  Research projects based on OQS were supported by funding from the Natural Sciences and Engineering Research Council of Canada (NSERC).  Microsoft Research donated computation time on Azure.
+Financial support for OQS in 2019 came from Amazon Web Services and the Canadian Centre for Cyber Security.  Research projects based on OQS were supported by funding from the Natural Sciences and Engineering Research Council of Canada (NSERC).  Microsoft Research donated computation time on Azure.
 
 ## Plans for 2020
 

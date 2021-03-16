@@ -13,4 +13,17 @@ for f in *.list; do
     tail orig-$f > $f
 done
 cd ..
-rm -rf visualization && mv visualization_tmp visualization
+rm -rf x86_64/visualization && mv visualization_tmp x86_64/visualization
+cd ../..
+mkdir -p _site/benchmarking/visualization_tmp
+cd _site/benchmarking/visualization_tmp
+/usr/local/bin/aws s3 cp s3://oqs-tests/site/site-aarch64.tgz .
+tar zxf site-aarch64.tgz
+for f in *.list; do
+    mv $f orig-$f
+    tail orig-$f > $f
+done
+cd ..
+rm -rf aarch64/visualization && mv visualization_tmp aarch64/visualization
+cd ../..
+

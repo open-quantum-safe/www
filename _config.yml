@@ -66,7 +66,7 @@ search:
 
 heading_anchors: true
 
-footer_content: "Copyright &copy; 2017-2020 The Open Quantum Safe Project.<br /> This site uses <a href='https://pmarsceill.github.io/just-the-docs/' target='_blank'>Just the Docs</a>, a documentation theme for Jekyll. Background image by <a href='https://commons.wikimedia.org/wiki/File:05_camera_painting_motion_blur_experimental_digital_photography_by_Rick_Doble.jpg'>Rick Doble</a>."
+footer_content: "Copyright &copy; 2017-2021 The Open Quantum Safe Project.<br /> This site uses <a href='https://pmarsceill.github.io/just-the-docs/' target='_blank'>Just the Docs</a>, a documentation theme for Jekyll. Background image by <a href='https://commons.wikimedia.org/wiki/File:05_camera_painting_motion_blur_experimental_digital_photography_by_Rick_Doble.jpg'>Rick Doble</a>."
 
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: false # show or hide edit this page link

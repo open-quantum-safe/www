@@ -7,35 +7,20 @@ nav_order: 6
 
 <p>These pages visualize measurements taken by the <a href="https://github.com/open-quantum-safe/profiling">OQS profiling</a> project.</p>
 
-<h2>Intel/AMD benchmarking</h2>
-
-<p>The following measurements have been taken on an <a href="https://aws.amazon.com/ec2/instance-types/">AWS c4 instance</a>:</p>
+<h2>Benchmarking</h2>
 
 <ol>
-<li><a href="x86_64/visualization/speed_kem_series.html" target="_blank">KEM algorithms runtime</a> (liboqs speed_kem)</li>
-<li><a href="x86_64/visualization/speed_sig_series.html" target="_blank">SIG algorithms runtime</a> (liboqs speed_sig)</li>
-<li><a href="x86_64/visualization/mem_kem_series.html" target="_blank">KEM algorithms memory use</a> (liboqs test_kem)</li>
-<li><a href="x86_64/visualization/mem_sig_series.html" target="_blank">SIG algorithms memory use</a> (liboqs test_mem_sig)</li>
-<li><a href="x86_64/visualization/openssl_speed_series.html" target="_blank">KEM/SIG OpenSSL performance</a> (openssl speed)</li>
-<li><a href="x86_64/visualization/handshakes_series.html" target="_blank">TLS handshakes performance</a> (openssl s_time)</li>
-</ol>
-
-<h2>ARM benchmarking</h2>
-
-<p>The following measurements have been taken on an <a href="https://aws.amazon.com/ec2/instance-types/">AWS t4 instance</a>:</p>
-
-<ol>
-<li><a href="aarch64/visualization/speed_kem_series.html" target="_blank">KEM algorithms runtime</a> (liboqs speed_kem)</li>
-<li><a href="aarch64/visualization/speed_sig_series.html" target="_blank">SIG algorithms runtime</a> (liboqs speed_sig)</li>
-<li><a href="aarch64/visualization/mem_kem_series.html" target="_blank">KEM algorithms memory use</a> (liboqs test_kem)</li>
-<li><a href="aarch64/visualization/mem_sig_series.html" target="_blank">SIG algorithms memory use</a> (liboqs test_mem_sig)</li>
-<li><a href="aarch64/visualization/openssl_speed_series.html" target="_blank">KEM/SIG OpenSSL performance</a> (openssl speed)</li>
-<li><a href="aarch64/visualization/handshakes_series.html" target="_blank">TLS handshakes performance</a> (openssl s_time)</li>
+<li><a href="visualization/speed_kem.html" target="_blank">KEM algorithms runtime</a> (liboqs speed_kem)</li>
+<li><a href="visualization/speed_sig.html" target="_blank">SIG algorithms runtime</a> (liboqs speed_sig)</li>
+<li><a href="visualization/mem_kem.html" target="_blank">KEM algorithms memory use</a> (liboqs test_kem)</li>
+<li><a href="visualization/mem_sig.html" target="_blank">SIG algorithms memory use</a> (liboqs test_mem_sig)</li>
+<li><a href="visualization/openssl_speed.html" target="_blank">KEM/SIG OpenSSL performance</a> (openssl speed)</li>
+<li><a href="visualization/handshakes.html" target="_blank">TLS handshakes performance</a> (openssl s_time)</li>
 </ol>
 
 <h2>Additional information</h2>
 
-<p>Algorithms labelled <tt>-ref</tt> are reference (C-code only) implementations compiled without special CPU feature support. Algorithms without this moniker are compiled with all CPU extensions available but with code portability features switched on (see <a href="https://github.com/open-quantum-safe/liboqs/wiki/Customizing-liboqs#OQS_PORTABLE_BUILD">here for details about this option</a>). Algorithm names ending in <tt>-noport</tt> represent measurements taken without portability enabled (i.e., such code may crash when executed on machines without suitable performance-enhancing CPU features).</p>
+<p>Algorithms labelled <tt>-ref</tt> are reference (C-code only) implementations compiled without special CPU feature support. Algorithms without this moniker are compiled with all CPU extensions available but with code portability/distributability features switched on (see <a href="https://github.com/open-quantum-safe/liboqs/wiki/Customizing-liboqs#OQS_DIST_BUILD">here for details about this option</a>). Algorithm names ending in <tt>-noport</tt> represent measurements taken without portability/distributability enabled (i.e., such code may crash when executed on machines without suitable performance-enhancing CPU features).</p>
 
 <p>These graphs will be extended over time to other CPU types and cloud infrastructures.</p>
 

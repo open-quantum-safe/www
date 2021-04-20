@@ -23,5 +23,5 @@ All of our development takes place on our [Github](https://github.com/open-quant
 
 - March 26, 2021: Release of [OQS-OpenSSL 1.1.1 snapshot 2021-03](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2021-03)
 - March 26, 2021: Release of [OQS-BoringSSL snapshot 2021-03](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2021-03)
-- March 11, 2021: [Unitary Fund](https://unitary.fund) sponsors of Open Quantum Safe projects
+- March 11, 2021: [Unitary Fund](https://unitary.fund) sponsors Open Quantum Safe
 - March 10, 2021: Release of [liboqs version 0.5.0](https://github.com/open-quantum-safe/liboqs/releases/tag/0.5.0)

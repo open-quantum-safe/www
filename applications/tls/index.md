@@ -27,11 +27,11 @@ The goal of these integration is to provide easy prototyping of quantum-resistan
 
 <div class="float-right"><a class="btn btn-purple" href="https://github.com/open-quantum-safe/openssl">OQS-OpenSSL <br>on Github <img src="{{ site.baseurl }}/img/logos/GitHub-Mark-Light-64px.png" style="height: 1em; padding-left: 1em; margin-bottom: -2px;"></a></div>
 
-Our <a href="https://github.com/open-quantum-safe/openssl">OpenSSL fork</a> implements post-quantum and hybrid key exchange and post-quantum public key authentication in TLS 1.3, and also supports post-quantum algorithms in X.509 certificate generation and S/MIME / CMS message handling. 
+Our <a href="https://github.com/open-quantum-safe/openssl">OpenSSL fork</a> implements post-quantum and hybrid key exchange and post-quantum public key authentication in TLS 1.3, and also supports post-quantum algorithms in X.509 certificate generation and S/MIME / CMS message handling, all based on the current OpenSSL 1.1.1 code base. 
 
-See the [OQS-OpenSSL README](https://github.com/open-quantum-safe/openssl/blob/OQS-OpenSSL_1_1_1-stable/README.md) for the list of supported algorithms and usage instructions.
+See the [OQS-OpenSSL README](https://github.com/open-quantum-safe/openssl/blob/OQS-OpenSSL_1_1_1-stable/README.md) for the current list of supported algorithms and usage instructions.
 
-### Releases
+### OpenSSL 1.1.1 releases
 {: .no_toc }
 
 The OQS-OpenSSL-1.1.1 series provides post-quantum algorithms in TLS 1.3, X.509, and S/MIME and is actively maintained, including regular updates to follow/merge the upstream/main OpenSSL project releases:
@@ -43,15 +43,24 @@ The OQS-OpenSSL-1.1.1 series provides post-quantum algorithms in TLS 1.3, X.509,
 - [OQS-OpenSSL 1.1.1 snapshot 2018-11](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2018-11) aligned with liboqs 0.1.0 (November 13, 2018)
 - [all releases](https://github.com/open-quantum-safe/liboqs/releases)
 
-The OQS-OpenSSL-1.0.2 series provided post-quantum algorithms in TLS 1.2.  It is deprecated and no longer maintained. The archived releases are listed below (click on "OQS-OpenSSL 1.0.2 releases" below to see details).
+The OQS-OpenSSL-1.0.2 series provided post-quantum algorithms in TLS 1.2.  It is deprecated and no longer maintained. 
 
 <details markdown="block">
-<summary>OQS-OpenSSL 1.0.2 releases</summary>
+<summary>Click here to see archived OQS-OpenSSL 1.0.2 releases</summary>
 - [OQS-OpenSSL 1.0.2 snapshot 2019-10](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_0_2-stable-snapshot-2019-10) aligned with liboqs 0.2.0 (October 8, 2019)
 - [OQS-OpenSSL 1.0.2 snapshot 2018-11](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_0_2-stable-snapshot-2018-11) aligned with liboqs 0.1.0 (November 13, 2018)
 - [OQS-OpenSSL 1.0.2 snapshot 2018-05](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_0_2-stable-snapshot-2018-05) (May 30, 2018)
 - [OQS-OpenSSL 1.0.2 snapshot 2018-04](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_0_2-stable-snapshot-2018-04) (April 10, 2018)
 </details>
+
+## OQS-OpenSSL provider
+
+<div class="float-right"><a class="btn btn-purple" href="https://github.com/open-quantum-safe/oqs-provider">OQS-provider <br>on Github <img src="{{ site.baseurl }}/img/logos/GitHub-Mark-Light-64px.png" style="height: 1em; padding-left: 1em; margin-bottom: -2px;"></a></div>
+
+The new, state-of-the-art [OpenSSL (3.0) architecture](https://www.openssl.org/docs/OpenSSLStrategicArchitecture.html) provides a more clean way to integrate novel algorithms into TLS1.3: A fully separate binary plug-in component independent of the main TLS logic, a [provider](https://www.openssl.org/docs/manmaster/man7/provider.html) permits integration of post-quantum algorithms into TLS1.3 without changing the core logic of OpenSSL. 
+
+Currently this is --in line with OpenSSL3.0 itself-- still alpha code not yet providing the same full set of integration features as in the [OpenSSL 1.1.1. fork](#oqs-openssl). Fully supported are PQ-KEM (including hybrid) algorithms already.
+
 
 ## OQS-BoringSSL
 
@@ -75,6 +84,8 @@ See the [OQS-BoringSSL README](https://github.com/open-quantum-safe/boringssl/bl
 <a href="https://github.com/open-quantum-safe/oqs-engine">oqs-engine</a> is a C-based OpenSSL ENGINE that enables in (vanilla) OpenSSL the use of post-quantum digital signature algorithms from liboqs. Changes and/or additions to the algorithms supported by liboqs will be dynamically reflected in the ENGINE, thereby facilitating the deployment and evaluation of post-quantum digital signature algorithms in contexts where it might be expensive or infeasible to replace OpenSSL wholesale with our corresponding fork. 
 
 We are grateful to <a href="https://www.senetas.com">Senetas</a> for contributing this ENGINE to the OQS project.  Hear about Senetas' work on the ENGINE for OQS in their interview on <a href="https://risky.biz/RB581/">episode 581 of the Risky Business podcast</a>.
+
+This subproject has been discontinued in line with the [strategic OpenSSL architecture](https://www.openssl.org/docs/OpenSSLStrategicArchitecture.html) and replaced by the actively maintained [OQS-provider](#oqs-openssl-provider).
 
 ## Demo integrations
 

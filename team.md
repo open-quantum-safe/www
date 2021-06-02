@@ -20,12 +20,14 @@ nav_order: 7
 - Vlad Gheorghiu <span class="text-grey-dk-000">(evolutionQ)</span>
 - Basil Hess <span class="text-grey-dk-000">(IBM Research)</span>
 - Christian Paquin <span class="text-grey-dk-000">(Microsoft Research)</span>
+- John Schanck <span class="text-grey-dk-000">(University of Waterloo)</span>
 - Goutam Tamvada <span class="text-grey-dk-000">(University of Waterloo)</span>
 
 ## Contributors
 
 Nicholas Allen <span class="text-grey-dk-000">(Amazon Web Services)</span>, 
 Maxime Anvari, 
+Sofía Celi <span class="text-grey-dk-000">(Cloudflare)</span>, 
 Ben Davies <span class="text-grey-dk-000">(University of Waterloo)</span>, 
 Ryan Deschamps <span class="text-grey-dk-000">(University of Waterloo)</span>, 
 Matías Dieguez, 

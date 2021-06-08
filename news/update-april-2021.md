@@ -1,12 +1,12 @@
 ---
 layout: default
-title: OQS Update - April 2021
+title: Update - April 2021
 nav_order: 2
 has_children: false
 has_toc: true
 parent: About our project
 ---
-# OQS Update - April 2021
+# Update - April 2021
 
 *This status update was presented at the [NIST 3rd PQC Standardization Conference](https://csrc.nist.gov/events/2021/third-pqc-standardization-conference) in June 2021.*
 

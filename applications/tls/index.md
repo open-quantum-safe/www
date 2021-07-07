@@ -129,7 +129,7 @@ Using our forks of [OpenSSL](#oqs-openssl) and [BoringSSL](#oqs-boringssl), we'v
 
 ### Chromium
 
-- [Pre-built Chromium binary for Ubuntu 18.04 (64bit x86)](https://github.com/open-quantum-safe/oqs-demos/releases/download/v0.4.0/chromium-ubuntu-0.4.0.tgz) (149 MB)
+- [Pre-built Chromium binary for Ubuntu 20.04 (64bit x86)](https://github.com/open-quantum-safe/oqs-demos/releases/download/v0.5.0/chromium-ubuntu-0.5.0.tgz) (149 MB)
 - [Building your own Chromium binary](https://github.com/open-quantum-safe/oqs-demos/tree/main/chromium) (warning: painful!)
 
 ### (Interoperability) Test server

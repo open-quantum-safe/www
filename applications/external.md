@@ -19,5 +19,6 @@ liboqs has been used in the following external projects:
 - <a href="https://github.com/strongX509/docker/tree/master/pq-strongswan">strongSwan: Post-Quantum IKEv2 demo</a>
 - <a href="https://newsroom.ibm.com/2020-11-30-IBM-Cloud-Delivers-Quantum-Safe-Cryptography-and-Hyper-Protect-Crypto-Services-to-Help-Protect-Data-in-the-Hybrid-Era">IBM Cloud</a>
 - <a href="https://github.com/hannestschofenig/mbedtls">mbedTLS</a>
+- <a href="https://www.wolfssl.com/wolfssl-liboqs-integration/">wolfSSL</a>
 
 If you're using liboqs, please get in touch and we'll add you to the list!

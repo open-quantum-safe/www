@@ -20,5 +20,6 @@ liboqs has been used in the following external projects:
 - <a href="https://newsroom.ibm.com/2020-11-30-IBM-Cloud-Delivers-Quantum-Safe-Cryptography-and-Hyper-Protect-Crypto-Services-to-Help-Protect-Data-in-the-Hybrid-Era">IBM Cloud</a>
 - <a href="https://github.com/hannestschofenig/mbedtls">mbedTLS</a>
 - <a href="https://www.wolfssl.com/wolfssl-liboqs-integration/">wolfSSL</a>
+- <a href="https://lists.freebsd.org/pipermail/dev-commits-ports-main/2021-September/018107.html">FreeBSD</a>
 
 If you're using liboqs, please get in touch and we'll add you to the list!

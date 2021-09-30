@@ -17,10 +17,9 @@ nav_order: 7
 
 - Michael Baentsch <span class="text-grey-dk-000">(baentsch.ch)</span>
 - Eric Crockett <span class="text-grey-dk-000">(Amazon Web Services)</span>
-- Vlad Gheorghiu <span class="text-grey-dk-000">(evolutionQ)</span>
+- Vlad Gheorghiu <span class="text-grey-dk-000">(softwareQ / University of Waterloo)</span>
 - Basil Hess <span class="text-grey-dk-000">(IBM Research)</span>
 - Christian Paquin <span class="text-grey-dk-000">(Microsoft Research)</span>
-- John Schanck <span class="text-grey-dk-000">(University of Waterloo)</span>
 - Goutam Tamvada <span class="text-grey-dk-000">(University of Waterloo)</span>
 
 ## Contributors
@@ -34,6 +33,7 @@ Ryan Deschamps <span class="text-grey-dk-000">(University of Waterloo)</span>,
 Matías Dieguez, 
 Javad Doliskani, 
 Nir Drucker <span class="text-grey-dk-000">(Amazon Web Services)</span>, 
+Ted Eaton <span class="text-grey-dk-000">(University of Waterloo)</span>,
 Nicholas Fulton <span class="text-grey-dk-000">(Arizona State University)</span>, 
 Jason Goertzen <span class="text-grey-dk-000">(University of Waterloo)</span>, 
 Shay Gueron <span class="text-grey-dk-000">(Amazon Web Services)</span>, 
@@ -47,6 +47,7 @@ Shravan Mishra,
 Dimitris Mouris <span class="text-grey-dk-000">(University of Delaware)</span>, 
 Brian Neill <span class="text-grey-dk-000">(University of Waterloo)</span>, 
 Alex Parent <span class="text-grey-dk-000">(University of Waterloo)</span>, 
+John Schanck <span class="text-grey-dk-000">(University of Waterloo)</span>,
 Peter Schwabe <span class="text-grey-dk-000">(Radboud University)</span>, 
 Dimitris Sikeridis <span class="text-grey-dk-000">(University of New Mexico, Cisco Systems)</span>, 
 John Underhill, 

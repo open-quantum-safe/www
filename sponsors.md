@@ -6,7 +6,7 @@ nav_order: 8
 
 # Sponsors
 
-Direct financial support for the development of Open Quantum Safe has been provided by <a href="https://aws.amazon.com">Amazon Web Services</a>, the <a href="https://cyber.gc.ca">Canadian Centre for Cyber Security</a>, and <a href="https://unitary.fund">Unitary Fund</a>.
+Direct financial support for the development of Open Quantum Safe has been provided by <a href="https://aws.amazon.com">Amazon Web Services</a>, the <a href="https://cyber.gc.ca">Canadian Centre for Cyber Security</a>, <a href="https://unitary.fund">Unitary Fund</a>, and <a href="https://nlnet.nl/assure/">the NGI Assure Fund</a>.
 
 Major in-kind contributions of developer time have been made by <a href="https://aws.amazon.com">Amazon Web Services</a>, <a href="https://evolutionq.com">evolutionQ</a>, <a href="https://www.zurich.ibm.com/security/quantumsafecryptography.html">IBM Research</a>, and <a href="https://www.microsoft.com/en-us/research/project/post-quantum-cryptography/">Microsoft Research</a>.
 
@@ -51,6 +51,11 @@ Research projects which developed specific components of OQS have been supported
     <div class="d-inline-block" style="height: 100px;">
         <a href="https://unitary.fund/" style="background-image: none; vertical-align: middle;">
             <img src="{{ site.baseurl }}/img/logos/unitary.png" alt="Unitary Fund" style="max-height: 70%;"/>
+        </a>
+    </div>
+    <div class="d-inline-block" style="height: 100px;">
+        <a href="https://nlnet.nl/assure/" style="background-image: none; vertical-align: middle;">
+            <img src="{{ site.baseurl }}/img/logos/NGIAssure_tag.png" alt="NLNet NGI assure" style="max-height: 70%;"/>
         </a>
     </div>
 </div>

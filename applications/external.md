@@ -23,6 +23,7 @@ liboqs has been used in the following external projects:
   - <a href="https://www.wolfssl.com/wolfssl-liboqs-integration/">wolfSSL liboqs integration</a>
   - <a href="https://www.wolfssl.com/hybrid-post-quantum-groups-tls-1-3/">wolfSSL hybrid post-quantum groups in TLS 1.3</a>
   - <a href="https://www.wolfssl.com/post-quantum-curl/">wolfSSL post-quantum cURL</a>
+  - <a href="https://www.wolfssl.com/integration-falcon-signature-scheme-wolfssl/">Integration of the Falcon signature scheme into wolfSSL</a>
 - <a href="https://lists.freebsd.org/pipermail/dev-commits-ports-main/2021-September/018107.html">FreeBSD</a>
 
 If you're using liboqs, please get in touch and we'll add you to the list!

@@ -35,6 +35,8 @@ We realize some parties may want to deploy quantum-safe cryptography prior to th
 
 **WE DO NOT CURRENTLY RECOMMEND RELYING ON LIBOQS OR OUR APPLICATION INTEGRATIONS IN A PRODUCTION ENVIRONMENT OR TO PROTECT ANY SENSITIVE DATA.** This project is meant to help with research and prototyping.  While we make a best-effort approach to avoid security bugs, software in our project has not received the level of auditing and analysis that would be necessary to rely on it for high security use.
 
+liboqs is not as full-featured as a general purpose encryption library. Among its limitations, it presents cryptographic primitives in the exact form as used in the NIST standardization project: as signature schemes and key encapsulation mechanisms (KEMs).  liboqs does not provide an interface for public key encryption, although such a primitive can be build from KEMs.
+
 ### Security policy
 
 For information about bug reporting, please see our [security policy](../liboqs/security).

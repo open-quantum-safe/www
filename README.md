@@ -26,3 +26,19 @@ bundle exec jekyll serve
 The output will show the local address that the web server is running on.
 
 Note that `jekyll serve` doesn't seem to pick up some changes, such as changes to the `_config.yml` site configuration file, or if you have a custom plugin (which we don't).
+
+## Updating the liboqs submodule
+
+```bash
+git submodule foreach git pull origin main
+git add _includes/liboqs
+git commit
+```
+
+## Rebuilding API documentation
+
+```bash
+make doxyjinj
+```
+
+Then clean up the diffs so that they have the YML header and don't have their own HTML header / footer.

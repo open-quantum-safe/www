@@ -41,6 +41,7 @@ Torben Hansen <span class="text-grey-dk-000">(Royal Holloway, University of Lond
 Kevin Kane <span class="text-grey-dk-000">(Microsoft Research)</span>, 
 Nikita Karpey, 
 Dusan Kostic <span class="text-grey-dk-000">(Amazon Web Services)</span>, 
+Piotr Kubaj <span class="text-grey-dk-000">(Intel)</span>, 
 Tancrède Lepoint, 
 Yong Jian Ming, 
 Shravan Mishra, 

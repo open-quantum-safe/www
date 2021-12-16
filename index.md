@@ -21,6 +21,7 @@ All of our development takes place on our [Github](https://github.com/open-quant
 
 ## Recent updates
 
+- December 16, 2021: Release of [liboqs version 0.7.1](https://github.com/open-quantum-safe/liboqs/releases/tag/0.7.1)
 - November 16, 2021: [Debian adds liboqs packages to unstable branch](https://tracker.debian.org/pkg/liboqs)
 - August 11, 2021: Release of [liboqs version 0.7.0](https://github.com/open-quantum-safe/liboqs/releases/tag/0.7.0), [OQS-OpenSSL 1.1.1 snapshot 2021-08](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2021-08), [OQS-BoringSSL snapshot 2021-08](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2021-08), and [OQS-OpenSSH snapshot 2021-08](https://github.com/open-quantum-safe/openssh/releases/tag/OQS-OpenSSH-snapshot-2021-08)
 - June 8, 2021: Release of [liboqs version 0.6.0](https://github.com/open-quantum-safe/liboqs/releases/tag/0.6.0)

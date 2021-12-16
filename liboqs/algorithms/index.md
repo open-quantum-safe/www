@@ -13,7 +13,7 @@ nav_order: 2
 
 - [**Classic McEliece**](kem/classic_mceliece): Classic-McEliece-348864†, Classic-McEliece-348864f†, Classic-McEliece-460896†, Classic-McEliece-460896f†, Classic-McEliece-6688128†, Classic-McEliece-6688128f†, Classic-McEliece-6960119†, Classic-McEliece-6960119f†, Classic-McEliece-8192128†, Classic-McEliece-8192128f†
 - [**Kyber**](kem/kyber): Kyber512, Kyber768, Kyber1024, Kyber512-90s, Kyber768-90s, Kyber1024-90s
-- [**NTRU**](kem/ntru): NTRU-HPS-2048-509, NTRU-HPS-2048-677, NTRU-HPS-4096-821, NTRU-HRSS-701
+- [**NTRU**](kem/ntru): NTRU-HPS-2048-509, NTRU-HPS-2048-677, NTRU-HPS-4096-821, NTRU-HPS-4096-1229, NTRU-HRSS-701, NTRU-HRSS-1373
 - [**SABER**](kem/saber): LightSaber-KEM, Saber-KEM, FireSaber-KEM
 
 <small>Note that algorithms marked with a dagger (†) have large stack usage and may cause failures when run on threads or in constrained environments.</small>
@@ -23,7 +23,7 @@ nav_order: 2
 - [**BIKE**](kem/bike): BIKE1-L1-CPA, BIKE1-L3-CPA, BIKE1-L1-FO, BIKE1-L3-FO
 - [**FrodoKEM**](kem/frodokem): FrodoKEM-640-AES, FrodoKEM-640-SHAKE, FrodoKEM-976-AES, FrodoKEM-976-SHAKE, FrodoKEM-1344-AES, FrodoKEM-1344-SHAKE
 - [**HQC**](kem/hqc): HQC-128-1-CCA2, HQC-192-1-CCA2, HQC-192-2-CCA2, HQC-256-1-CCA2†, HQC-256-2-CCA2†, HQC-256-3-CCA2†
-- [**NTRU-Prime**](kem/ntruprime): ntrulpr653, ntrulpr761, ntrulpr857, sntrup653, sntrup761, sntrup857
+- [**NTRU-Prime**](kem/ntruprime): ntrulpr653, ntrulpr761, ntrulpr857, ntrulpr1277, sntrup653, sntrup761, sntrup857, sntrup1277
 - [**SIKE**](kem/sike): SIDH-p434, SIDH-p503, SIDH-p610, SIDH-p751, SIKE-p434, SIKE-p503, SIKE-p610, SIKE-p751, SIDH-p434-compressed, SIDH-p503-compressed, SIDH-p610-compressed, SIDH-p751-compressed, SIKE-p434-compressed, SIKE-p503-compressed, SIKE-p610-compressed, SIKE-p751-compressed
 
 ## Signature schemes

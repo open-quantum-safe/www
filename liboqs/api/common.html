@@ -47,9 +47,19 @@ nav_exclude: true
   <br><br>
   <h2>Enumeration Types</h2>
   
+    
+  <code>
+    <span class="text-muted">enum </span><b><a href="#common_8h_1a7682cde206b02be2addea22bb31cf7fc">OQS_STATUS</a></b>
+  </code>
+  <br>
+  <code>
+    <span class="text-muted">enum </span><b><a href="#common_8h_1a30dcade5b6c22570e059174037346282">OQS_CPU_EXT</a></b>
+  </code>
+  
+  
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/common/common.h#L92" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/common/common.h#L97" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="common_8h_1a7682cde206b02be2addea22bb31cf7fc"><code><span class="text-muted">enum</span> <b>OQS_STATUS</b></code></h3>
     <div class="card-text">
       
@@ -58,8 +68,7 @@ nav_exclude: true
   <pre class="m-0">ret = OQS_KEM_encaps(...);
 if (ret == OQS_SUCCESS) { ... }
 </pre>
-</div></p>
-<p>rather than <div class="ml-4 border p-2 bg-light">
+</div> rather than <div class="ml-4 border p-2 bg-light">
   <pre class="m-0">if (!OQS_KEM_encaps(...) { ... }
 </pre>
 </div> </p>
@@ -95,6 +104,138 @@ if (ret == OQS_SUCCESS) { ... }
   </div>
 </div>
     <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/common/common.h#L109" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="common_8h_1a30dcade5b6c22570e059174037346282"><code><span class="text-muted">enum</span> <b>OQS_CPU_EXT</b></code></h3>
+    <div class="card-text">
+      
+<p>CPU runtime detection flags </p>
+        
+    </div>
+    
+      <h4>Enumeration values</h4>
+      <table class="table mb-0">
+        
+          <tr>
+            <td><code>OQS_CPU_EXT_INIT <span class="text-muted"></span></code></td>
+            <td class="pb-0">
+          </td>
+          </tr>
+        
+          <tr>
+            <td><code>OQS_CPU_EXT_ADX <span class="text-muted"></span></code></td>
+            <td class="pb-0">
+          </td>
+          </tr>
+        
+          <tr>
+            <td><code>OQS_CPU_EXT_AES <span class="text-muted"></span></code></td>
+            <td class="pb-0">
+          </td>
+          </tr>
+        
+          <tr>
+            <td><code>OQS_CPU_EXT_AVX <span class="text-muted"></span></code></td>
+            <td class="pb-0">
+          </td>
+          </tr>
+        
+          <tr>
+            <td><code>OQS_CPU_EXT_AVX2 <span class="text-muted"></span></code></td>
+            <td class="pb-0">
+          </td>
+          </tr>
+        
+          <tr>
+            <td><code>OQS_CPU_EXT_AVX512 <span class="text-muted"></span></code></td>
+            <td class="pb-0">
+          </td>
+          </tr>
+        
+          <tr>
+            <td><code>OQS_CPU_EXT_BMI1 <span class="text-muted"></span></code></td>
+            <td class="pb-0">
+          </td>
+          </tr>
+        
+          <tr>
+            <td><code>OQS_CPU_EXT_BMI2 <span class="text-muted"></span></code></td>
+            <td class="pb-0">
+          </td>
+          </tr>
+        
+          <tr>
+            <td><code>OQS_CPU_EXT_PCLMULQDQ <span class="text-muted"></span></code></td>
+            <td class="pb-0">
+          </td>
+          </tr>
+        
+          <tr>
+            <td><code>OQS_CPU_EXT_VPCLMULQDQ <span class="text-muted"></span></code></td>
+            <td class="pb-0">
+          </td>
+          </tr>
+        
+          <tr>
+            <td><code>OQS_CPU_EXT_POPCNT <span class="text-muted"></span></code></td>
+            <td class="pb-0">
+          </td>
+          </tr>
+        
+          <tr>
+            <td><code>OQS_CPU_EXT_SSE <span class="text-muted"></span></code></td>
+            <td class="pb-0">
+          </td>
+          </tr>
+        
+          <tr>
+            <td><code>OQS_CPU_EXT_SSE2 <span class="text-muted"></span></code></td>
+            <td class="pb-0">
+          </td>
+          </tr>
+        
+          <tr>
+            <td><code>OQS_CPU_EXT_SSE3 <span class="text-muted"></span></code></td>
+            <td class="pb-0">
+          </td>
+          </tr>
+        
+          <tr>
+            <td><code>OQS_CPU_EXT_ARM_AES <span class="text-muted"></span></code></td>
+            <td class="pb-0">
+          </td>
+          </tr>
+        
+          <tr>
+            <td><code>OQS_CPU_EXT_ARM_SHA2 <span class="text-muted"></span></code></td>
+            <td class="pb-0">
+          </td>
+          </tr>
+        
+          <tr>
+            <td><code>OQS_CPU_EXT_ARM_SHA3 <span class="text-muted"></span></code></td>
+            <td class="pb-0">
+          </td>
+          </tr>
+        
+          <tr>
+            <td><code>OQS_CPU_EXT_ARM_NEON <span class="text-muted"></span></code></td>
+            <td class="pb-0">
+          </td>
+          </tr>
+        
+          <tr>
+            <td><code>OQS_CPU_EXT_COUNT <span class="text-muted"></span></code></td>
+            <td class="pb-0">
+          </td>
+          </tr>
+        
+      </table>
+    
+  </div>
+</div>
+    <br>
 
 
 
@@ -104,8 +245,18 @@ if (ret == OQS_SUCCESS) { ... }
     <table class="table">
   
     <tr>
+      <td class="text-right"><code><span class="text-muted">OQS_API int</span></code></td>
+      <td><code><b><a href="#common_8h_1a3b8d0c6a64664542abe8c4317453ad2e">OQS_CPU_has_extension</a></b><span class="text-muted">(OQS_CPU_EXT ext)</span></code></td>
+    </tr>
+  
+    <tr>
       <td class="text-right"><code><span class="text-muted">OQS_API void</span></code></td>
       <td><code><b><a href="#common_8h_1a9a10aa531a4f9788f1e8b9994262cb2a">OQS_init</a></b><span class="text-muted">(void)</span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">OQS_API int</span></code></td>
+      <td><code><b><a href="#common_8h_1a5669335fa754471220799d4da8571861">OQS_MEM_secure_bcmp</a></b><span class="text-muted">(const void *a, const void *b, size_t len)</span></code></td>
     </tr>
   
     <tr>
@@ -123,16 +274,47 @@ if (ret == OQS_SUCCESS) { ... }
       <td><code><b><a href="#common_8h_1aeb283601b868f9a7b6b732df4adbe624">OQS_MEM_insecure_free</a></b><span class="text-muted">(void *ptr)</span></code></td>
     </tr>
   
+    <tr>
+      <td class="text-right"><code><span class="text-muted">void *</span></code></td>
+      <td><code><b><a href="#common_8h_1a343b4dc9f04bf52e87e4638138f46a04">OQS_MEM_aligned_alloc</a></b><span class="text-muted">(size_t alignment, size_t size)</span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">void</span></code></td>
+      <td><code><b><a href="#common_8h_1a5efdb0c410a5725f8072cfd74f47b4d8">OQS_MEM_aligned_free</a></b><span class="text-muted">(void *ptr)</span></code></td>
+    </tr>
+  
 </table>
   
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/common/common.h#L156" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/common/common.h#L138" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="common_8h_1a3b8d0c6a64664542abe8c4317453ad2e">OQS_CPU_has_extension</h3>
+    <div class="card-subtitle mb-2"><code>OQS_API int <b>OQS_CPU_has_extension</b>(OQS_CPU_EXT ext)</code></div>
+    <div class="card-text">
+      
+<p>Checks if the CPU supports a given extension</p>
+<p>
+</p>
+        
+    </div>
+    
+    
+      <h4>Returns</h4>
+      <div class="ml-5"><p>1 if the given CPU extension is available, 0 otherwise. </p>
+</div>
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/common/common.h#L144" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="common_8h_1a9a10aa531a4f9788f1e8b9994262cb2a">OQS_init</h3>
     <div class="card-subtitle mb-2"><code>OQS_API void <b>OQS_init</b>(void)</code></div>
     <div class="card-text">
       
-<p>This currently only sets the values in the OQS_CPU_EXTENSIONS, and so has effect only when OQS_USE_CPU_EXTENSIONS and OQS_PORTABLE_BUILD are set. </p>
+<p>This currently only sets the values in the OQS_CPU_EXTENSIONS, and so has effect only when OQS_DIST_BUILD is set. </p>
         
     </div>
     
@@ -142,7 +324,53 @@ if (ret == OQS_SUCCESS) { ... }
     <br>
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/common/common.h#L168" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/common/common.h#L155" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="common_8h_1a5669335fa754471220799d4da8571861">OQS_MEM_secure_bcmp</h3>
+    <div class="card-subtitle mb-2"><code>OQS_API int <b>OQS_MEM_secure_bcmp</b>(const void *a, const void *b, size_t len)</code></div>
+    <div class="card-text">
+      
+<p>Constant time comparison of byte sequences <code>a</code> and <code>b</code> of length <code>len</code>. Returns 0 if the byte sequences are equal or if <code>len</code>=0. Returns 1 otherwise.</p>
+<p>
+</p>
+        
+    </div>
+    
+      <h4>Parameters</h4>
+      <table class="table mb-0">
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">const void *</code></td>
+            <td><code>a</code></td>
+            <td class="pb-0">
+<p>A byte sequence of length at least <code>len</code>. </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">const void *</code></td>
+            <td><code>b</code></td>
+            <td class="pb-0">
+<p>A byte sequence of length at least <code>len</code>. </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">size_t</code></td>
+            <td><code>len</code></td>
+            <td class="pb-0">
+<p>The number of bytes to compare. </p>
+</td>
+          </tr>
+        
+      </table>
+    
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/common/common.h#L167" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="common_8h_1a2bd640141597d0775f803fecd5131c55">OQS_MEM_cleanse</h3>
     <div class="card-subtitle mb-2"><code>OQS_API void <b>OQS_MEM_cleanse</b>(void *ptr, size_t len)</code></div>
     <div class="card-text">
@@ -181,7 +409,7 @@ if (ret == OQS_SUCCESS) { ... }
     <br>
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/common/common.h#L182" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/common/common.h#L181" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="common_8h_1a4b230b209b2066a7e43dce6cc21ba211">OQS_MEM_secure_free</h3>
     <div class="card-subtitle mb-2"><code>OQS_API void <b>OQS_MEM_secure_free</b>(void *ptr, size_t len)</code></div>
     <div class="card-text">
@@ -221,7 +449,7 @@ if (ret == OQS_SUCCESS) { ... }
     <br>
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/common/common.h#L193" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/common/common.h#L192" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="common_8h_1aeb283601b868f9a7b6b732df4adbe624">OQS_MEM_insecure_free</h3>
     <div class="card-subtitle mb-2"><code>OQS_API void <b>OQS_MEM_insecure_free</b>(void *ptr)</code></div>
     <div class="card-text">
@@ -251,6 +479,37 @@ if (ret == OQS_SUCCESS) { ... }
   </div>
 </div>
     <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/common/common.h#L201" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="common_8h_1a343b4dc9f04bf52e87e4638138f46a04">OQS_MEM_aligned_alloc</h3>
+    <div class="card-subtitle mb-2"><code>void * <b>OQS_MEM_aligned_alloc</b>(size_t alignment, size_t size)</code></div>
+    <div class="card-text">
+      
+<p>Internal implementation of C11 aligned_alloc to work around compiler quirks.</p>
+<p>Allocates size bytes of uninitialized memory with a base pointer that is a multiple of alignment. Alignment must be a power of two and a multiple of sizeof(void *). Size must be a multiple of alignment. </p>
+        
+    </div>
+    
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/common/common.h#L206" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="common_8h_1a5efdb0c410a5725f8072cfd74f47b4d8">OQS_MEM_aligned_free</h3>
+    <div class="card-subtitle mb-2"><code>void <b>OQS_MEM_aligned_free</b>(void *ptr)</code></div>
+    <div class="card-text">
+      
+<p>Free memory allocated with OQS_MEM_aligned_alloc. </p>
+        
+    </div>
+    
+    
+  </div>
+</div>
+    <br>
 
 
 
@@ -258,7 +517,7 @@ if (ret == OQS_SUCCESS) { ... }
   <h2>Macros</h2>
   <table class="table"><tbody>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/common/common.h#L26" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/common/common.h#L26" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_EXIT_IF_NULLPTR</b> 
@@ -281,7 +540,7 @@ if (ret == OQS_SUCCESS) { ... }
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/common/common.h#L43" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/common/common.h#L43" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_OPENSSL_GUARD</b> 
@@ -307,7 +566,7 @@ if (ret == OQS_SUCCESS) { ... }
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/common/common.h#L56" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/common/common.h#L56" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>SIZE_T_TO_INT_OR_EXIT</b> 
@@ -332,7 +591,7 @@ if (ret == OQS_SUCCESS) { ... }
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/common/common.h#L75" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/common/common.h#L75" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_API</b> 
@@ -345,21 +604,6 @@ if (ret == OQS_SUCCESS) { ... }
 <p>Defines which functions should be exposed outside the LibOQS library</p>
 <p>By default the visibility of all the symbols is defined to "hidden" Only the library API should be marked as default</p>
 <p>Example: OQS_API return_value function_name(void); </p>
-        
-      
-    </td></tr>
-    <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/master/src/common/common.h#L204" target="_blank">[src]</a></small></div>
-      <p><code>
-        <span class="text-muted">#define</span> 
-        <b>UNUSED</b> 
-        
-        
-          <span class="text-muted"></span>
-        
-      </code></p>
-      
-<p>Macros that indicates a function argument may be unused. Used to comply with an API specification but when an implementation doesn't actually use the argument and we'd get a compiler warning otherwise. </p>
         
       
     </td></tr>

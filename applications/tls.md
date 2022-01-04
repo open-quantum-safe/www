@@ -136,7 +136,7 @@ Using our forks of [OpenSSL](#oqs-openssl) and [BoringSSL](#oqs-boringssl), we'v
 
 ### Wireshark
 
-- [Getting and running the pre-built post-quantum enabled **Wireshark** demo Docker image](https://hub.docker.com/repository/docker/openquantumsafe/wireshark) and [usage instructions](https://hub.docker.com/repository/docker/openquantumsafe/wireshark)
+- [Getting and running the pre-built post-quantum enabled **Wireshark** demo Docker image](https://hub.docker.com/repository/docker/openquantumsafe/wireshark) and [usage instructions](https://github.com/open-quantum-safe/oqs-demos/blob/main/wireshark/USAGE.md)
 - [Building your own Wireshark demo Docker image](https://github.com/open-quantum-safe/oqs-demos/tree/main/wireshark)
 
 ### (Interoperability) Test server

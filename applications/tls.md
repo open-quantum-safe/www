@@ -93,7 +93,7 @@ This subproject has been discontinued in line with the [strategic OpenSSL archit
 
 <div class="float-right"><a class="btn btn-purple" href="https://github.com/open-quantum-safe/oqs-demos">OQS-Demos <br> on Github <img src="{{ site.baseurl }}/img/logos/GitHub-Mark-Light-64px.png" style="height: 1em; padding-left: 1em; margin-bottom: -2px;"></a></div>
 
-The easiest way to get started with experimenting with post-quantum cryptography is to use our pre-built Docker images containing post-quantum-enabled versions of the web servers [Apache httpd](#apache-httpd) and [nginx](#nginx), the [high-availability web proxy haproxy](#haproxy) or the command-line web client [curl](#curl). You can also download a pre-built binary of post-quantum-enabled [Chromium](#chromium).
+The easiest way to get started with experimenting with post-quantum cryptography is to use our pre-built Docker images containing post-quantum-enabled versions of the web servers [Apache httpd](#apache-httpd) and [nginx](#nginx), the [high-availability web proxy haproxy](#haproxy) or the command-line web client [curl](#curl). You can also download a pre-built binary of post-quantum-enabled [Chromium](#chromium) and [Wireshark](#wireshark).
 
 There also exists a [post-quantum-enabled docker image for SSH](../ssh#demo-integration).
 
@@ -133,6 +133,11 @@ Using our forks of [OpenSSL](#oqs-openssl) and [BoringSSL](#oqs-boringssl), we'v
 
 - [Pre-built Chromium binary for Ubuntu 20.04 (64bit x86)](https://github.com/open-quantum-safe/oqs-demos/releases/download/v0.5.0/chromium-ubuntu-0.5.0.tgz) (149 MB)
 - [Building your own Chromium binary](https://github.com/open-quantum-safe/oqs-demos/tree/main/chromium) (warning: painful!)
+
+### Wireshark
+
+- [Getting and running the pre-built post-quantum enabled **Wireshark** demo Docker image](https://hub.docker.com/repository/docker/openquantumsafe/wireshark) and [usage instructions](https://hub.docker.com/repository/docker/openquantumsafe/wireshark)
+- [Building your own Wireshark demo Docker image](https://github.com/open-quantum-safe/oqs-demos/tree/main/wireshark)
 
 ### (Interoperability) Test server
 

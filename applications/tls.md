@@ -36,7 +36,8 @@ See the [OQS-OpenSSL README](https://github.com/open-quantum-safe/openssl/blob/O
 
 The OQS-OpenSSL-1.1.1 series provides post-quantum algorithms in TLS 1.3, X.509, and S/MIME and is actively maintained, including regular updates to follow/merge the upstream/main OpenSSL project releases:
 
-- [OQS-OpenSSL 1.1.1 snapshot 2021-08](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2021-08) aligned with liboqs 0.7.0 (August 11, 2021) <span class="label label-green">current version</span>
+- [OQS-OpenSSL 1.1.1 snapshot 2022-01](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2022-01) aligned with liboqs 0.7.1 (January 6, 2022) <span class="label label-green">current version</span>
+- [OQS-OpenSSL 1.1.1 snapshot 2021-08](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2021-08) aligned with liboqs 0.7.0 (August 11, 2021)
 - [OQS-OpenSSL 1.1.1 snapshot 2021-03](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2021-03) aligned with liboqs 0.5.0 (March 26, 2021)
 - [OQS-OpenSSL 1.1.1 snapshot 2020-08](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2020-08) aligned with liboqs 0.4.0 (August 11, 2020)
 - [OQS-OpenSSL 1.1.1 snapshot 2020-07](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2020-07) aligned with liboqs 0.3.0 (July 10, 2020)
@@ -74,7 +75,8 @@ See the [OQS-BoringSSL README](https://github.com/open-quantum-safe/boringssl/bl
 ### Releases
 {: .no_toc }
 
-- [OQS-BoringSSL snapshot 2021-08](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2021-08) aligned with liboqs 0.7.0 (August 11, 2021) <span class="label label-green">current version</span>
+- [OQS-BoringSSL snapshot 2022-01](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2022-01) aligned with liboqs 0.7.1 (January 6, 2022) <span class="label label-green">current version</span>
+- [OQS-BoringSSL snapshot 2021-08](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2021-08) aligned with liboqs 0.7.0 (August 11, 2021)
 - [OQS-BoringSSL snapshot 2021-03](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2021-03) aligned with liboqs 0.5.0 (March 26, 2021)
 - [OQS-BoringSSL snapshot 2020-08](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2020-08) aligned with liboqs 0.4.0 (August 11, 2020)
 - [OQS-BoringSSL snapshot 2020-07](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2020-07) aligned with liboqs 0.3.0 (July 10, 2020)

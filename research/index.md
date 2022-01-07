@@ -13,6 +13,7 @@ OQS has been used to support research in the following papers and technical stan
 
 ### Research papers
 
+- [**More efficient post-quantum KEMTLS with pre-distributed public keys**](https://eprint.iacr.org/2021/779), by Peter Schwabe, Douglas Stebila, and Thom Wiggers.  *ESORICS 2021*.
 - [**PQFabric: A permissioned blockchain secure from both classical and quantum attacks**](https://arxiv.org/abs/2010.06571), by Bhargav Das, Amelia Holcomb, Michele Mosca, and Geovandro C. C. F. Pereira.
 - [**Post-quantum TLS without handshake signatures**](https://www.douglas.stebila.ca/research/papers/CCS-SchSteWig20/), by Peter Schwabe, Douglas Stebila, and Thom Wiggers.  *ACM CCS 2020*.
 - [**Benchmarking post-quantum cryptography in TLS**](PQCrypto-PaqSteTam20), by Christian Paquin, Douglas Stebila, and Goutam Tamvada.  *PQCrypto 2020*.

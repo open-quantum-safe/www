@@ -28,6 +28,7 @@ liboqs has been used in the following external projects:
   - <a href="https://www.wolfssl.com/open-quantum-safe-wolfssl-joint-wireshark-integration/">Open Quantum Safe and wolfSSL Joint Wireshark Integration</a>
   - <a href="https://www.wolfssl.com/post-quantum-performance-research-results/">Post-Quantum Performance Research Results</a>
 - <a href="https://lists.freebsd.org/pipermail/dev-commits-ports-main/2021-September/018107.html">FreeBSD</a>
+- <a href="https://tracker.debian.org/pkg/liboqs">Debian</a>
 - <a href="https://www.linkedin.com/pulse/demonstrating-quantum-safe-tls-13-web-server-client-nist-barshteyn/">Demonstrating a Quantum-Safe TLS 1.3 Web Server-Client Architecture with NIST Level 5 Security</a>
 
 If you're using liboqs, please get in touch and we'll add you to the list!

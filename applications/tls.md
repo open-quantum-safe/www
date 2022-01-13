@@ -63,6 +63,7 @@ The new, state-of-the-art [OpenSSL (3.0) architecture](https://www.openssl.org/d
 
 Currently this is --in line with OpenSSL3.0 itself-- still alpha code not yet providing the same full set of integration features as in the [OpenSSL 1.1.1. fork](#oqs-openssl). Fully supported are PQ-KEM (including hybrid) algorithms already.
 
+- [OQS-OpenSSL provider version 0.3](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.3.0) aligned with liboqs 0.7.1 (January 13, 2022) <span class="label label-green">current version</span>
 
 ## OQS-BoringSSL
 

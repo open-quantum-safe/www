@@ -21,10 +21,12 @@ All of our development takes place on our [Github](https://github.com/open-quant
 
 ## Recent updates
 
-- January 13, 2022: Posted [year in review 2021](news/year-in-review-2021)
+- January 13, 2022: [Year in review 2021](news/year-in-review-2021)
 - January 6, 2022: Release of [OQS-OpenSSL 1.1.1 snapshot 2022-01](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2022-01), [OQS-BoringSSL snapshot 2022-01](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2022-01), [OQS-OpenSSH snapshot 2022-01](https://github.com/open-quantum-safe/openssh/releases/tag/OQS-OpenSSH-snapshot-2022-01), [liboqs-cpp 0.7.1](https://github.com/open-quantum-safe/liboqs-cpp/releases/tag/0.7.1), [liboqs-go 0.7.1](https://github.com/open-quantum-safe/liboqs-go/releases/tag/0.7.1), [liboqs-python 0.7.1](https://github.com/open-quantum-safe/liboqs-python/releases/tag/0.7.1), and [oqs-provider 0.3.0](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.3.0)
+- December 31, 2021: [VeriSign Inc.](https://verisign.com/) sponsors Open Quantum Safe
 - December 16, 2021: Release of [liboqs version 0.7.1](https://github.com/open-quantum-safe/liboqs/releases/tag/0.7.1)
 - November 16, 2021: [Debian adds liboqs packages to unstable branch](https://tracker.debian.org/pkg/liboqs)
+- November 1, 2021: [Amazon Web Services](https://aws.amazon.com/) sponsors Open Quantum Safe
 - October, 2021: [NLnet NGI Assure fund sponsors oqs-provider](https://nlnet.nl/project/oqsprovider/)
 - August 11, 2021: Release of [liboqs version 0.7.0](https://github.com/open-quantum-safe/liboqs/releases/tag/0.7.0), [OQS-OpenSSL 1.1.1 snapshot 2021-08](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2021-08), [OQS-BoringSSL snapshot 2021-08](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2021-08), and [OQS-OpenSSH snapshot 2021-08](https://github.com/open-quantum-safe/openssh/releases/tag/OQS-OpenSSH-snapshot-2021-08)
 - June 8, 2021: Release of [liboqs version 0.6.0](https://github.com/open-quantum-safe/liboqs/releases/tag/0.6.0)

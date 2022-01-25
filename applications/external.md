@@ -27,6 +27,7 @@ liboqs has been used in the following external projects:
   - <a href="https://www.wolfssl.com/post-quantum-research-results-pq-wolfssl-team/">Post-quantum research results from the pq-wolfssl team</a>
   - <a href="https://www.wolfssl.com/open-quantum-safe-wolfssl-joint-wireshark-integration/">Open Quantum Safe and wolfSSL Joint Wireshark Integration</a>
   - <a href="https://www.wolfssl.com/post-quantum-performance-research-results/">Post-Quantum Performance Research Results</a>
+  - <a href="https://qiita.com/kj1/items/8531feac2f3a56e6d6d9">Trying Post-Quantum Cryptography with TLS (Part 1: Key Exchange)</a>
 - <a href="https://lists.freebsd.org/pipermail/dev-commits-ports-main/2021-September/018107.html">FreeBSD</a>
 - <a href="https://tracker.debian.org/pkg/liboqs">Debian</a>
 - Igor Barshteyn:

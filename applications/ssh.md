@@ -62,4 +62,4 @@ See the [README](https://github.com/open-quantum-safe/libssh/blob/OQS-master/REA
 ### Releases
 {: .no_toc }
 
-- [snapshot 2022-01](https://github.com/open-quantum-safe/libssh/releases/tag/OQS-libssh-snapshot-2022-01) aligned with liboqs 0.7.1 (January 6, 2022) <span class="label label-green">current version</span>
+- [snapshot 2022-01](https://github.com/open-quantum-safe/libssh/releases/tag/OQS-libssh-snapshot-2022-01) aligned with liboqs 0.7.1 (January 25, 2022) <span class="label label-green">current version</span>

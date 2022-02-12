@@ -125,7 +125,7 @@ Using [our fork of OpenSSL](#oqs-openssl), we've enabled support for post-quantu
 ### HTTP(s) clients
 {: .no_toc }
 
-Using our forks of [OpenSSL](#oqs-openssl) and [BoringSSL](#oqs-boringssl), we've enabled support for post-quantum and hybrid key exchange and authentication in the curl command-line web client and the Chromium web browser.
+Using our forks of [OpenSSL](#oqs-openssl) and [BoringSSL](#oqs-boringssl), we've enabled support for post-quantum and hybrid key exchange and authentication in the curl command-line web client and the Chromium and Epiphany web browsers.
 
 ### curl
 
@@ -137,6 +137,12 @@ Using our forks of [OpenSSL](#oqs-openssl) and [BoringSSL](#oqs-boringssl), we'v
 - [Pre-built Chromium binary for Ubuntu 20.04 (64bit x86)](https://github.com/open-quantum-safe/oqs-demos/releases/download/v0.5.0/chromium-ubuntu-0.5.0.tgz) (149 MB)
 - [Building your own Chromium binary](https://github.com/open-quantum-safe/oqs-demos/tree/main/chromium) (warning: painful!)
 
+### epiphany
+
+- [Getting and running the pre-built post-quantum enabled **epiphany** browser demo Docker image](https://hub.docker.com/r/openquantumsafe/epiphany)
+- [Building your own epiphany demo Docker image](https://github.com/open-quantum-safe/oqs-demos/tree/main/epiphany)
+
+
 ### Wireshark
 
 - [Getting and running the pre-built post-quantum enabled **Wireshark** demo Docker image](https://hub.docker.com/repository/docker/openquantumsafe/wireshark) and [usage instructions](https://github.com/open-quantum-safe/oqs-demos/blob/main/wireshark/USAGE.md)
@@ -144,6 +150,14 @@ Using our forks of [OpenSSL](#oqs-openssl) and [BoringSSL](#oqs-boringssl), we'v
 
 ### (Interoperability) Test server
 
-We're interested in design and draft standards for hybrid authentication and key exchange as well as interoperability testing with other implementers. As an initial step to facilitate such testing we have set up a first iteration of such a demonstration and interoperability test server. All of the clients above can be used with this test server using [the above post-quantum enabled nginx](#nginx). Any usage and all feedback is very welcome.
+We're interested in design and draft standards for hybrid authentication and key exchange as well as interoperability testing with other implementers. As an initial step to facilitate such testing we have set up a first iteration of such a demonstration and interoperability test server at [https://test.openquantumsafe.org](https://test.openquantumsafe.org). All of the clients above can be used with this test server using [the above post-quantum enabled nginx](#nginx). Any usage and all feedback is very welcome.
 
 [Test server](https://test.openquantumsafe.org/){: .btn .btn-blue }
+
+### QUIC
+
+The [QUIC](https://www.rfc-editor.org/rfc/rfc9000.html) protocol uses TLS1.3 for secure session establishment. We thus could also made available post-quantum enabled **QUIC** client and server components.
+
+- [Getting and running the pre-built post-quantum enabled **nginx-quic** demo Docker image](https://hub.docker.com/repository/docker/openquantumsafe/nginx-quic)
+- [Getting and running the pre-built post-quantum enabled **msquic** (reach) demo Docker image](https://hub.docker.com/repository/docker/openquantumsafe/msquic-reach)
+- [Building your own QUIC-enabled client- and server components](https://github.com/open-quantum-safe/oqs-demos/tree/main/quic)

@@ -31,6 +31,7 @@ liboqs has been used in the following external projects:
   - <a href="https://qiita.com/kj1/items/f311c0eb2baf049b3cc3">Trying Post-Quantum Cryptography with TLS (Part 2: Authentication) (Japanese)</a>
   - <a href="https://www.wolfssl.com/post-quantum-goodies-wolfssl-5-1-1-falcon/">Post-Quantum Goodies in wolfSSL 5.1.1: FALCON</a>
   - <a href="https://www.youtube.com/watch?v=0gveI0_9HYo">Post-quantum demo of wolfSSL</a>
+  - <a href="https://www.wolfssl.com/post-quantum-tls-1-3-key-establishment-comes-stm32-cortex-m4/">Post-Quantum TLS 1.3 Key Establishment comes to STM32 Cortex M4</a>
 - <a href="https://lists.freebsd.org/pipermail/dev-commits-ports-main/2021-September/018107.html">FreeBSD</a>
 - <a href="https://tracker.debian.org/pkg/liboqs">Debian</a>
 - Igor Barshteyn:

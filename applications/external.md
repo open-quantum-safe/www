@@ -37,5 +37,6 @@ liboqs has been used in the following external projects:
 - Igor Barshteyn:
     - <a href="https://www.linkedin.com/pulse/demonstrating-quantum-safe-tls-13-web-server-client-nist-barshteyn/">Demonstrating a Quantum-Safe TLS 1.3 Web Server-Client Architecture with NIST Level 5 Security</a>
     - <a href="https://www.linkedin.com/pulse/quic-protocol-quantum-safe-cryptography-presenting-future-igor/">The QUIC Protocol and Quantum-Safe Cryptography - Presenting a Platform for Much-Needed Future Experiments</a>
+- <a href="https://github.com/buyobuyo404/PQCrypto">Chongqing University PQCrypto project</a>, adding post-quantum cryptography to X.509, TLS, and OCSP in Go crypto
 
 If you're using liboqs, please get in touch and we'll add you to the list!

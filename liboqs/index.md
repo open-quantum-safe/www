@@ -23,7 +23,7 @@ liboqs provides:
 
 **Open source**. liboqs is a C library for quantum-safe cryptographic algorithms, released under the MIT License. liboqs incorporates some external components which use a different license.
 
-**Multi-platform**. liboqs builds on Linux, macOS, and Windows, supports x86 and ARM architectures, and the clang, gcc, and Microsoft compilers.  Toolchains are available for cross-compiling to other platforms.
+**Multi-platform**. liboqs builds on Linux, macOS, and Windows, supports x86_64 and ARM architectures, and the clang, gcc, and Microsoft compilers.  Toolchains are available for cross-compiling to other platforms.
 
 **Common API**. liboqs uses a common API for post-quantum key encapsulation and signature algorithms, making it easy to switch between algorithms. Our API closely follows the NIST/SUPERCOP API, with some additional wrappers and data structures.
 

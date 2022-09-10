@@ -42,7 +42,7 @@ liboqs has been used in the following external projects:
 - <a href="https://github.com/buyobuyo404/PQCrypto">Chongqing University PQCrypto project</a>, adding post-quantum cryptography to X.509, TLS, and OCSP in Go crypto
 - Entrust:
   - <a href="https://www.entrust.com/newsroom/press-releases/2022/entrust-helps-enterprises-prepare-now-for-post-quantum-security-journey">"Entrust Helps Enterprises Prepare Now for Post Quantum Security Journey With New PQ Testing and Development Solutions"</a>
-  - <a href="https://www.entrust.com/digital-security/hsm/products/nshield-software/codesafe">Entrust Codesafe</a>
+  - <a href="https://www.entrust.com/digital-security/hsm/products/nshield-software/codesafe">Entrust CodeSafe - supporting the nShield Post-Quantum Cryptography SDK</a>
   - <a href="https://www.entrust.com/podcast-channels/entrust-engage">Entrust Engage Podcasts</a>
 
 If you're using liboqs, please get in touch and we'll add you to the list!

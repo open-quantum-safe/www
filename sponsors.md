@@ -8,21 +8,26 @@ nav_order: 8
 
 Direct financial support for the development of Open Quantum Safe has been provided by <a href="https://aws.amazon.com">Amazon Web Services</a>, the <a href="https://cyber.gc.ca">Canadian Centre for Cyber Security</a>, <a href="https://unitary.fund">Unitary Fund</a>, <a href="https://nlnet.nl/assure/">the NGI Assure Fund</a>, and <a href="https://www.verisign.com/">VeriSign Inc.</a>
 
-Major in-kind contributions of developer time have been made by <a href="https://aws.amazon.com">Amazon Web Services</a>, <a href="https://evolutionq.com">evolutionQ</a>, <a href="https://www.zurich.ibm.com/security/quantumsafecryptography.html">IBM Research</a>, and <a href="https://www.microsoft.com/en-us/research/project/post-quantum-cryptography/">Microsoft Research</a>.
+Major in-kind contributions of developer time have been made by <a href="https://aws.amazon.com">Amazon Web Services</a>, <a href="https://cisco.com/">Cisco</a>, <a href="https://evolutionq.com">evolutionQ</a>, <a href="https://www.zurich.ibm.com/security/quantumsafecryptography.html">IBM Research</a>, and <a href="https://www.microsoft.com/en-us/research/project/post-quantum-cryptography/">Microsoft Research</a>.
 
-Research projects which developed specific components of OQS have been supported by various research grants, including Australian Research Council (ARC) Discovery Project grant DP130104304, Natural Sciences and Engineering Research Council of Canada (NSERC) Discovery grant RGPIN-2016-05146, and NSERC Discovery Accelerator Supplement grant RGPAS-2016-05146.
+Research projects which developed specific components of OQS have been supported by various research grants, including Australian Research Council (ARC) Discovery Project grant DP130104304, Natural Sciences and Engineering Research Council of Canada (NSERC) Discovery grants RGPIN-2016-05146 and RGPIN-2022-03187, and NSERC Discovery Accelerator Supplement grant RGPAS-2016-05146.
 
 <br><br>
 
 <div style="text-align: center">
     <div class="d-inline-block" style="height: 100px;">
-        <a href="http://aws.amazon.com/" style="background-image: none; vertical-align: middle; ">
+        <a href="https://aws.amazon.com/" style="background-image: none; vertical-align: middle; ">
             <img src="{{ site.baseurl }}/img/logos/aws.png" alt="Amazon Web Services" style="height: 70%; padding-left: 10px; padding-right: 10px;" />
         </a>
     </div>
     <div class="d-inline-block" style="height: 100px;">
-        <a href="http://nserc.gc.ca/" style="background-image: none; vertical-align: middle;">
+        <a href="https://www.nserc-crsng.gc.ca/" style="background-image: none; vertical-align: middle;">
             <img src="{{ site.baseurl }}/img/logos/nserc.png" alt="NSERC" style="max-height: 80%;"/>
+        </a>
+    </div>
+    <div class="d-inline-block" style="height: 100px;">
+        <a href="https://cisco.com/" style="background-image: none; vertical-align: middle;">
+            <img src="{{ site.baseurl }}/img/logos/cisco.png" alt="Cisco" style="max-height: 80%; padding-left: 10px; "/>
         </a>
     </div>
 </div>

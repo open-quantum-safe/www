@@ -74,6 +74,11 @@ We'd like to make a special acknowledgement to the companies who have dedicated 
         </a>
     </div>
     <div class="d-inline-block" style="height: 100px;">
+        <a href="http://cisco.com/" style="background-image: none; vertical-align: middle; ">
+            <img src="{{ site.baseurl }}/img/logos/cisco.png" alt="Cisco" style="height: 80%; padding-left: 10px; padding-right: 20px;" />
+        </a>
+    </div>
+    <div class="d-inline-block" style="height: 100px;">
         <a href="https://www.evolutionq.com/" style="background-image: none; vertical-align: middle;">
             <img src="{{ site.baseurl }}/img/logos/evolutionQ.png" alt="evolutionQ" style="max-height: 100%;"/>
         </a>

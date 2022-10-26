@@ -17,7 +17,7 @@ has_toc: false
 {:toc}
 
 
-We've integrated liboqs into forks of BoringSSL and OpenSSL to provide prototype post-quantum key exchange and authentication and ciphersuites in the TLS protocol.  Researchers looking to try additional post-quantum algorithms can easily add more algorithms that follow the OQS API.  You can use our modified implementations to prototype quantum-resistant cryptography in applications that rely on OpenSSL (such as <a href="https://github.com/open-quantum-safe/oqs-demos/tree/main/httpd">Apache httpd</a>, <a href="https://github.com/open-quantum-safe/oqs-demos/tree/main/nginx">nginx</a>, <a href="https://github.com/open-quantum-safe/oqs-demos/tree/main/haproxy">haproxy</a>, <a href="https://github.com/open-quantum-safe/oqs-demos/tree/main/curl">curl</a>, or <a href="https://www.microsoft.com/en-us/research/project/post-quantum-crypto-vpn/">OpenVPN</a>) or on BoringSSL (such as <a href="https://github.com/open-quantum-safe/oqs-demos/tree/main/chromium">Chromium</a>).  
+We've integrated liboqs into forks of BoringSSL and OpenSSL1.1.1 as well as a standalone OQS provider for OpenSSL3 to provide prototype post-quantum key exchange and authentication and ciphersuites in the TLS protocol.  Researchers looking to try additional post-quantum algorithms can easily add more algorithms that follow the OQS API.  You can use our modified implementations to prototype quantum-resistant cryptography in applications that rely on OpenSSL (such as <a href="https://github.com/open-quantum-safe/oqs-demos/tree/main/httpd">Apache httpd</a>, <a href="https://github.com/open-quantum-safe/oqs-demos/tree/main/nginx">nginx</a>, <a href="https://github.com/open-quantum-safe/oqs-demos/tree/main/haproxy">haproxy</a>, <a href="https://github.com/open-quantum-safe/oqs-demos/tree/main/curl">curl</a>, or <a href="https://www.microsoft.com/en-us/research/project/post-quantum-crypto-vpn/">OpenVPN</a>) or on BoringSSL (such as <a href="https://github.com/open-quantum-safe/oqs-demos/tree/main/chromium">Chromium</a>).  
 
 An [Internet-Draft](https://tools.ietf.org/html/draft-ietf-tls-hybrid-design-00) is available describing how the TLS 1.3 protocol was adapted to include the hybrid PQ key exchange algorithms.
 
@@ -36,7 +36,8 @@ See the [OQS-OpenSSL README](https://github.com/open-quantum-safe/openssl/blob/O
 
 The OQS-OpenSSL-1.1.1 series provides post-quantum algorithms in TLS 1.3, X.509, and S/MIME and is actively maintained, including regular updates to follow/merge the upstream/main OpenSSL project releases:
 
-- [OQS-OpenSSL 1.1.1 snapshot 2022-01](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2022-01) aligned with liboqs 0.7.1 (January 6, 2022) <span class="label label-green">current version</span>
+- [OQS-OpenSSL 1.1.1 snapshot 2022-08](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL-1_1_1-stable-snapshot-2022-08) aligned with liboqs 0.7.2 (August 24, 2022) <span class="label label-green">current version</span>
+- [OQS-OpenSSL 1.1.1 snapshot 2022-01](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2022-01) aligned with liboqs 0.7.1 (January 6, 2022)
 - [OQS-OpenSSL 1.1.1 snapshot 2021-08](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2021-08) aligned with liboqs 0.7.0 (August 11, 2021)
 - [OQS-OpenSSL 1.1.1 snapshot 2021-03](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2021-03) aligned with liboqs 0.5.0 (March 26, 2021)
 - [OQS-OpenSSL 1.1.1 snapshot 2020-08](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2020-08) aligned with liboqs 0.4.0 (August 11, 2020)
@@ -61,9 +62,10 @@ The OQS-OpenSSL-1.0.2 series provided post-quantum algorithms in TLS 1.2.  It is
 
 The new, state-of-the-art [OpenSSLv3  architecture](https://www.openssl.org/docs/OpenSSLStrategicArchitecture.html) provides a more clean way to integrate novel algorithms into TLS1.3: A fully separate binary plug-in component independent of the main TLS logic, a [provider](https://www.openssl.org/docs/manmaster/man7/provider.html) permits integration of post-quantum algorithms into TLS1.3 without changing the core logic of OpenSSL. Along the same lines, providers extend X.509 certificate management functions provided by OpenSSL to new algorithm classes.
 
-The <i>oqsprovider</i> is thus making all quantum-safe algorithms supported by OQS as well as their hybrid (classic/quantum-safe) variants readily available to OpenSSLv3 users and applications. It has matured to the level of being used as <a href="https://github.com/openssl/openssl/blob/master/test/README-external.md#oqsprovider-test-suite">validation test for the OpenSSL3 provider functionality</a>. This ensures that all quantum-safe algorithms supported by OQS are readily available without code changes to any installation running OpenSSLv3. All limitations/open issues are documented at <a href="https://github.com/open-quantum-safe/oqs-provider/issues">the issues tracker for the oqsprovider project</a>.
+The <i>oqsprovider</i> is thus making all quantum-safe algorithms supported by OQS as well as their hybrid (classic/quantum-safe) variants readily available to OpenSSLv3 users and applications. It has matured to the level of being used as <a href="https://github.com/openssl/openssl/blob/master/test/README-external.md#oqsprovider-test-suite">validation test for the OpenSSL3 provider functionality</a>. This ensures that all quantum-safe algorithms supported by OQS are readily available without code changes to any installation running OpenSSLv3. All limitations/open issues are documented at <a href="https://github.com/open-quantum-safe/oqs-provider/issues">the issues tracker for the oqsprovider project</a>. Functional limitations of the different OpenSSL3 versions are documented [here](https://github.com/open-quantum-safe/oqs-provider#note-on-openssl-versions).
 
-- [OQS-OpenSSL provider version 0.3](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.3.0) aligned with liboqs 0.7.1 (January 13, 2022) <span class="label label-green">current version</span>
+- [OQS-OpenSSL provider version 0.4](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.4.0) aligned with liboqs 0.7.2 (August 22, 2022) <span class="label label-green">current version</span>
+- [OQS-OpenSSL provider version 0.3](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.3.0) aligned with liboqs 0.7.1 (January 13, 2022)
 
 ## OQS-BoringSSL
 
@@ -76,11 +78,14 @@ See the [OQS-BoringSSL README](https://github.com/open-quantum-safe/boringssl/bl
 ### Releases
 {: .no_toc }
 
-- [OQS-BoringSSL snapshot 2022-01](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2022-01) aligned with liboqs 0.7.1 (January 6, 2022) <span class="label label-green">current version</span>
+- [OQS-BoringSSL snapshot 2022-08](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2022-08) aligned with liboqs 0.7.2 (August 25, 2022) <span class="label label-green">current version</span>
+- [OQS-BoringSSL snapshot 2022-01](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2022-01) aligned with liboqs 0.7.1 (January 6, 2022)
 - [OQS-BoringSSL snapshot 2021-08](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2021-08) aligned with liboqs 0.7.0 (August 11, 2021)
 - [OQS-BoringSSL snapshot 2021-03](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2021-03) aligned with liboqs 0.5.0 (March 26, 2021)
 - [OQS-BoringSSL snapshot 2020-08](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2020-08) aligned with liboqs 0.4.0 (August 11, 2020)
 - [OQS-BoringSSL snapshot 2020-07](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2020-07) aligned with liboqs 0.3.0 (July 10, 2020)
+
+Continued updates to OQS-BoringSSL are currently not planned due to lack of interest in this software. Statements of interest should be voiced [here](https://github.com/orgs/open-quantum-safe/discussions/1292).
 
 ## OQS-Engine
 
@@ -156,8 +161,18 @@ We're interested in design and draft standards for hybrid authentication and key
 
 ### QUIC
 
-The [QUIC](https://www.rfc-editor.org/rfc/rfc9000.html) protocol uses TLS1.3 for secure session establishment. We thus could also made available post-quantum enabled **QUIC** client and server components.
+The [QUIC](https://www.rfc-editor.org/rfc/rfc9000.html) protocol uses TLS1.3 for secure session establishment. We thus could also make available post-quantum enabled **QUIC** client and server components:
 
 - [Getting and running the pre-built post-quantum enabled **nginx-quic** demo Docker image](https://hub.docker.com/repository/docker/openquantumsafe/nginx-quic)
 - [Getting and running the pre-built post-quantum enabled **msquic** (reach) demo Docker image](https://hub.docker.com/repository/docker/openquantumsafe/msquic-reach)
 - [Building your own QUIC-enabled client- and server components](https://github.com/open-quantum-safe/oqs-demos/tree/main/quic)
+- [Additional Dockerfiles exist to provide post-quantum enablement](https://github.com/open-quantum-safe/oqs-demos/tree/main/ngtcp2) for [ngtcp2](https://github.com/ngtcp2/ngtcp2).
+
+### MQTT
+
+The [MQTT](https://mqtt.org) protocol also uses TLS for session security. We thus could also make available post-quantum enabled **MQTT** broker, subscriber and publisher based on [Mosquitto](https://mosquitto.org/):
+
+- [Getting and running pre-built quantum-safe Mosquitto docker images](https://hub.docker.com/repository/docker/openquantumsafe/mosquitto).
+- [Building your own quantum safe Mosquitto docker images](https://github.com/open-quantum-safe/oqs-demos/tree/main/mosquitto).
+
+

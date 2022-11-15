@@ -20,6 +20,8 @@ liboqs has been used in the following external projects:
 - <a href="https://newsroom.ibm.com/2020-11-30-IBM-Cloud-Delivers-Quantum-Safe-Cryptography-and-Hyper-Protect-Crypto-Services-to-Help-Protect-Data-in-the-Hybrid-Era">IBM Cloud</a>
 - <a href="https://github.com/hannestschofenig/mbedtls">mbedTLS</a>
 - wolfSSL:
+  - <a href="https://www.wolfssl.com/nist-announces-post-quantum-algorithm-standardization/">NIST Announces Post-Quantum Algorithm Standardization</a>
+  - <a href="https://www.wolfssl.com/end-summer-post-quantum-round/">End of Summer Post-Quantum Round Up</a>
   - <a href="https://www.wolfssl.com/wolfssl-liboqs-integration/">wolfSSL liboqs integration</a>
   - <a href="https://www.wolfssl.com/hybrid-post-quantum-groups-tls-1-3/">wolfSSL hybrid post-quantum groups in TLS 1.3</a>
   - <a href="https://www.wolfssl.com/post-quantum-curl/">wolfSSL post-quantum cURL</a>

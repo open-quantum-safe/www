@@ -2,9 +2,16 @@
 layout: default
 title: Team
 nav_order: 7
+has_children: true
+has_toc: false
 ---
 
 # Team
+
+{: .new-title }
+> Join the team! – February 2023
+>
+> The University of Waterloo is hiring a Cryptographic Research Architect to work on the Open Quantum Safe project. [Learn more about the position and apply.](/team/open-positions)
 
 ## Project leaders
 

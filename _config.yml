@@ -66,7 +66,7 @@ search:
 
 heading_anchors: true
 
-footer_content: "Copyright &copy; 2017-2022 The Open Quantum Safe Project.<br /> This site uses <a href='https://pmarsceill.github.io/just-the-docs/' target='_blank'>Just the Docs</a>, a documentation theme for Jekyll. Background image by <a href='https://commons.wikimedia.org/wiki/File:05_camera_painting_motion_blur_experimental_digital_photography_by_Rick_Doble.jpg'>Rick Doble</a>."
+footer_content: "Copyright &copy; 2017-2023 The Open Quantum Safe Project.<br /> This site uses <a href='https://pmarsceill.github.io/just-the-docs/' target='_blank'>Just the Docs</a>, a documentation theme for Jekyll. Background image by <a href='https://commons.wikimedia.org/wiki/File:05_camera_painting_motion_blur_experimental_digital_photography_by_Rick_Doble.jpg'>Rick Doble</a>."
 
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: false # show or hide edit this page link
@@ -74,3 +74,15 @@ gh_edit_link_text: "Edit this page on GitHub."
 gh_edit_repository: "https://github.com/open-quanum-safe/www" # the github URL for your repo
 gh_edit_branch: "master" # the branch that your docs is served from
 gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
+
+callouts:
+  highlight:
+    color: yellow
+  important:
+    color: blue
+  new:
+    color: green
+  note:
+    color: purple
+  warning:
+    color: red

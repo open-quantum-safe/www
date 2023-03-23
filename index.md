@@ -21,12 +21,6 @@ All of our development takes place on our [Github](https://github.com/open-quant
 
 ## Recent updates
 
-{: .new-title }
-> Join the team! – February 2023
->
-> The University of Waterloo is hiring a Cryptographic Research Architect to work on the Open Quantum Safe project. [Learn more about the position and apply.](/team/open-positions)
-
-
 - August 21, 2022: Release of [liboqs version 0.7.2](https://github.com/open-quantum-safe/liboqs/releases/tag/0.7.2)
 - January 25, 2022: First release of [OQS-libssh](https://github.com/open-quantum-safe/libssh/releases/tag/OQS-libssh-snapshot-2022-01)
 - January 13, 2022: [Year in review 2021](news/year-in-review-2021)

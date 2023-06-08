@@ -21,6 +21,7 @@ All of our development takes place on our [Github](https://github.com/open-quant
 
 ## Recent updates
 
+- June 7, 2023: Release of [liboqs version 0.8.0](https://github.com/open-quantum-safe/liboqs/releases/tag/0.8.0)
 - August 21, 2022: Release of [liboqs version 0.7.2](https://github.com/open-quantum-safe/liboqs/releases/tag/0.7.2)
 - January 25, 2022: First release of [OQS-libssh](https://github.com/open-quantum-safe/libssh/releases/tag/OQS-libssh-snapshot-2022-01)
 - January 13, 2022: [Year in review 2021](news/year-in-review-2021)

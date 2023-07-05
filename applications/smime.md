@@ -9,7 +9,7 @@ nav_order: 4
 
 Our [fork of OpenSSL](tls/#oqs-openssl) as well as [oqsprovider](tls.html#oqs-openssl-provider) together with OpenSSL3 (master) can perform S/MIME and CMS signing operations using post-quantum and hybrid digital signatures.
 
-For instructions on doing post-quantum S/MIME operations, see the [OQS-OpenSSL README section "CMS demo"](https://github.com/open-quantum-safe/openssl/blob/OQS-OpenSSL_1_1_1-stable/README.md#cms-demo).
+For instructions on doing post-quantum S/MIME operations, see the [OQS-Provider USAGE section "SMIME message signing"](https://github.com/open-quantum-safe/oqs-provider/blob/main/USAGE.md#smime-message-signing----cryptographic-message-syntax-cms).
 
 The easiest way to execute post-quantum S/MIME and CMS signing operations is by [using the pre-built openssl 1.1.1 docker image at Docker hub](https://hub.docker.com/r/openquantumsafe/curl) or [using the pre-built OpenSSL3 docker image at Docker hub](https://hub.docker.com/repository/docker/openquantumsafe/oqs-ossl3).
 

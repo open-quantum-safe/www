@@ -44,7 +44,9 @@ There also exist [post-quantum-enabled docker images for TLS applications](tls#d
 ### Releases
 {: .no_toc }
 
-- [snapshot 2022-01](https://github.com/open-quantum-safe/openssh/releases/tag/OQS-OpenSSH-snapshot-2022-01) aligned with liboqs 0.7.1 (January 6, 2022) <span class="label label-green">current version</span>
+- [snapshot 2023-06](https://github.com/open-quantum-safe/openssh/releases/tag/OQS-OpenSSH-snapshot-2023-06) aligned with liboqs 0.8.0 (June 26, 2023) <span class="label label-green">current version</span>
+- [snapshot 2022-08](https://github.com/open-quantum-safe/openssh/releases/tag/OQS-OpenSSH-snapshot-2022-08) aligned with liboqs 0.7.2 (August 23, 2022)
+- [snapshot 2022-01](https://github.com/open-quantum-safe/openssh/releases/tag/OQS-OpenSSH-snapshot-2022-01) aligned with liboqs 0.7.1 (January 6, 2022)
 - [snapshot 2021-08](https://github.com/open-quantum-safe/openssh/releases/tag/OQS-OpenSSH-snapshot-2021-08) aligned with liboqs 0.7.0 (August 11, 2021)
 - [snapshot 2020-08](https://github.com/open-quantum-safe/openssh/releases/tag/OQS-OpenSSH-snapshot-2020-08) aligned with liboqs 0.4.0 (September 3, 2020)
 - [snapshot 2020-07](https://github.com/open-quantum-safe/openssh/releases/tag/OQS-OpenSSH-snapshot-2020-07) aligned with liboqs 0.3.0 (July 10, 2020)

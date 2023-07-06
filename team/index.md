@@ -65,7 +65,7 @@ All our work is done as open source via our [GitHub project](https://github.com/
 
 The Open Quantum Safe project incorporates and adapts a variety of open source cryptographic software.  See the individual project pages for lists of contributors and external software.  We especially acknowledge algorithm implementations via the [PQClean project](https://github.com/PQClean/PQClean).
 
-We'd like to make a special acknowledgement to the companies who have dedicated programmer time to contribute source code to OQS, including Amazon Web Services, Cisco Systems, evolutionQ, IBM Research, Microsoft Research, and Senetas.
+We'd like to make a special acknowledgement to the companies who have dedicated programmer time to contribute source code to OQS, including Amazon Web Services, Cisco Systems, evolutionQ, IBM Research, Microsoft Research, Senetas, and softwareQ.
 
 <div style="text-align: center">
     <div class="d-inline-block" style="height: 100px;">
@@ -98,4 +98,9 @@ We'd like to make a special acknowledgement to the companies who have dedicated 
             <img src="{{ site.baseurl }}/img/logos/senetas.jpg" alt="Senetas" style="max-height: 80%;"/>
         </a>
     </div>
+    <div class="d-inline-block" style="height: 100px;">
+        <a href="https://www.softwareq.ca/" style="background-image: none; vertical-align: middle;">
+            <img src="{{ site.baseurl }}/img/logos/softwareq.png" alt="softwareQ" style="max-height: 80%;"/>
+        </a>
+    </div>    
 </div>

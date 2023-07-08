@@ -100,7 +100,7 @@ We'd like to make a special acknowledgement to the companies who have dedicated 
     </div>
     <div class="d-inline-block" style="height: 100px;">
         <a href="https://www.softwareq.ca/" style="background-image: none; vertical-align: middle;">
-            <img src="{{ site.baseurl }}/img/logos/softwareq.png" alt="softwareQ" style="max-height: 80%;"/>
+            <img src="{{ site.baseurl }}/img/logos/softwareQ.png" alt="softwareQ" style="max-height: 80%;"/>
         </a>
     </div>    
 </div>

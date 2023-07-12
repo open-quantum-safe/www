@@ -36,7 +36,7 @@ See the [OQS-OpenSSL README](https://github.com/open-quantum-safe/openssl/blob/O
 
 The OQS-OpenSSL-1.1.1 series provides post-quantum algorithms in TLS 1.3, X.509, and S/MIME; its maintenance will end when OpenSSL1.1.1 support ends, [on September 11, 2023](https://www.openssl.org/blog/blog/2023/03/28/1.1.1-EOL/). Until then regular updates to follow/merge the upstream/main OpenSSL project releases occur(ed):
 
-- [OQS-OpenSSL 1.1.1 snapshot 2023-07](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL-1_1_1-stable-snapshot-2023-07) aligned with liboqs 0.8.0 (July 7, 2023) <span class="label label-green">current version</span>
+- [OQS-OpenSSL 1.1.1 snapshot 2023-07](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL-1_1_1-stable-snapshot-2023-07) aligned with liboqs 0.8.0 (July 7, 2023) <span class="label label-green">current version</span> <span class="label label-red">end of life</span>
 - [OQS-OpenSSL 1.1.1 snapshot 2022-08](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL-1_1_1-stable-snapshot-2022-08) aligned with liboqs 0.7.2 (August 24, 2022)
 - [OQS-OpenSSL 1.1.1 snapshot 2022-01](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2022-01) aligned with liboqs 0.7.1 (January 6, 2022)
 - [OQS-OpenSSL 1.1.1 snapshot 2021-08](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2021-08) aligned with liboqs 0.7.0 (August 11, 2021)

@@ -23,7 +23,7 @@ liboqs provides:
 
 **Open source**. liboqs is a C library for quantum-safe cryptographic algorithms, released under the MIT License. liboqs incorporates some external components which use a different license.
 
-**Multi-platform**. liboqs builds on Linux, macOS, and Windows, supports x86_64 and ARM architectures (except Windows on ARM64), and the clang, gcc, and Microsoft compilers.  Toolchains are available for cross-compiling to other platforms.
+**Multi-platform**. liboqs builds on Linux, macOS, and Windows, supports x86_64 and ARM architectures (except Windows on ARM64), and the clang, gcc, and Microsoft compilers.  Toolchains are available for cross-compiling to other platforms. Not all algorithms are supported on all those platforms; always consult [the algorithm datasheets](algorithms) for details on each algorithm.
 
 **Common API**. liboqs uses a common API for post-quantum key encapsulation and signature algorithms, making it easy to switch between algorithms. Our API closely follows the NIST/SUPERCOP API, with some additional wrappers and data structures.
 
@@ -37,7 +37,8 @@ Post-quantum algorithm implementations in liboqs are derived from the reference 
 
 ## Releases
 
-- [version 0.7.2](https://github.com/open-quantum-safe/liboqs/releases/tag/0.7.2) (August 21, 2022) <span class="label label-green">current version</span>
+- [version 0.8.0](https://github.com/open-quantum-safe/liboqs/releases/tag/0.8.0) (June 7, 2023) <span class="label label-green">current version</span>
+- [version 0.7.2](https://github.com/open-quantum-safe/liboqs/releases/tag/0.7.2) (August 21, 2022)
 - [version 0.7.1](https://github.com/open-quantum-safe/liboqs/releases/tag/0.7.1) (December 16, 2021)
 - [version 0.7.0](https://github.com/open-quantum-safe/liboqs/releases/tag/0.7.0) (August 11, 2021)
 - [version 0.6.0](https://github.com/open-quantum-safe/liboqs/releases/tag/0.6.0) (June 8, 2021)

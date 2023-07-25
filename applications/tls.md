@@ -34,9 +34,10 @@ See the [OQS-OpenSSL README](https://github.com/open-quantum-safe/openssl/blob/O
 ### OpenSSL 1.1.1 releases
 {: .no_toc }
 
-The OQS-OpenSSL-1.1.1 series provides post-quantum algorithms in TLS 1.3, X.509, and S/MIME and is actively maintained, including regular updates to follow/merge the upstream/main OpenSSL project releases:
+The OQS-OpenSSL-1.1.1 series provides post-quantum algorithms in TLS 1.3, X.509, and S/MIME; its maintenance will end when OpenSSL1.1.1 support ends, [on September 11, 2023](https://www.openssl.org/blog/blog/2023/03/28/1.1.1-EOL/). Until then regular updates to follow/merge the upstream/main OpenSSL project releases occur(ed):
 
-- [OQS-OpenSSL 1.1.1 snapshot 2022-08](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL-1_1_1-stable-snapshot-2022-08) aligned with liboqs 0.7.2 (August 24, 2022) <span class="label label-green">current version</span>
+- [OQS-OpenSSL 1.1.1 snapshot 2023-07](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL-1_1_1-stable-snapshot-2023-07) aligned with liboqs 0.8.0 (July 7, 2023) <span class="label label-green">current version</span> <span class="label label-red">end of life</span>
+- [OQS-OpenSSL 1.1.1 snapshot 2022-08](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL-1_1_1-stable-snapshot-2022-08) aligned with liboqs 0.7.2 (August 24, 2022)
 - [OQS-OpenSSL 1.1.1 snapshot 2022-01](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2022-01) aligned with liboqs 0.7.1 (January 6, 2022)
 - [OQS-OpenSSL 1.1.1 snapshot 2021-08](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2021-08) aligned with liboqs 0.7.0 (August 11, 2021)
 - [OQS-OpenSSL 1.1.1 snapshot 2021-03](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2021-03) aligned with liboqs 0.5.0 (March 26, 2021)
@@ -64,8 +65,9 @@ The new, state-of-the-art [OpenSSLv3  architecture](https://www.openssl.org/docs
 
 The <i>oqsprovider</i> is thus making all quantum-safe algorithms supported by OQS as well as their hybrid (classic/quantum-safe) variants readily available to OpenSSLv3 users and applications. It has matured to the level of being used as <a href="https://github.com/openssl/openssl/blob/master/test/README-external.md#oqsprovider-test-suite">validation test for the OpenSSL3 provider functionality</a>. This ensures that all quantum-safe algorithms supported by OQS are readily available without code changes to any installation running OpenSSLv3. All limitations/open issues are documented at <a href="https://github.com/open-quantum-safe/oqs-provider/issues">the issues tracker for the oqsprovider project</a>. Functional limitations of the different OpenSSL3 versions are documented [here](https://github.com/open-quantum-safe/oqs-provider#note-on-openssl-versions).
 
-- [OQS-OpenSSL provider version 0.4](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.4.0) aligned with liboqs 0.7.2 (August 22, 2022) <span class="label label-green">current version</span>
-- [OQS-OpenSSL provider version 0.3](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.3.0) aligned with liboqs 0.7.1 (January 13, 2022)
+- [OQS-OpenSSL provider version 0.5.0](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.5.0) aligned with liboqs 0.8.0 (June 9, 2023) <span class="label label-green">current version</span>
+- [OQS-OpenSSL provider version 0.4.0](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.4.0) aligned with liboqs 0.7.2 (August 22, 2022) 
+- [OQS-OpenSSL provider version 0.3.0](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.3.0) aligned with liboqs 0.7.1 (January 13, 2022)
 
 ## OQS-BoringSSL
 
@@ -78,7 +80,8 @@ See the [OQS-BoringSSL README](https://github.com/open-quantum-safe/boringssl/bl
 ### Releases
 {: .no_toc }
 
-- [OQS-BoringSSL snapshot 2022-08](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2022-08) aligned with liboqs 0.7.2 (August 25, 2022) <span class="label label-green">current version</span>
+- [OQS-BoringSSL snapshot 2022-06](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2023-06) aligned with liboqs 0.8.0 (July 4, 2023) <span class="label label-green">current version</span>
+- [OQS-BoringSSL snapshot 2022-08](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2022-08) aligned with liboqs 0.7.2 (August 25, 2022)
 - [OQS-BoringSSL snapshot 2022-01](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2022-01) aligned with liboqs 0.7.1 (January 6, 2022)
 - [OQS-BoringSSL snapshot 2021-08](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2021-08) aligned with liboqs 0.7.0 (August 11, 2021)
 - [OQS-BoringSSL snapshot 2021-03](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2021-03) aligned with liboqs 0.5.0 (March 26, 2021)
@@ -139,7 +142,7 @@ Using our forks of [OpenSSL](#oqs-openssl) and [BoringSSL](#oqs-boringssl), we'v
 
 ### Chromium
 
-- [Pre-built Chromium binary for Ubuntu 20.04 (64bit x86)](https://github.com/open-quantum-safe/oqs-demos/releases/download/v0.5.0/chromium-ubuntu-0.5.0.tgz) (149 MB)
+- [Pre-built Chromium binary for Ubuntu 20.04 (64bit x86) at liboqs v0.7.2](https://github.com/open-quantum-safe/oqs-demos/releases/download/0.7.2/chromium-ubuntu-0.7.2.tgz) (149 MB)
 - [Building your own Chromium binary](https://github.com/open-quantum-safe/oqs-demos/tree/main/chromium) (warning: painful!)
 
 ### epiphany
@@ -168,6 +171,8 @@ The [QUIC](https://www.rfc-editor.org/rfc/rfc9000.html) protocol uses TLS1.3 for
 - [Building your own QUIC-enabled client- and server components](https://github.com/open-quantum-safe/oqs-demos/tree/main/quic)
 - [Additional Dockerfiles exist to provide post-quantum enablement](https://github.com/open-quantum-safe/oqs-demos/tree/main/ngtcp2) for [ngtcp2](https://github.com/ngtcp2/ngtcp2).
 
+*Note*: This code is still based on `oqs-openssl111` thus may become unsupported as soon as [OpenSSL1.1.1 support ends in September 2023](https://www.openssl.org/blog/blog/2023/03/28/1.1.1-EOL).
+
 ### MQTT
 
 The [MQTT](https://mqtt.org) protocol also uses TLS for session security. We thus could also make available post-quantum enabled **MQTT** broker, subscriber and publisher based on [Mosquitto](https://mosquitto.org/):
@@ -175,4 +180,5 @@ The [MQTT](https://mqtt.org) protocol also uses TLS for session security. We thu
 - [Getting and running pre-built quantum-safe Mosquitto docker images](https://hub.docker.com/repository/docker/openquantumsafe/mosquitto).
 - [Building your own quantum safe Mosquitto docker images](https://github.com/open-quantum-safe/oqs-demos/tree/main/mosquitto).
 
+*Note*: This code is still based on `oqs-openssl111` thus may become unsupported as soon as [OpenSSL1.1.1 support ends in September 2023](https://www.openssl.org/blog/blog/2023/03/28/1.1.1-EOL).
 

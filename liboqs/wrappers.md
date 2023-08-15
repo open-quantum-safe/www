@@ -15,3 +15,7 @@ You can use post-quantum algorithms from liboqs in the following languages via l
 - [.Net](https://github.com/open-quantum-safe/liboqs-dotnet)
 - [Python](https://github.com/open-quantum-safe/liboqs-python)
 - [Rust](https://github.com/open-quantum-safe/liboqs-rust)
+
+The following third-party language-specific wrappers have been made available by external parties:
+
+- [PHP](https://github.com/Muzosh/liboqs-php) by Petr Muzikant

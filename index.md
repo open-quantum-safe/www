@@ -21,6 +21,8 @@ All of our development takes place on our [Github](https://github.com/open-quant
 
 ## Recent updates
 
+- November 2, 2023, 12-1pm US Eastern time: [liboqs release call on Zoom](https://uwaterloo.zoom.us/j/98288698086)
+- <b>October 12, 2023: Release of [liboqs version 0.9.0](https://github.com/open-quantum-safe/liboqs/releases/tag/0.9.0)</b>
 - July 25, 2023: Release of [oqs-provider 0.5.1](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.5.1)
 - July 7, 2023: Release of [OQS-OpenSSL 1.1.1 snapshot 2023-07](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2023-07); note that this is the final release of OQS-OpenSSL 1.1.1
 - July 5, 2023: Releases of [liboqs-cpp 0.8.0](https://github.com/open-quantum-safe/liboqs-cpp/releases/tag/0.8.0), [liboqs-go 0.8.0](https://github.com/open-quantum-safe/liboqs-go/releases/tag/0.8.0), and [liboqs-python 0.8.0](https://github.com/open-quantum-safe/liboqs-python/releases/tag/0.8.0)

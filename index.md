@@ -21,7 +21,8 @@ All of our development takes place on our [Github](https://github.com/open-quant
 
 ## Recent updates
 
-- November 2, 2023, 12-1pm US Eastern time: [liboqs release call on Zoom](https://uwaterloo.zoom.us/j/98288698086)
+- November 2, 2023: [OQS release call on Zoom](https://uwaterloo.zoom.us/j/98288698086): 12-1pm US Eastern time / 5–6pm Central European ([time zone converter](https://www.timeanddate.com/worldclock/fixedtime.html?msg=OQS+release+call&iso=20231102T12&p1=1203&ah=1))
+- October 21, 2023: Release of [oqs-provider 0.5.2](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.5.2)
 - October 21, 2023: Release of [OQS-OpenSSH snapshot 2023-10](https://github.com/open-quantum-safe/openssh/releases/tag/OQS-OpenSSH-snapshot-2023-10)
 - <b>October 12, 2023: Release of [liboqs version 0.9.0](https://github.com/open-quantum-safe/liboqs/releases/tag/0.9.0)</b>
 - July 25, 2023: Release of [oqs-provider 0.5.1](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.5.1)

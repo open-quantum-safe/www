@@ -46,6 +46,8 @@ liboqs has been used in the following external projects:
   - <a href="https://www.entrust.com/newsroom/press-releases/2022/entrust-helps-enterprises-prepare-now-for-post-quantum-security-journey">"Entrust Helps Enterprises Prepare Now for Post Quantum Security Journey With New PQ Testing and Development Solutions"</a>
   - <a href="https://www.entrust.com/digital-security/hsm/products/nshield-software/codesafe">Entrust CodeSafe - supporting the nShield Post-Quantum Cryptography SDK</a>
   - <a href="https://www.entrust.com/podcast-channels/entrust-engage">Entrust Engage Podcasts</a>
-- <a href="https://cryptographycaffe.sandboxaq.com/posts/sandwich-release/">Sandwich</a> by <a href="https://sandboxaq.com/">SandboxAQ</a>
+- <a href="https://sandboxaq.com/">SandboxAQ</a>:
+  - <a href="https://cryptographycaffe.sandboxaq.com/posts/sandwich-release/">Sandwich</a>
+  - <a href="https://cryptographycaffe.sandboxaq.com/posts/pq-fido/">End-to-End PQ-Secure Fido2 Protocol</a>
 
 If you're using liboqs, please get in touch and we'll add you to the list!

@@ -49,5 +49,6 @@ liboqs has been used in the following external projects:
 - <a href="https://sandboxaq.com/">SandboxAQ</a>:
   - <a href="https://cryptographycaffe.sandboxaq.com/posts/sandwich-release/">Sandwich</a>
   - <a href="https://cryptographycaffe.sandboxaq.com/posts/pq-fido/">End-to-End PQ-Secure Fido2 Protocol</a>
+- <a href="https://www.expressvpn.com/blog/lightway-post-quantum/">ExpressVPN</a> (see also story at <a href="https://www.techradar.com/computing/cyber-security/expressvpn-launches-post-quantum-protection">TechRadar</a>)
 
 If you're using liboqs, please get in touch and we'll add you to the list!

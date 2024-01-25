@@ -1,10 +1,8 @@
 ---
 layout: default
 title: Year in review – 2021
-nav_order: 3
-has_children: false
 has_toc: true
-parent: About our project
+nav_exclude: true
 ---
 # Year in review – 2021
 

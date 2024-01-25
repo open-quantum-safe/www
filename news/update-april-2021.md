@@ -2,9 +2,8 @@
 layout: default
 title: Update - April 2021
 nav_order: 2
-has_children: false
 has_toc: true
-parent: About our project
+nav_exclude: true
 ---
 # Update - April 2021
 

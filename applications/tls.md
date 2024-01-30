@@ -23,7 +23,24 @@ An [Internet-Draft](https://tools.ietf.org/html/draft-ietf-tls-hybrid-design-00)
 
 The goal of these integration is to provide easy prototyping of quantum-resistant cryptography and should not be considered "production quality".  Please see more about [limitations of our prototype software](../about#limitations).
 
+## OQS-OpenSSL provider
+
+<div class="float-right"><a class="btn btn-purple" href="https://github.com/open-quantum-safe/oqs-provider">OQS-provider <br>on Github <img src="{{ site.baseurl }}/img/logos/GitHub-Mark-Light-64px.png" style="height: 1em; padding-left: 1em; margin-bottom: -2px;"></a></div>
+
+The new, state-of-the-art [OpenSSLv3  architecture](https://www.openssl.org/docs/OpenSSLStrategicArchitecture.html) provides a more clean way to integrate novel algorithms into TLS1.3: A fully separate binary plug-in component independent of the main TLS logic, a [provider](https://www.openssl.org/docs/manmaster/man7/provider.html) permits integration of post-quantum algorithms into TLS1.3 without changing the core logic of OpenSSL. Along the same lines, providers extend X.509 certificate management functions provided by OpenSSL to new algorithm classes.
+
+The <i>oqsprovider</i> is thus making all quantum-safe algorithms supported by OQS as well as their hybrid (classic/quantum-safe) variants readily available to OpenSSLv3 users and applications. It has matured to the level of being used as <a href="https://github.com/openssl/openssl/blob/master/test/README-external.md#oqsprovider-test-suite">validation test for the OpenSSL3 provider functionality</a>. This ensures that all quantum-safe algorithms supported by OQS are readily available without code changes to any installation running OpenSSLv3. All limitations/open issues are documented at <a href="https://github.com/open-quantum-safe/oqs-provider/issues">the issues tracker for the oqsprovider project</a>. Functional limitations of the different OpenSSL3 versions are documented [here](https://github.com/open-quantum-safe/oqs-provider#note-on-openssl-versions).
+
+- [OQS-OpenSSL provider version 0.5.2](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.5.2) aligned with liboqs 0.9.0 (October 21, 2023) <span class="label label-green">current version</span>
+- [OQS-OpenSSL provider version 0.5.1](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.5.1) aligned with liboqs 0.8.0 (July 25, 2023)
+- [OQS-OpenSSL provider version 0.5.0](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.5.0) aligned with liboqs 0.8.0 (June 9, 2023)
+- [OQS-OpenSSL provider version 0.4.0](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.4.0) aligned with liboqs 0.7.2 (August 22, 2022) 
+- [OQS-OpenSSL provider version 0.3.0](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.3.0) aligned with liboqs 0.7.1 (January 13, 2022)
+
 ## OQS-OpenSSL
+
+{: .warning }
+<b>Note:</b> The OpenSSL project has announced that its support for OpenSSL 1.1.1 will stop in September, 2023, and that all users should switch to OpenSSL 3. Consequently, the Open Quantum Safe project is discontinuing development of our OQS-OpenSSL 1.1.1 fork. No more releases are planned for OQS-OpenSSL 1.1.1. The OQS Provider for OpenSSL 3 (described above) provides full support for post-quantum key exchange and authentication in TLS 1.3, X.509, and S/MIME.
 
 <div class="float-right"><a class="btn btn-purple" href="https://github.com/open-quantum-safe/openssl">OQS-OpenSSL <br>on Github <img src="{{ site.baseurl }}/img/logos/GitHub-Mark-Light-64px.png" style="height: 1em; padding-left: 1em; margin-bottom: -2px;"></a></div>
 
@@ -56,20 +73,6 @@ The OQS-OpenSSL-1.0.2 series provided post-quantum algorithms in TLS 1.2.  It is
 - [OQS-OpenSSL 1.0.2 snapshot 2018-05](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_0_2-stable-snapshot-2018-05) (May 30, 2018)
 - [OQS-OpenSSL 1.0.2 snapshot 2018-04](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_0_2-stable-snapshot-2018-04) (April 10, 2018)
 </details>
-
-## OQS-OpenSSL provider
-
-<div class="float-right"><a class="btn btn-purple" href="https://github.com/open-quantum-safe/oqs-provider">OQS-provider <br>on Github <img src="{{ site.baseurl }}/img/logos/GitHub-Mark-Light-64px.png" style="height: 1em; padding-left: 1em; margin-bottom: -2px;"></a></div>
-
-The new, state-of-the-art [OpenSSLv3  architecture](https://www.openssl.org/docs/OpenSSLStrategicArchitecture.html) provides a more clean way to integrate novel algorithms into TLS1.3: A fully separate binary plug-in component independent of the main TLS logic, a [provider](https://www.openssl.org/docs/manmaster/man7/provider.html) permits integration of post-quantum algorithms into TLS1.3 without changing the core logic of OpenSSL. Along the same lines, providers extend X.509 certificate management functions provided by OpenSSL to new algorithm classes.
-
-The <i>oqsprovider</i> is thus making all quantum-safe algorithms supported by OQS as well as their hybrid (classic/quantum-safe) variants readily available to OpenSSLv3 users and applications. It has matured to the level of being used as <a href="https://github.com/openssl/openssl/blob/master/test/README-external.md#oqsprovider-test-suite">validation test for the OpenSSL3 provider functionality</a>. This ensures that all quantum-safe algorithms supported by OQS are readily available without code changes to any installation running OpenSSLv3. All limitations/open issues are documented at <a href="https://github.com/open-quantum-safe/oqs-provider/issues">the issues tracker for the oqsprovider project</a>. Functional limitations of the different OpenSSL3 versions are documented [here](https://github.com/open-quantum-safe/oqs-provider#note-on-openssl-versions).
-
-- [OQS-OpenSSL provider version 0.5.2](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.5.2) aligned with liboqs 0.9.0 (October 21, 2023) <span class="label label-green">current version</span>
-- [OQS-OpenSSL provider version 0.5.1](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.5.1) aligned with liboqs 0.8.0 (July 25, 2023)
-- [OQS-OpenSSL provider version 0.5.0](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.5.0) aligned with liboqs 0.8.0 (June 9, 2023)
-- [OQS-OpenSSL provider version 0.4.0](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.4.0) aligned with liboqs 0.7.2 (August 22, 2022) 
-- [OQS-OpenSSL provider version 0.3.0](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.3.0) aligned with liboqs 0.7.1 (January 13, 2022)
 
 ## OQS-BoringSSL
 

@@ -21,6 +21,8 @@ A [pre-Internet-Draft](https://github.com/open-quantum-safe/openssh/blob/OQS-mas
 
 The goal of these integrations is to provide easy prototyping of quantum-resistant cryptography and should not be considered "production quality".  Please see more about [limitations of our prototype software](../about#limitations).
 
+{: .warning }
+<b>Note:</b> Our OpenSSH and libssh integrations are currently inactive and not receiving updates. Contributors are welcome.
 
 ## OQS-OpenSSH
 

@@ -20,6 +20,7 @@ The [OQS Technical Steering Committee](https://github.com/open-quantum-safe/tsc)
 - [Michael Baentsch](https://baentsch.ch/)
 - Thomas Bailleux <span class="text-grey-dk-000">(SandboxAQ)</span>
 - [Basil Hess](https://research.ibm.com/people/basil-hess) <span class="text-grey-dk-000">(IBM Research)</span>
+- Brian Jarvis <span class="text-grey-dk-000">(AWS)</span>
 - [Christian Paquin](https://www.microsoft.com/en-us/research/people/cpaquin/) <span class="text-grey-dk-000">(Microsoft Research)</span>
 - [Douglas Stebila](https://www.douglas.stebila.ca/research/) <span class="text-grey-dk-000">(University of Waterloo)</span>
 

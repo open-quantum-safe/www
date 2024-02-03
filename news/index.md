@@ -12,7 +12,7 @@ parent: About our project
 
 The Open Quantum Safe project was founded as a research project by Michele Mosca and Douglas Stsebila in 2014, and has grown with the help of many [contributors](/team/) and [sponsors](/about/sponsors).
 
-In 2024, the Open Quantum Safe project joined the [Linux Foundation](https://linuxfoundation.org/).
+In 2024, the Open Quantum Safe project joined the [Linux Foundation](https://linuxfoundation.org/) as one of the launch projects of the [Post-Quantum Cryptography Alliance](https://pqca.org/).
 
 ## News posts
 

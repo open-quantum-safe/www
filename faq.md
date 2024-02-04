@@ -54,7 +54,7 @@ ML-KEM (Kyber) is a key encapsulation mechanism (see the above question to learn
 
 ### What is OQS?
 
-The Open Quantum Safe project is an open-source software project to support the development and prototyping of post-quantum cryptography.  Read more about the OQS project on our [about](/about) page.
+The Open Quantum Safe project is an open-source software project to support the development and prototyping of post-quantum cryptography.  OQS implements a broad set of post-quantum cryptography algorithms, including some algorithms that are in the process of being standardized.  Read more about the OQS project on our [about](/about) page.
 
 ### Is OQS safe to use?
 
@@ -72,9 +72,9 @@ Our [liboqs](https://github.com/open-quantum-safe/liboqs/) project is a C langua
 
 ### How can I use post-quantum cryptography on my website and in my web browser?
 
-In our [OQS Demos](https://github.com/open-quantum-safe/oqs-demos/), we provide example Docker images for running web server and web browser demos using post-quantum algorithms.  We also operate a [test web server](https://test.openquantumsafe.org/) for testing post-quantum TLS connections.
+In our [OQS Demos](https://github.com/open-quantum-safe/oqs-demos/), we provide example Docker images for running web server and web browser demos using post-quantum algorithms implemented by OQS.  We also operate a [test web server](https://test.openquantumsafe.org/) for testing post-quantum TLS connections.
 
-However, post-quantum cryptography has not yet been fully deployed in mainstream web servers and web browsers.  Google Chrome is [starting](https://blog.chromium.org/2023/08/protecting-chrome-traffic-with-hybrid.html) to roll out support for hybrid post-quantum cryptography, so it may be available in some users' browsers.  Most web servers do not yet support post-quantum cryptography, but some big providers and content distribution networks do, such as Cloudflare [1](https://blog.cloudflare.com/post-quantum-for-all/), [2](https://blog.cloudflare.com/post-quantum-to-origins/).
+However, post-quantum cryptography has not yet been fully deployed in mainstream web servers and web browsers, but some have started to deploy a selection of algorithms.  Google Chrome is [starting](https://blog.chromium.org/2023/08/protecting-chrome-traffic-with-hybrid.html) to roll out support for hybrid post-quantum cryptography, so it may be available in some users' browsers.  Most web servers do not yet support post-quantum cryptography, but some big providers and content distribution networks do, such as Cloudflare [1](https://blog.cloudflare.com/post-quantum-for-all/), [2](https://blog.cloudflare.com/post-quantum-to-origins/).
 
 ### How can I get involved?
 

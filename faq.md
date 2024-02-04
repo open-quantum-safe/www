@@ -24,9 +24,9 @@ Like most cryptography algorithms, post-quantum cryptography algorithms rely on 
 
 The worldwide effort for developing and standardizing is centred around the [NIST Post-Quantum Cryptography Standardization Project](https://csrc.nist.gov/projects/post-quantum-cryptography).  In 2016, the NIST PQC project issued a call for proposals for quantum-resistant digital signature and key encapsulation mechanisms, kicking off a multi-year project to standardize one or more quantum-resistant cryptosystems after several rounds of public review and comment. In 2022, NIST announced its selection of 4 algorithms for standardization: the key encapsulation mechanism CRYSTALS-Kyber, and three signature schemes CRYSTALS-Dilithium, Falcon, and SPHINCS+. In 2023, NIST released draft standards for 3 of those algorithms, with a goal of publishing those standards in 2024.  NIST continues to evaluate additional post-quantum algorithms for potential standardization.
 
-Standardization of post-quantum algorithms is also taking place in other bodies.  The [Crypto Forum Research Group](https://datatracker.ietf.org/rg/cfrg/about/) within the Internet Engineering Task Force has standardized two stateful hash-based signature schemes (XMSS and LMS/HSS).  The International Organization for Standardization (ISO) is also considering the standardization of several post-quantum algorithms.
+Standardization of post-quantum algorithms is also taking place in other bodies.  The [Crypto Forum Research Group](https://datatracker.ietf.org/rg/cfrg/about/) within the Internet Engineering Task Force has standardized two stateful hash-based signature schemes (XMSS and LMS/HSS).  The International Organization for Standardization (ISO) is also considering the standardization of several post-quantum algorithms.  Other countries are also evaluating and standardizing post-quantum cryptography.
 
-As of February 2024, here is the status of the standards-track post-quantum algorithms:
+As of February 2024, here is the status of NIST and IETF standards-track post-quantum algorithms:
 
 Key encapsulation mechanisms:
 
@@ -48,9 +48,9 @@ KEMs are closely related to [public key encryption](https://en.wikipedia.org/wik
 
 KEMs are often used in secure channel establishment protocols like TLS in order to set up a symmetric encryption key that is subsequently used in a symmetric key encryption scheme like AES to encrypt application data.
 
-### How can I sign things using a Kyber certificate?
+### How can I sign things using a ML-KEM (Kyber) certificate?
 
-Kyber is a key encapsulation mechanism (see the above question to learn more about KEMs), not a digital signature scheme.  This means that the security goal of Kyber is confidentiality, not authentication.  You need to use a digital signature scheme like ML-DSA (Dilithium) in order to digitally sign a message.
+ML-KEM (Kyber) is a key encapsulation mechanism (see the above question to learn more about KEMs), not a digital signature scheme.  This means that the security goal of ML-KEM is confidentiality, not authentication.  You need to use a digital signature scheme like ML-DSA (Dilithium) in order to digitally sign a message.
 
 ### What is OQS?
 
@@ -68,7 +68,7 @@ You can also get started with our pre-built Docker images for experiments in man
 
 ### How can I use post-quantum cryptography in &lt;my favourite programming language&gt;?
 
-Our [liboqs](https://github.com/open-quantum-safe/liboqs/) project is a C language library with support for many post-quantum algorithms.  We have thin wrappers that provide bindings for these algorithms in many languages, including [C++](https://github.com/open-quantum-safe/liboqs-cpp/), [Go](https://github.com/open-quantum-safe/liboqs-go), [Java](https://github.com/open-quantum-safe/liboqs-java/), [.NET](https://github.com/open-quantum-safe/liboqs-dotnet/), [Python](https://github.com/open-quantum-safe/liboqs-python/), and [Rust](https://github.com/open-quantum-safe/liboqs-rust/).  Note that these language wrappers only expose the basic algorithm APIs for directly calling; they do not integrate the PQ algorithms into higher level cryptographic APIs of the language (for example, liboqs-java let's you directly call the key generation, sign, and verify algorithms of a PQ signature scheme, but does not add support for PQ algorithms to Java's X.509 layer or Java's TLS layer.)
+Our [liboqs](https://github.com/open-quantum-safe/liboqs/) project is a C language library with support for many post-quantum algorithms.  We have thin wrappers that provide bindings for these algorithms in many languages, including [C++](https://github.com/open-quantum-safe/liboqs-cpp/), [Go](https://github.com/open-quantum-safe/liboqs-go), [Java](https://github.com/open-quantum-safe/liboqs-java/), [.NET](https://github.com/open-quantum-safe/liboqs-dotnet/), [Python](https://github.com/open-quantum-safe/liboqs-python/), and [Rust](https://github.com/open-quantum-safe/liboqs-rust/).  Note that these language wrappers only expose the basic algorithm APIs for directly calling; they do not integrate the PQ algorithms into higher level cryptographic APIs of the language (for example, liboqs-java and liboqs-python lets you directly call the key generation, sign, and verify algorithms of a PQ signature scheme, but does not add support for PQ algorithms to Java or Python's X.509 layer or TLS layer.)
 
 ### How can I use post-quantum cryptography on my website and in my web browser?
 

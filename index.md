@@ -10,10 +10,10 @@ nav_order: 0
 <div style="background-image: url('{{site.baseurl}}/img/header-bg.jpg'); background-size: cover; color: white; text-align: center; padding-top: 6rem; padding-bottom: 6rem;">
 <div class="fs-10 fw-700" style="color: white; font-family: 'Montserrat'; text-transform: uppercase;">Open Quantum Safe</div>
 <br />
-<div class="fs-6" style="color: white; font-family: 'Droid Serif';"><i>software for prototyping <br> quantum-resistant cryptography</i></div>
+<div class="fs-6" style="color: white; font-family: 'Droid Serif';"><i>software for the transition <br>to quantum-resistant cryptography</i></div>
 </div>
 
-The [Open Quantum Safe (OQS) project](about) is an open-source project that aims to support the development and prototyping of [quantum-resistant cryptography](post-quantum-crypto). OQS is part of the [Linux Foundation](https://www.linuxfoundation.org/).
+The [Open Quantum Safe (OQS) project](about) is an open-source project that aims to support the transition to [quantum-resistant cryptography](post-quantum-crypto). OQS is part of the [Linux Foundation](https://www.linuxfoundation.org/).
 
 OQS consists of two main lines of work: [liboqs](liboqs), an open source C library for quantum-resistant cryptographic algorithms, and prototype integrations into [protocols and applications](applications), including the widely used OpenSSL library.  These tools support [research](research) by ourselves and others.
 

@@ -54,9 +54,13 @@ ML-KEM (Kyber) is a key encapsulation mechanism (see the above question to learn
 
 ### What is OQS?
 
-The Open Quantum Safe project is an open-source software project to support the development and prototyping of post-quantum cryptography.  OQS implements a broad set of post-quantum cryptography algorithms, including some algorithms that are in the process of being standardized.  Read more about the OQS project on our [about](/about) page.
+The Open Quantum Safe project is an open-source software project to support the transition post-quantum cryptography.  OQS implements a broad set of post-quantum cryptography algorithms, including some algorithms that are in the process of being standardized.  Read more about the OQS project on our [about](/about) page.
 
 ### Is OQS safe to use?
+
+OQS began as a research project to enable the prototyping and evaluation of quantum-resistant cryptography. As the field of post-quantum cryptography starts to mature with emerging standards, it is our goal to mature our codebase into a production-track version that is suitable for use in production environments, while also maintaining an experimental-track version of the our suite that continues to support research and development in new post-quantum cryptography algorithms.
+
+At present, the post-quantum algorithms in OQS have not been adopted as standards by NIST, and the implementations in OQS have not been subject to external audit.  For these two reasons, we do not currently recommend the use of OQS in production environments, but hope to be able to address these needs in the future.
 
 Read about the limitations of our software on our [about](/about) page.
 

@@ -21,7 +21,7 @@ All of our development takes place on our [Github](https://github.com/open-quant
 
 ## Recent updates
 
-- February 6, 2024: OQS is one of the launch projects of the Linux Foundation's new [Post-Quantum Cryptography Alliance](https://pqca.org/)
+- February 6, 2024: OQS is one of the launch projects of the Linux Foundation's new [Post-Quantum Cryptography Alliance](https://pqca.org/) ([press release](https://www.linuxfoundation.org/press/announcing-the-post-quantum-cryptography-alliance-pqca))
 - January 23, 2024: The Open Quantum Safe project joins the [Linux Foundation](https://www.linuxfoundation.org/)
 - <b>January 16, 2024: Release of [liboqs version 0.9.2](https://github.com/open-quantum-safe/liboqs/releases/tag/0.9.2)</b>
 - <b>December 22, 2023: Release of [liboqs version 0.9.1](https://github.com/open-quantum-safe/liboqs/releases/tag/0.9.1)</b>

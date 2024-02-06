@@ -83,3 +83,24 @@ However, post-quantum cryptography has not yet been fully deployed in mainstream
 ### How can I get involved?
 
 All of our development takes place on our [GitHub repositories](https://github.com/open-quantum-safe/). Stop on by, we'd love to hear from you!
+
+### What is the relationship between OQS and the PQ Code Package?
+
+The [PQ Code Package](https://github.com/pq-code-package) is a newly launched project of the Linux Foundation, and is a sister project to the Open Quantum Safe project.  The PQ Code Package project aims to build high-assurance and formally verified software implementations of standards-track post-quantum cryptography algorithms, starting with the ML-KEM (Kyber) algorithm.
+
+The PQ Code Package will provide standalone implementations of ML-KEM, intended to be adopted by authors of other cryptographic libraries who need to import source code for ML-KEM into their library.  Open Quantum Safe is multi-algorithm suite of post-quantum cryptography, distributed in binary form, with integrations into higher level applications using the [OQS OpenSSL 3 provider](https://github.com/open-quantum-safe/oqs-provider/).  As the implementations in the PQ Code Package mature, they will be incorporated into liboqs to provide users of OQS access to high-assurance implementations of these algorithms.
+
+### What is the relationship between the Post-Quantum Cryptography Alliance and the Post-Quantum Cryptography Coalition?
+
+In September 2023, MITRE announced the [Post-Quantum Cryptography Coalition (PQCC)](https://www.mitre.org/news-insights/news-release/post-quantum-cryptography-coalition-launches).  
+
+The PQC Coalition has four main work streams:
+
+1. Advancing standards relevant to PQC migration,
+2. Creating technical materials to support education and workforce development,  
+3. Producing and verifying open-source, production-quality code, and implementing side-channel resistant code for industry verticals, and
+4. Ensuring cryptographic agility.
+
+In February 2024, the Linux Foundation launched the [Post-Quantum Cryptography Alliance (PQCA)](https://pqca.org/), which includes the Open Quantum Safe project.  The PQCA is focused primarily on open source software for post-quantum cryptography.  
+
+Several founding members of the PQC Coalition are also members of the Post-Quantum Cryptography Alliance.  We envision a close working relationship between the PQCC's activities on their workstream #3, and the work of the PQCA.  One of the ways we plan to work together on that goal is that the PQCC in workstream 3 will help identify requirements for PQ implementations (e.g., measures of side channel resistance), and then feed that guidance into the open-source software projects in the PQCA which will build open source implementations.

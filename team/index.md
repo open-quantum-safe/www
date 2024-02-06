@@ -8,9 +8,11 @@ has_toc: false
 
 # Our Team
 
+OQS is part of the [Linux Foundation](https://www.linuxfoundation.org/)'s [Post-Quantum Cryptography Alliance](https://pqca.org/).
+
 ## Getting Involved
 
-All our work is done as open source via our [GitHub project](https://github.com/open-quantum-safe).  We welcome all types of contributions: new algorithms, source code, code review, bug reports, new integrations, documentation.  Feel free to begin participating on GitHub, or reach out to [Douglas Stebila](https://www.douglas.stebila.ca/research/) for more information.
+All our work is done as open source via our [GitHub project](https://github.com/open-quantum-safe).  We welcome all types of contributions: new algorithms, source code, code review, bug reports, new integrations, documentation.  Feel free to begin participating on GitHub, say hello on our [Discord server](https://discord.com/invite/gv8YN5bb) on the [#oqs-general channel](https://discord.com/channels/1202723482224295936/1203395992003678238), or reach out to [Douglas Stebila](https://www.douglas.stebila.ca/research/) for more information.
 
 ## OQS Technical Steering Committee
 

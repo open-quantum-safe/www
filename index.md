@@ -13,7 +13,7 @@ nav_order: 0
 <div class="fs-6" style="color: white; font-family: 'Droid Serif';"><i>software for the transition <br>to quantum-resistant cryptography</i></div>
 </div>
 
-The [Open Quantum Safe (OQS) project](about) is an open-source project that aims to support the transition to [quantum-resistant cryptography](post-quantum-crypto). OQS is part of the [Linux Foundation](https://www.linuxfoundation.org/).
+The [Open Quantum Safe (OQS) project](about) is an open-source project that aims to support the transition to [quantum-resistant cryptography](post-quantum-crypto). OQS is part of the [Linux Foundation](https://www.linuxfoundation.org/)'s [Post-Quantum Cryptography Alliance](https://pqca.org/).
 
 OQS consists of two main lines of work: [liboqs](liboqs), an open source C library for quantum-resistant cryptographic algorithms, and prototype integrations into [protocols and applications](applications), including the widely used OpenSSL library.  These tools support [research](research) by ourselves and others.
 
@@ -21,6 +21,7 @@ All of our development takes place on our [Github](https://github.com/open-quant
 
 ## Recent updates
 
+- February 6, 2024: OQS is one of the launch projects of the Linux Foundation's new [Post-Quantum Cryptography Alliance](https://pqca.org/) ([press release](https://www.linuxfoundation.org/press/announcing-the-post-quantum-cryptography-alliance-pqca))
 - January 23, 2024: The Open Quantum Safe project joins the [Linux Foundation](https://www.linuxfoundation.org/)
 - <b>January 16, 2024: Release of [liboqs version 0.9.2](https://github.com/open-quantum-safe/liboqs/releases/tag/0.9.2)</b>
 - <b>December 22, 2023: Release of [liboqs version 0.9.1](https://github.com/open-quantum-safe/liboqs/releases/tag/0.9.1)</b>

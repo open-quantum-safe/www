@@ -9,7 +9,7 @@ parent: About our project
 
 ## Linux Foundation
 
-In 2024, the Open Quantum Safe project joined the [Linux Foundation](https://linuxfoundation.org/).
+In 2024, the Open Quantum Safe project joined the [Linux Foundation](https://linuxfoundation.org/) as part of the [Post-Quantum Cryptography Alliance](https://pqca.org/).
 
 ## Past sponsors
 

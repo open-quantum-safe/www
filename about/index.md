@@ -17,7 +17,7 @@ has_toc: false
 
 ## Overview
 
-The goal of the Open Quantum Safe (OQS) project is to support the transition to quantum-resistant cryptography.
+The goal of the Open Quantum Safe (OQS) project is to support the transition to quantum-resistant cryptography. OQS is part of the [Linux Foundation](https://www.linuxfoundation.org/)'s [Post-Quantum Cryptography Alliance](https://pqca.org/).
 
 OQS consists of two main lines of work: [liboqs](liboqs), an open source C library for quantum-resistant cryptographic algorithms, and prototype [integrations](applications) into protocols and applications, including a fork of the widely used OpenSSL library.
 

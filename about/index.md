@@ -17,13 +17,13 @@ has_toc: false
 
 ## Overview
 
-The goal of the Open Quantum Safe (OQS) project is to support the development and prototyping of quantum-resistant cryptography.
+The goal of the Open Quantum Safe (OQS) project is to support the transition to quantum-resistant cryptography.
 
 OQS consists of two main lines of work: [liboqs](liboqs), an open source C library for quantum-resistant cryptographic algorithms, and prototype [integrations](applications) into protocols and applications, including a fork of the widely used OpenSSL library.
 
-OQS is intended for prototyping and evaluating quantum-resistant cryptography. Security of proposed quantum-resistant algorithms may rapidly change as research advances, and may ultimately be completely insecure against either classical or quantum computers.
+OQS began as a research project to enable the prototyping and evaluation of quantum-resistant cryptography. As the field of post-quantum cryptography starts to mature with emerging standards, the OQS project continues to further improve our existing codebase and strengthen our code quality checks on implementations of standards-track algorithms that are intended to be used in deployments.  In parallel, we also plan to maintain an experimental-track version of our suite to support ongoing research and development in new post-quantum cryptography algorithms and evolving PQ capabilities.
 
-We believe that the NIST Post-Quantum Cryptography standardization project is currently the best avenue to identifying potentially quantum-resistant algorithms. OQS does not intend to "pick winners", and we strongly recommend that applications and protocols rely on the outcomes of the NIST standardization project when deploying post-quantum cryptography.
+Early adopters of post-quantum cryptography should proceed with caution.  We believe that open standardization processes such as the NIST Post-Quantum Cryptography standardization project are the best avenue to identifying potentially quantum-resistant algorithms. OQS does not intend to "pick winners", and we strongly recommend that applications and protocols rely on the outcomes of the NIST standardization project when deploying post-quantum cryptography.  Security of proposed quantum-resistant algorithms may rapidly change as research advances, and may ultimately be completely insecure against either classical or quantum computers, and adopters may want to carefully consider the hybrid use of post-quantum and traditional algorithms to manage risk.
 
 While there are many other advanced cryptographic primitives that need to be updated to have quantum resistance, our focus is currently on post-quantum KEMs and signature schemes in the NIST PQC standardization project.
 

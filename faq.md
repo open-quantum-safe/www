@@ -60,7 +60,7 @@ The Open Quantum Safe project is an open-source software project to support the 
 
 OQS began as a research project to enable the prototyping and evaluation of quantum-resistant cryptography. As the field of post-quantum cryptography starts to mature with emerging standards, it is our goal to mature our codebase into a production-track version that is suitable for use in production environments, while also maintaining an experimental-track version of the our suite that continues to support research and development in new post-quantum cryptography algorithms.
 
-At present, the post-quantum algorithms in OQS have not been adopted as standards by NIST, and the implementations in OQS have not been subject to external audit.  For these two reasons, we do not currently recommend the use of OQS in production environments, but hope to be able to address these needs in the future.
+At present, the post-quantum algorithms in OQS have not been adopted as standards by NIST, and the implementations in OQS have not been subject to external audit.  For these two reasons, we recommend extreme caution regarding the use of OQS in production environments at this time. With added support from the [Post-Quantum Cryptography Alliance](https://pqca.org/), we intend to increase our efforts to de-risk such use.
 
 Read about the limitations of our software on our [about](/about) page.
 

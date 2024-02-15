@@ -17,7 +17,7 @@ The [Open Quantum Safe (OQS) project](about) is an open-source project that aims
 
 OQS consists of two main lines of work: [liboqs](liboqs), an open source C library for quantum-resistant cryptographic algorithms, and prototype integrations into [protocols and applications](applications), including the widely used OpenSSL library.  These tools support [research](research) by ourselves and others.
 
-All of our development takes place on our [GitHub](https://github.com/open-quantum-safe) repositories.  We welcome new contributors interested in joining our [team](team).  Feel free to begin participating on GitHub or say hello on our [Discord server](https://discord.com/invite/gv8YN5bb) on the [#oqs-general channel](https://discord.com/channels/1202723482224295936/1203395992003678238).  We are grateful to the organizations that have supported and continue to support our work, and the academic, industry, public sector, and individual contributors who participate in the project.
+All of our development takes place on our [GitHub](https://github.com/open-quantum-safe) repositories.  We welcome new contributors interested in joining our [team](team).  Feel free to begin participating on GitHub or say hello on our [Discord server](https://discord.gg/qRfMantKwc) on the [#oqs-general channel](https://discord.com/channels/1202723482224295936/1203395992003678238).  We are grateful to the organizations that have supported and continue to support our work, and the academic, industry, public sector, and individual contributors who participate in the project.
 
 ## Recent updates
 

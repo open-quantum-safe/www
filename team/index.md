@@ -34,7 +34,7 @@ We are grateful to the many contributors to OQS over the years.  Please see the 
 
 The co-founders of the Open Quantum Safe project were [Michele Mosca](http://faculty.iqc.uwaterloo.ca/mmosca/) and [Douglas Stebila](https://www.douglas.stebila.ca/research/) at the University of Waterloo.
 
-Past members of the OQS core team include: Eric Crockett, John Schanck, Goutam Tamvada, and Thom Wiggers.
+Past members of the OQS core team include: Eric Crockett, Vlad Gheorghiu, John Schanck, Goutam Tamvada, and Thom Wiggers.
 
 ## Acknowledgements
 

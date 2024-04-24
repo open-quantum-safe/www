@@ -4,8 +4,8 @@
 
 ```bash
 gem install bundler
-git clone --recursive git@github.com:dstebila/oqs-www-new
-cd oqs-www-new
+git clone --recursive git@github.com:open-quantum-safe/www
+cd www
 bundle install
 ```
 

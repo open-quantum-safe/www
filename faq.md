@@ -48,6 +48,12 @@ KEMs are closely related to [public key encryption](https://en.wikipedia.org/wik
 
 KEMs are often used in secure channel establishment protocols like TLS in order to set up a symmetric encryption key that is subsequently used in a symmetric key encryption scheme like AES to encrypt application data.
 
+### How can I encrypt things using ML-KEM (Kyber)?
+
+ML-KEM (Kyber) is a key encapsulation mechanism, not a public key encryption scheme. See the question above to learn about key encapsulation mechanisms and how they differ from public key encryption schemes.
+
+It is possible to build a public key encryption scheme by combining a KEM with a symmetric encryption scheme; this is often called the "KEM/DEM approach" or "hybrid public key encryption" (in that phrase, "hybrid" means "hybrid public key / symmetric" rather than "hybrid classical / post-quantum").  One standard for doing this is [HPKE (RFC 9180)](https://www.rfc-editor.org/rfc/rfc9180.html).
+
 ### How can I sign things using a ML-KEM (Kyber) certificate?
 
 ML-KEM (Kyber) is a key encapsulation mechanism (see the above question to learn more about KEMs), not a digital signature scheme.  This means that the security goal of ML-KEM is confidentiality, not authentication.  You need to use a digital signature scheme like ML-DSA (Dilithium) in order to digitally sign a message.

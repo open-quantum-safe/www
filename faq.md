@@ -50,7 +50,7 @@ KEMs are often used in secure channel establishment protocols like TLS in order 
 
 ### How can I encrypt things using ML-KEM (Kyber)?
 
-ML-KEM (Kyber) is a key encapsulation mechanism, not a public key encryption scheme. See the question about to learn about key encapsulation mechanisms and how they differ from public key encryption schemes.
+ML-KEM (Kyber) is a key encapsulation mechanism, not a public key encryption scheme. See the question above to learn about key encapsulation mechanisms and how they differ from public key encryption schemes.
 
 It is possible to build a public key encryption scheme by combining a KEM with a symmetric encryption scheme; this is often called the "KEM/DEM approach" or "hybrid public key encryption" (in that phrase, "hybrid" means "hybrid public key / symmetric" rather than "hybrid classical / post-quantum").  One standard for doing this is [HPKE (RFC 9180)](https://www.rfc-editor.org/rfc/rfc9180.html).
 

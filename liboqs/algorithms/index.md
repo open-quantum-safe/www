@@ -11,7 +11,8 @@ nav_order: 2
 
 ### NIST selection
 
-- [**Kyber**](kem/kyber)
+- [**Kyber** (Round 3 version)](kem/kyber)
+- [**ML-KEM** (NIST ipd version)](kem/ml-kem)
 
 ### Round 4 candidates
 
@@ -28,6 +29,16 @@ nav_order: 2
 
 ### NIST selections
 
-- [**Dilithium**](sig/dilithium)
+- [**Dilithium** (Round 3 version)](sig/dilithium)
 - [**Falcon**](sig/falcon)
+- [**ML-DS** (NIST ipd version)](sig/ml-dsa)
 - [**SPHINCS+**](sig/sphincs)
+
+### NIST PQ signatures on-ramp
+
+- [**MAYO**](sig/mayo)
+
+## Stateful hash-based signature schemes
+
+- [**LMS**](sig_stfl/lms)
+- [**XMSS**](sig_stfl/xmss)

@@ -9,7 +9,7 @@ nav_order: 3
 
 ## Reporting security bugs
 
-If you think you have found a security bug in OQS software, please send email to security@openquantumsafe.org or [submit a security disclosure on Github](https://github.com/open-quantum-safe/liboqs/security).  If you want to send an encrypted message, you can use [this PGP key](https://www.douglas.stebila.ca/about/contact/) to email dstebila@uwaterloo.ca.  We do not run a bug bounty program.
+If you think you have found a security bug in OQS software, please send email to security@openquantumsafe.org or submit a security disclosure on Github for [liboqs](https://github.com/open-quantum-safe/liboqs/security) or [oqs-provider](https://github.com/open-quantum-safe/oqs-provider/security).  If you want to send an encrypted message, you can use [this PGP key](https://www.douglas.stebila.ca/about/contact/) to email dstebila@uwaterloo.ca.  We do not run a bug bounty program.
 
 ## General principles
 

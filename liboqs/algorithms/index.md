@@ -31,7 +31,7 @@ nav_order: 2
 
 - [**Dilithium** (Round 3 version)](sig/dilithium)
 - [**Falcon**](sig/falcon)
-- [**ML-DS** (NIST ipd version)](sig/ml-dsa)
+- [**ML-DSA** (NIST ipd version)](sig/ml-dsa)
 - [**SPHINCS+**](sig/sphincs)
 
 ### NIST PQ signatures on-ramp

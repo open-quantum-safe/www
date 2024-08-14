@@ -28,6 +28,7 @@ OQS has been used to support research in the following papers and technical stan
 
 ## Other research using OQS tools
 
+- [**The Performance of Post-Quantum TLS 1.3**](https://dl.acm.org/doi/10.1145/3624354.3630585), by Markus Sosnowski, Florian Wiedner, Eric Hauser, Lion Steger, Dimitrios Schoinianakis, Sebastian Gallenmüller, and Georg Carle. *CoNEXT 2023*.
 - [**ELCA: Introducing Enterprise-level Cryptographic Agility for a Post-Quantum Era**](https://eprint.iacr.org/2023/1539), by Dimitrios Sikeridis, David Ott, Sean Huntley, Shivali Sharma, Vasantha Kumar Dhanasekar, Megha Bansal, Akhilesh Kumar, Anwitha U N, Daniel Beveridge, Sairam Veeraswamy. IACR Cryptology ePrint Archive*, 2023.
 - [**Migrating Nginx Web Servers to Quantum-Safe TLS**](https://we.tl/t-kB5ehIdV9X), by Ibrahim Mohammad and Helene Burghoff.  Master's thesis, IT-University of Copenhagen, 2021.
 - [**Assessing the overhead of post-quantum cryptography in TLS 1.3 and SSH**](https://dl.acm.org/doi/10.1145/3386367.3431305), by Dimitrios Sikeridis, Panos Kampanakis, and Michael Devetsikiotis. *CoNEXT 2020*.

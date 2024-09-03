@@ -12,7 +12,7 @@ nav_order: 2
 ### NIST selection
 
 - [**Kyber** (Round 3 version)](kem/kyber)
-- [**ML-KEM** (NIST ipd version)](kem/ml-kem)
+- [**ML-KEM** (FIPS 203 version)](kem/ml-kem)
 
 ### Round 4 candidates
 

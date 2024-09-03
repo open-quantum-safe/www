@@ -22,21 +22,21 @@ Like most cryptography algorithms, post-quantum cryptography algorithms rely on 
 
 ### What is the status of PQ standardization?
 
-The worldwide effort for developing and standardizing is centred around the [NIST Post-Quantum Cryptography Standardization Project](https://csrc.nist.gov/projects/post-quantum-cryptography).  In 2016, the NIST PQC project issued a call for proposals for quantum-resistant digital signature and key encapsulation mechanisms, kicking off a multi-year project to standardize one or more quantum-resistant cryptosystems after several rounds of public review and comment. In 2022, NIST announced its selection of 4 algorithms for standardization: the key encapsulation mechanism CRYSTALS-Kyber, and three signature schemes CRYSTALS-Dilithium, Falcon, and SPHINCS+. In 2023, NIST released draft standards for 3 of those algorithms, with a goal of publishing those standards in 2024.  NIST continues to evaluate additional post-quantum algorithms for potential standardization.
+The worldwide effort for developing and standardizing is centred around the [NIST Post-Quantum Cryptography Standardization Project](https://csrc.nist.gov/projects/post-quantum-cryptography).  In 2016, the NIST PQC project issued a call for proposals for quantum-resistant digital signature and key encapsulation mechanisms, kicking off a multi-year project to standardize one or more quantum-resistant cryptosystems after several rounds of public review and comment. In 2022, NIST announced its selection of 4 algorithms for standardization: the key encapsulation mechanism CRYSTALS-Kyber, and three signature schemes CRYSTALS-Dilithium, Falcon, and SPHINCS+. In 2023, NIST released draft standards for 3 of those algorithms.  In 2024, NIST published FIPS 202, 203, and 204, specifying the ML-KEM (Kyber), ML-DSA (Dilithium), and SLH-DSA (SPHINCS+) algorithms. NIST continues to evaluate additional post-quantum algorithms for potential standardization.
 
 Standardization of post-quantum algorithms is also taking place in other bodies.  The [Crypto Forum Research Group](https://datatracker.ietf.org/rg/cfrg/about/) within the Internet Engineering Task Force has standardized two stateful hash-based signature schemes (XMSS and LMS/HSS).  The International Organization for Standardization (ISO) is also considering the standardization of several post-quantum algorithms.  Other countries are also evaluating and standardizing post-quantum cryptography.
 
-As of February 2024, here is the status of NIST and IETF standards-track post-quantum algorithms:
+As of September 2024, here is the status of NIST and IETF standards-track post-quantum algorithms:
 
 Key encapsulation mechanisms:
 
-- ML-KEM a.k.a. CRYSTALS-Kyber: [draft standard from NIST](https://csrc.nist.gov/pubs/fips/203/ipd)
+- ML-KEM a.k.a. CRYSTALS-Kyber: [FIPS 203 published by NIST](https://csrc.nist.gov/pubs/fips/203/final)
 
 Digital signature schemes:
 
-- ML-DSA a.k.a. CRYSTALS-Dilithium: [draft standard from NIST](https://csrc.nist.gov/pubs/fips/204/ipd)
+- ML-DSA a.k.a. CRYSTALS-Dilithium: [FIPS 204 published by NIST](https://csrc.nist.gov/pubs/fips/204/final)
 - Falcon: draft standard under development by NIST
-- SLH-DSA a.k.a. SPHINCS+: [draft standard from NIST](https://csrc.nist.gov/pubs/fips/205/ipd)
+- SLH-DSA a.k.a. SPHINCS+: [FIPS 205 published by NIST](https://csrc.nist.gov/pubs/fips/205/final)
 - XMSS: [standard from CFRG / IRTF](https://www.rfc-editor.org/rfc/rfc8391.html)
 - LMS/HSS: [standard from CFRG / IRTF](https://www.rfc-editor.org/rfc/rfc8554.html)
 

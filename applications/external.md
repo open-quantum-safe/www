@@ -50,5 +50,6 @@ liboqs has been used in the following external projects:
   - <a href="https://cryptographycaffe.sandboxaq.com/posts/sandwich-release/">Sandwich</a>
   - <a href="https://cryptographycaffe.sandboxaq.com/posts/pq-fido/">End-to-End PQ-Secure Fido2 Protocol</a>
 - <a href="https://www.expressvpn.com/blog/lightway-post-quantum/">ExpressVPN</a> (see also story at <a href="https://www.techradar.com/computing/cyber-security/expressvpn-launches-post-quantum-protection">TechRadar</a>)
+- SoftIron: <a href="https://blog.softiron.com/engineering/quantum-computers-are-coming-for-your-data-time-to-panic/">post-quantum cryptography</a> in <a href="https://softiron.com/resources/softiron-launches-worlds-first-post-quantum-safe-virtualization-and-private-cloud-solutions-with-q4-2024-updates/">virtualization and private cloud</a>
 
 If you're using liboqs, please get in touch and we'll add you to the list!

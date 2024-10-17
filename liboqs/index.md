@@ -37,7 +37,8 @@ Post-quantum algorithm implementations in liboqs are derived from the reference 
 
 ## Releases
 
-- [version 0.10.1](https://github.com/open-quantum-safe/liboqs/releases/tag/0.10.1) (June 7, 2024) <span class="label label-green">current version</span>
+- [version 0.11.0](https://github.com/open-quantum-safe/liboqs/releases/tag/0.11.0) (September 27, 2024) <span class="label label-green">current version</span>
+- [version 0.10.1](https://github.com/open-quantum-safe/liboqs/releases/tag/0.10.1) (June 7, 2024)
 - [version 0.10.0](https://github.com/open-quantum-safe/liboqs/releases/tag/0.10.0) (March 23, 2024)
 - [version 0.9.2](https://github.com/open-quantum-safe/liboqs/releases/tag/0.9.2) (January 16, 2024)
 - [version 0.9.1](https://github.com/open-quantum-safe/liboqs/releases/tag/0.9.1) (December 22, 2023)

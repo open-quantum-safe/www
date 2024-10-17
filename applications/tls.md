@@ -31,7 +31,8 @@ The new, state-of-the-art [OpenSSLv3  architecture](https://www.openssl.org/docs
 
 The <i>oqsprovider</i> is thus making all quantum-safe algorithms supported by OQS as well as their hybrid (classic/quantum-safe) variants readily available to OpenSSLv3 users and applications. It has matured to the level of being used as <a href="https://github.com/openssl/openssl/blob/master/test/README-external.md#oqsprovider-test-suite">validation test for the OpenSSL3 provider functionality</a>. This ensures that all quantum-safe algorithms supported by OQS are readily available without code changes to any installation running OpenSSLv3. All limitations/open issues are documented at <a href="https://github.com/open-quantum-safe/oqs-provider/issues">the issues tracker for the oqsprovider project</a>. Functional limitations of the different OpenSSL3 versions are documented [here](https://github.com/open-quantum-safe/oqs-provider#note-on-openssl-versions).
 
-- [OQS-OpenSSL provider version 0.6.1](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.6.1) aligned with liboqs 0.10.1 (June 14, 2024) <span class="label label-green">current version</span>
+- [OQS-OpenSSL provider version 0.7.0](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.7.0) aligned with liboqs 0.11.0 (October 8, 2024) <span class="label label-green">current version</span>
+- [OQS-OpenSSL provider version 0.6.1](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.6.1) aligned with liboqs 0.10.1 (June 14, 2024)
 - [OQS-OpenSSL provider version 0.6.0](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.6.0) aligned with liboqs 0.10.0 (April 12, 2024)
 - [OQS-OpenSSL provider version 0.5.2](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.5.2) aligned with liboqs 0.9.0 (October 21, 2023)
 - [OQS-OpenSSL provider version 0.5.1](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.5.1) aligned with liboqs 0.8.0 (July 25, 2023)
@@ -87,7 +88,8 @@ See the [OQS-BoringSSL README](https://github.com/open-quantum-safe/boringssl/bl
 ### Releases
 {: .no_toc }
 
-- [OQS-BoringSSL snapshot 2022-06](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2023-06) aligned with liboqs 0.8.0 (July 4, 2023) <span class="label label-green">current version</span>
+- [OQS-BoringSSL snapshot 2024-10](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2024-10) aligned with liboqs 0.11.0 (October 10, 2024) <span class="label label-green">current version</span>
+- [OQS-BoringSSL snapshot 2023-06](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2023-06) aligned with liboqs 0.8.0 (July 4, 2023)
 - [OQS-BoringSSL snapshot 2022-08](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2022-08) aligned with liboqs 0.7.2 (August 25, 2022)
 - [OQS-BoringSSL snapshot 2022-01](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2022-01) aligned with liboqs 0.7.1 (January 6, 2022)
 - [OQS-BoringSSL snapshot 2021-08](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2021-08) aligned with liboqs 0.7.0 (August 11, 2021)

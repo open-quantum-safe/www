@@ -22,6 +22,7 @@ All of our development takes place on our [GitHub](https://github.com/open-quant
 ## Recent updates
 
 - October 10, 2024: Release of [OQS-BoringSSL snapshot 2024-10](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2024-10)
+- October 8, 2024: Release of [oqs-provider 0.7.0](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.7.0)
 - <b>September 27, 2024: Release of [liboqs version 0.11.0](https://github.com/open-quantum-safe/liboqs/releases/tag/0.11.0)</b>
 - August 30, 2024: Release of [OQS-OpenSSH snapshot 2024-08](https://github.com/open-quantum-safe/openssh/releases/tag/OQS-OpenSSH-snapshot-2024-08)
 - June 14, 2024: Release of [oqs-provider 0.6.1](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.6.1)

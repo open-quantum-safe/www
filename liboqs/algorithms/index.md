@@ -32,7 +32,7 @@ has_children: true
 
 - [**Dilithium** (Round 3 version)](sig/dilithium)
 - [**Falcon**](sig/falcon)
-- [**ML-DSA** (NIST ipd version)](sig/ml-dsa)
+- [**ML-DSA** (FIPS 204 version)](sig/ml-dsa)
 - [**SPHINCS+**](sig/sphincs)
 
 ### NIST PQ signatures on-ramp

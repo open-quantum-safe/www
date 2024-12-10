@@ -10,3 +10,4 @@ doxyjinj:
 	cd _doxygen_pretty && python3 doxyjinj.py header_file.html ../_includes/liboqs/build/docs/xml/kem_8h.xml 'https://github.com/open-quantum-safe/liboqs/tree/main/' > ../liboqs/api/kem.html
 	cd _doxygen_pretty && python3 doxyjinj.py header_file.html ../_includes/liboqs/build/docs/xml/rand_8h.xml 'https://github.com/open-quantum-safe/liboqs/tree/main/' > ../liboqs/api/rand.html
 	cd _doxygen_pretty && python3 doxyjinj.py header_file.html ../_includes/liboqs/build/docs/xml/sig_8h.xml 'https://github.com/open-quantum-safe/liboqs/tree/main/' > ../liboqs/api/sig.html
+	cd _doxygen_pretty && python3 doxyjinj.py header_file.html ../_includes/liboqs/build/docs/xml/sig_stfl_8h.xml 'https://github.com/open-quantum-safe/liboqs/tree/main/' > ../liboqs/api/sig_stfl.html

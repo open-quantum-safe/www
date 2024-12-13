@@ -38,6 +38,7 @@ has_children: true
 ### NIST PQ signatures on-ramp
 
 - [**MAYO**](sig/mayo)
+- [**CROSS**](sig/cross)
 
 ## Stateful hash-based signature schemes
 

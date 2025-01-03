@@ -9,6 +9,9 @@ nav_order: 5
 
 liboqs has been used in the following external projects:
 
+- Meta:
+  - <a href="https://engineering.fb.com/2024/05/22/security/post-quantum-readiness-tls-pqr-meta/">Post-quantum readiness for TLS at Meta</a>
+  - <a href="https://engineering.fb.com/2024/08/28/security/post-quantum-cryptography-meta/">Meta is getting ready for post-quantum cryptography</a> (podcast, liboqs mentioned at the 25-minute mark)
 - <a href="https://hsm.utimaco.com/news/utimaco-evolutionq-set-standards-by-taking-post-quantum-crypto-open-source/">Utimaco Hardware Security Module demo</a> with evolutionQ
 - <a href="https://github.com/Microsoft/PQCrypto-VPN">Microsoft Post-Quantum Cryptography VPN</a>: Experimental fork of OpenVPN adding post-quantum cryptography, to evaluate functionality and performance of quantum resistant cryptography in a VPN setting.
 - <a href="https://www.mullvad.net/en/blog/2017/12/8/introducing-post-quantum-vpn-mullvads-strategy-future-problem/">Mullvad VPN</a>: Public beta of Mullvad's VPN client using post-quantum key exchange.

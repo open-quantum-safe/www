@@ -12,9 +12,12 @@ You can use post-quantum algorithms from liboqs in the following languages via l
 - [C++](https://github.com/open-quantum-safe/liboqs-cpp)
 - [Go](https://github.com/open-quantum-safe/liboqs-go)
 - [Java](https://github.com/open-quantum-safe/liboqs-java)
-- [.Net](https://github.com/open-quantum-safe/liboqs-dotnet)
 - [Python](https://github.com/open-quantum-safe/liboqs-python)
 - [Rust](https://github.com/open-quantum-safe/liboqs-rust)
+
+The following language wrappers are no longer supported and are deprecated:
+
+- [.Net](https://github.com/open-quantum-safe/liboqs-dotnet) <span class="label label-red">deprecated</span>
 
 The following third-party language-specific wrappers have been made available by external parties:
 

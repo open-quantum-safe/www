@@ -15,7 +15,7 @@ nav_order: 2
 {:toc}
 
 
-We've integrated liboqs into forks of OpenSSH and libssh to provide prototype post-quantum and hybrid key exchange in the SSH protocol.  Researchers looking to try additional post-quantum algorithms can easily add more algorithms that follow the OQS API.
+We've integrated liboqs into a fork of OpenSSH to provide prototype post-quantum and hybrid key exchange in the SSH protocol.  Researchers looking to try additional post-quantum algorithms can easily add more algorithms that follow the OQS API.
 
 A [pre-Internet-Draft](https://github.com/open-quantum-safe/openssh/blob/OQS-master/ietf_pre_draft_sike_bike_hybrid_kex.txt) is available describing how the SSH protocol was adapted to include the hybrid PQ key exchange algorithms.
 
@@ -58,14 +58,19 @@ There also exist [post-quantum-enabled docker images for TLS applications](tls#d
 ## OQS-libssh
 
 {: .warning }
-<b>Note:</b> Our libssh integration is currently inactive and not receiving updates. Contributors are welcome.
+<b>DEPRECATION NOTICE</b>: The Open Quantum Safe project has discontinued development of our libssh fork. This repository is archived as read-only. Use of this code is not recommended, as it may rely on obsolete algorithms or implementations or may have security vulnerabilities or other bugs. If you are interested in reviving and maintaining this project, please reach out via the [OQS discussion board on Github](https://github.com/orgs/open-quantum-safe/discussions).
 
 <div class="float-right"><a class="btn btn-purple" href="https://github.com/open-quantum-safe/libssh">OQS-libssh <br> on Github <img src="{{ site.baseurl }}/img/logos/GitHub-Mark-Light-64px.png" style="height: 1em; padding-left: 1em; margin-bottom: -2px;"></a></div>
 
 Our <a href="https://github.com/open-quantum-safe/libssh">libssh fork</a> implements post-quantum and hybrid key exchange in the SSH protocol.
 See the [README](https://github.com/open-quantum-safe/libssh/blob/OQS-master/README.md) for the list of supported algorithms and usage instructions.
 
+<details markdown="block">
+<summary>Click here to see archived OQS-libssh releases</summary>
+
 ### Releases
 {: .no_toc }
 
-- [snapshot 2022-01](https://github.com/open-quantum-safe/libssh/releases/tag/OQS-libssh-snapshot-2022-01) aligned with liboqs 0.7.1 (January 25, 2022) <span class="label label-green">current version</span>
+- [snapshot 2022-08](https://github.com/open-quantum-safe/libssh/releases/tag/OQS-libssh-snapshot-2022-08) aligned with liboqs 0.7.2 (August 30, 2022) <span class="label label-red">deprecated</span>
+- [snapshot 2022-01](https://github.com/open-quantum-safe/libssh/releases/tag/OQS-libssh-snapshot-2022-01) aligned with liboqs 0.7.1 (January 25, 2022)
+</details>

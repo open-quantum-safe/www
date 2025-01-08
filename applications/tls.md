@@ -41,43 +41,6 @@ The <i>oqsprovider</i> is thus making all quantum-safe algorithms supported by O
 - [OQS-OpenSSL provider version 0.4.0](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.4.0) aligned with liboqs 0.7.2 (August 22, 2022) 
 - [OQS-OpenSSL provider version 0.3.0](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.3.0) aligned with liboqs 0.7.1 (January 13, 2022)
 
-## OQS-OpenSSL
-
-{: .warning }
-<b>Note:</b> The OpenSSL project has announced that its support for OpenSSL 1.1.1 will stop in September, 2023, and that all users should switch to OpenSSL 3. Consequently, the Open Quantum Safe project is discontinuing development of our OQS-OpenSSL 1.1.1 fork. No more releases are planned for OQS-OpenSSL 1.1.1. The OQS Provider for OpenSSL 3 (described above) provides full support for post-quantum key exchange and authentication in TLS 1.3, X.509, and S/MIME.
-
-<div class="float-right"><a class="btn btn-purple" href="https://github.com/open-quantum-safe/openssl">OQS-OpenSSL <br>on Github <img src="{{ site.baseurl }}/img/logos/GitHub-Mark-Light-64px.png" style="height: 1em; padding-left: 1em; margin-bottom: -2px;"></a></div>
-
-Our <a href="https://github.com/open-quantum-safe/openssl">OpenSSL fork</a> implements post-quantum and hybrid key exchange and post-quantum public key authentication in TLS 1.3, and also supports post-quantum algorithms in X.509 certificate generation and S/MIME / CMS message handling, all based on the current OpenSSL 1.1.1 code base. 
-
-See the [OQS-OpenSSL README](https://github.com/open-quantum-safe/openssl/blob/OQS-OpenSSL_1_1_1-stable/README.md) for the current list of supported algorithms and usage instructions.
-
-### OpenSSL 1.1.1 releases
-{: .no_toc }
-
-The OQS-OpenSSL-1.1.1 series provides post-quantum algorithms in TLS 1.3, X.509, and S/MIME; its maintenance will end when OpenSSL1.1.1 support ends, [on September 11, 2023](https://www.openssl.org/blog/blog/2023/03/28/1.1.1-EOL/). Until then regular updates to follow/merge the upstream/main OpenSSL project releases occur(ed):
-
-- [OQS-OpenSSL 1.1.1 snapshot 2023-07](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL-1_1_1-stable-snapshot-2023-07) aligned with liboqs 0.8.0 (July 7, 2023) <span class="label label-green">current version</span> <span class="label label-red">end of life</span>
-- [OQS-OpenSSL 1.1.1 snapshot 2022-08](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL-1_1_1-stable-snapshot-2022-08) aligned with liboqs 0.7.2 (August 24, 2022)
-- [OQS-OpenSSL 1.1.1 snapshot 2022-01](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2022-01) aligned with liboqs 0.7.1 (January 6, 2022)
-- [OQS-OpenSSL 1.1.1 snapshot 2021-08](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2021-08) aligned with liboqs 0.7.0 (August 11, 2021)
-- [OQS-OpenSSL 1.1.1 snapshot 2021-03](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2021-03) aligned with liboqs 0.5.0 (March 26, 2021)
-- [OQS-OpenSSL 1.1.1 snapshot 2020-08](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2020-08) aligned with liboqs 0.4.0 (August 11, 2020)
-- [OQS-OpenSSL 1.1.1 snapshot 2020-07](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2020-07) aligned with liboqs 0.3.0 (July 10, 2020)
-- [OQS-OpenSSL 1.1.1 snapshot 2019-10](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2019-10) aligned with liboqs 0.2.0 (October 8, 2019)
-- [OQS-OpenSSL 1.1.1 snapshot 2018-11](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2018-11) aligned with liboqs 0.1.0 (November 13, 2018)
-- [all releases](https://github.com/open-quantum-safe/liboqs/releases)
-
-The OQS-OpenSSL-1.0.2 series provided post-quantum algorithms in TLS 1.2.  It is deprecated and no longer maintained. 
-
-<details markdown="block">
-<summary>Click here to see archived OQS-OpenSSL 1.0.2 releases</summary>
-- [OQS-OpenSSL 1.0.2 snapshot 2019-10](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_0_2-stable-snapshot-2019-10) aligned with liboqs 0.2.0 (October 8, 2019)
-- [OQS-OpenSSL 1.0.2 snapshot 2018-11](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_0_2-stable-snapshot-2018-11) aligned with liboqs 0.1.0 (November 13, 2018)
-- [OQS-OpenSSL 1.0.2 snapshot 2018-05](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_0_2-stable-snapshot-2018-05) (May 30, 2018)
-- [OQS-OpenSSL 1.0.2 snapshot 2018-04](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_0_2-stable-snapshot-2018-04) (April 10, 2018)
-</details>
-
 ## OQS-BoringSSL
 
 <div class="float-right"><a class="btn btn-purple" href="https://github.com/open-quantum-safe/boringssl">OQS-BoringSSL <br> on Github <img src="{{ site.baseurl }}/img/logos/GitHub-Mark-Light-64px.png" style="height: 1em; padding-left: 1em; margin-bottom: -2px;"></a></div>
@@ -99,16 +62,6 @@ See the [OQS-BoringSSL README](https://github.com/open-quantum-safe/boringssl/bl
 - [OQS-BoringSSL snapshot 2020-07](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2020-07) aligned with liboqs 0.3.0 (July 10, 2020)
 
 Continued updates to OQS-BoringSSL are currently not planned due to lack of interest in this software. Statements of interest should be voiced [here](https://github.com/orgs/open-quantum-safe/discussions/1292).
-
-## OQS-Engine
-
-<div class="float-right"><a class="btn btn-purple" href="https://github.com/open-quantum-safe/oqs-engine">OQS-Engine <br> on Github <img src="{{ site.baseurl }}/img/logos/GitHub-Mark-Light-64px.png" style="height: 1em; padding-left: 1em; margin-bottom: -2px;"></a></div>
-
-<a href="https://github.com/open-quantum-safe/oqs-engine">oqs-engine</a> is a C-based OpenSSL ENGINE that enables in (vanilla) OpenSSL the use of post-quantum digital signature algorithms from liboqs. Changes and/or additions to the algorithms supported by liboqs will be dynamically reflected in the ENGINE, thereby facilitating the deployment and evaluation of post-quantum digital signature algorithms in contexts where it might be expensive or infeasible to replace OpenSSL wholesale with our corresponding fork. 
-
-We are grateful to <a href="https://www.senetas.com">Senetas</a> for contributing this ENGINE to the OQS project.  Hear about Senetas' work on the ENGINE for OQS in their interview on <a href="https://risky.biz/RB581/">episode 581 of the Risky Business podcast</a>.
-
-This subproject has been discontinued in line with the [strategic OpenSSL architecture](https://www.openssl.org/docs/OpenSSLStrategicArchitecture.html) and replaced by the actively maintained [OQS-provider](#oqs-openssl-provider).
 
 ## Demo integrations
 
@@ -192,3 +145,46 @@ The [MQTT](https://mqtt.org) protocol also uses TLS for session security. We thu
 
 *Note*: This code is still based on `oqs-openssl111` thus may become unsupported as soon as [OpenSSL1.1.1 support ends in September 2023](https://www.openssl.org/blog/blog/2023/03/28/1.1.1-EOL).
 
+## Discontinued projects
+
+### OQS-OpenSSL
+
+{: .warning }
+<b>DEPRECATION NOTICE</b>: The OpenSSL project has stopped support for OpenSSL 1.1.1, and all users should switch to OpenSSL 3. Consequently, the Open Quantum Safe project has discontinued development of our OQS-OpenSSL 1.1.1 fork. This repository is archived as read-only. Use of this code is not recommended, as it may rely on obsolete algorithms or implementations or may have security vulnerabilities or other bugs. The [OQS Provider for OpenSSL 3](https://github.com/open-quantum-safe/oqs-provider/) provides full support for post-quantum key exchange and authentication in TLS 1.3, X.509, and S/MIME. 
+
+<div class="float-right"><a class="btn btn-purple" href="https://github.com/open-quantum-safe/openssl">OQS-OpenSSL <br>on Github <img src="{{ site.baseurl }}/img/logos/GitHub-Mark-Light-64px.png" style="height: 1em; padding-left: 1em; margin-bottom: -2px;"></a></div>
+
+The OQS-OpenSSL-1.1.1 fork provided post-quantum and hybrid key exchange and post-quantum public key authentication in TLS 1.3, and post-quantum algorithms in X.509 certificate generation and S/MIME / CMS message handling.
+
+<details markdown="block">
+<summary>Click here to see archived OQS-OpenSSL 1.1.1 releases</summary>
+- [OQS-OpenSSL 1.1.1 snapshot 2023-07](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL-1_1_1-stable-snapshot-2023-07) aligned with liboqs 0.8.0 (July 7, 2023) <span class="label label-red">deprecated</span>
+- [OQS-OpenSSL 1.1.1 snapshot 2022-08](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL-1_1_1-stable-snapshot-2022-08) aligned with liboqs 0.7.2 (August 24, 2022)
+- [OQS-OpenSSL 1.1.1 snapshot 2022-01](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2022-01) aligned with liboqs 0.7.1 (January 6, 2022)
+- [OQS-OpenSSL 1.1.1 snapshot 2021-08](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2021-08) aligned with liboqs 0.7.0 (August 11, 2021)
+- [OQS-OpenSSL 1.1.1 snapshot 2021-03](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2021-03) aligned with liboqs 0.5.0 (March 26, 2021)
+- [OQS-OpenSSL 1.1.1 snapshot 2020-08](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2020-08) aligned with liboqs 0.4.0 (August 11, 2020)
+- [OQS-OpenSSL 1.1.1 snapshot 2020-07](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2020-07) aligned with liboqs 0.3.0 (July 10, 2020)
+- [OQS-OpenSSL 1.1.1 snapshot 2019-10](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2019-10) aligned with liboqs 0.2.0 (October 8, 2019)
+- [OQS-OpenSSL 1.1.1 snapshot 2018-11](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_1_1-stable-snapshot-2018-11) aligned with liboqs 0.1.0 (November 13, 2018)
+- [all releases](https://github.com/open-quantum-safe/liboqs/releases)
+</details>
+
+The OQS-OpenSSL-1.0.2 fork provided post-quantum and hybrid algorithms in TLS 1.2.
+
+<details markdown="block">
+<summary>Click here to see archived OQS-OpenSSL 1.0.2 releases</summary>
+- [OQS-OpenSSL 1.0.2 snapshot 2019-10](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_0_2-stable-snapshot-2019-10) aligned with liboqs 0.2.0 (October 8, 2019) <span class="label label-red">deprecated</span>
+- [OQS-OpenSSL 1.0.2 snapshot 2018-11](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_0_2-stable-snapshot-2018-11) aligned with liboqs 0.1.0 (November 13, 2018)
+- [OQS-OpenSSL 1.0.2 snapshot 2018-05](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_0_2-stable-snapshot-2018-05) (May 30, 2018)
+- [OQS-OpenSSL 1.0.2 snapshot 2018-04](https://github.com/open-quantum-safe/openssl/releases/tag/OQS-OpenSSL_1_0_2-stable-snapshot-2018-04) (April 10, 2018)
+</details>
+
+### OQS-Engine
+
+{: .warning }
+<b>DEPRECATION NOTICE</b>: Maintenance of the OQS-Engine has been discontinued as of April 2021. This repository is archived as read-only. Use of this code is not recommended, as it may rely on obsolete algorithms or implementations or may have security vulnerabilities or other bugs. The [OQS Provider for OpenSSL 3](https://github.com/open-quantum-safe/oqs-provider/) provides full support for post-quantum key exchange and authentication in TLS 1.3, X.509, and S/MIME. 
+
+<div class="float-right"><a class="btn btn-purple" href="https://github.com/open-quantum-safe/oqs-engine">OQS-Engine <br> on Github <img src="{{ site.baseurl }}/img/logos/GitHub-Mark-Light-64px.png" style="height: 1em; padding-left: 1em; margin-bottom: -2px;"></a></div>
+
+<a href="https://github.com/open-quantum-safe/oqs-engine">oqs-engine</a> was a C-based OpenSSL engine that enables in (vanilla) OpenSSL the use of post-quantum digital signature algorithms from liboqs. We are grateful to <a href="https://www.senetas.com">Senetas</a> for contributing this engine to the OQS project.  Hear about Senetas' work on the engine for OQS in their interview on <a href="https://risky.biz/RB581/">episode 581 of the Risky Business podcast</a>.

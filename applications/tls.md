@@ -52,7 +52,8 @@ See the [OQS-BoringSSL README](https://github.com/open-quantum-safe/boringssl/bl
 ### Releases
 {: .no_toc }
 
-- [OQS-BoringSSL snapshot 2024-10](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2024-10) aligned with liboqs 0.11.0 (October 10, 2024) <span class="label label-green">current version</span>
+- [OQS-BoringSSL snapshot 2025-01](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2025-01) aligned with liboqs 0.12.0 (January 21, 2025) <span class="label label-green">current version</span>
+- [OQS-BoringSSL snapshot 2024-10](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2024-10) aligned with liboqs 0.11.0 (October 10, 2024)
 - [OQS-BoringSSL snapshot 2023-06](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2023-06) aligned with liboqs 0.8.0 (July 4, 2023)
 - [OQS-BoringSSL snapshot 2022-08](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2022-08) aligned with liboqs 0.7.2 (August 25, 2022)
 - [OQS-BoringSSL snapshot 2022-01](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2022-01) aligned with liboqs 0.7.1 (January 6, 2022)

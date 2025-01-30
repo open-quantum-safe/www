@@ -21,6 +21,7 @@ All of our development takes place on our [GitHub](https://github.com/open-quant
 
 ## Recent updates
 
+- January 30, 2025: Release of [oqs and oqs-sys 0.10.1 Rust crates](https://github.com/open-quantum-safe/liboqs-rust/releases/tag/v0.10.1)
 - January 24, 2025: Release of [liboqs-java 0.2.0](https://github.com/open-quantum-safe/liboqs-java/releases/tag/0.2.0)
 - January 21, 2025: Release of [OQS-BoringSSL snapshot 2025-01](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2025-01)
 - January 16, 2025: Release of [liboqs-cpp 0.12.0](https://github.com/open-quantum-safe/liboqs-cpp/releases/tag/0.12.0), [liboqs-go 0.12.0](https://github.com/open-quantum-safe/liboqs-go/releases/tag/0.12.0), and [liboqs-python 0.12.0](https://github.com/open-quantum-safe/liboqs-python/releases/tag/0.12.0)

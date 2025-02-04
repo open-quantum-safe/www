@@ -1,8 +1,7 @@
 name: Build Jekyll site
 
 on:
-  push:
-    branches: ["main"]
+  push
 
 jobs:
   build:

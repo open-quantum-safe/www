@@ -7,9 +7,15 @@ nav_order: 3
 
 # Security policy
 
+The [liboqs security policy document](https://github.com/open-quantum-safe/liboqs/blob/main/SECURITY.md) lists the supported versions of liboqs and describes the threat model that liboqs aims to protect against.  
+
+Security reports for liboqs will be handled in accordance with the [OQS security response process](https://github.com/open-quantum-safe/tsc/blob/main/security/response-process.md).
+
 ## Reporting security bugs
 
-If you think you have found a security bug in OQS software, please send email to security@openquantumsafe.org or submit a security disclosure on Github for [liboqs](https://github.com/open-quantum-safe/liboqs/security) or [oqs-provider](https://github.com/open-quantum-safe/oqs-provider/security).  If you want to send an encrypted message, you can use [this PGP key](https://www.douglas.stebila.ca/about/contact/) to email dstebila@uwaterloo.ca.  We do not run a bug bounty program.
+If you think you have found a security bug in OQS software, please send email to security@openquantumsafe.org or submit a security disclosure on Github for [liboqs](https://github.com/open-quantum-safe/liboqs/security) or [oqs-provider](https://github.com/open-quantum-safe/oqs-provider/security).  
+
+We do not run a bug bounty program.
 
 ## General principles
 
@@ -21,4 +27,4 @@ The goal of these integration is to provide easy prototyping of quantum-resistan
 
 ## Notification
 
-When we are planning an update that fixes a high severity security issue, we will post an update on our website openquantumsafe.org indicating a planned release date and will notify those who have requested to be added to our notification list (email security@openquantumsafe.org to be added to this list).
+When we are planning an update that fixes a high severity security issue, we will post an update on our website openquantumsafe.org indicating a planned release date and will notify those who have requested to be added to our notification list (oqs-security-annnounce@lists.pqca.org); [click here to sign up for the security notification list](https://lists.pqca.org/g/oqs-security-announce/). 

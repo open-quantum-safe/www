@@ -19,8 +19,18 @@ OQS consists of two main lines of work: [liboqs](liboqs), an open source C libra
 
 All of our development takes place on our [GitHub](https://github.com/open-quantum-safe) repositories.  We welcome new contributors interested in joining our [team](team).  Feel free to begin participating on GitHub or say hello on our [Discord server](https://discord.gg/qRfMantKwc) on the [#oqs-general channel](https://discord.com/channels/1202723482224295936/1203395992003678238).  We are grateful to the organizations that have supported and continue to support our work, and the academic, industry, public sector, and individual contributors who participate in the project.
 
+{: .new-title :}
+> Survey – April 2025
+> 
+> OQS is running a survey to better understand our community. We would like to hear from organizations and individuals about their interest in and use of the Open Quantum Safe project.  Please take a few minutes to fill out the survey:
+>
+> {: .text-center :}
+> <a class="btn btn-green" href="https://linuxfoundation.surveymonkey.com/r/oqssurvey">OQS Community Survey</a>
+
+
 ## Recent updates
 
+- April 10, 2025: [OQS community survey open for responses](https://linuxfoundation.surveymonkey.com/r/oqssurvey)
 - April 9, 2025: [Blog post about 1 year anniversary of Post-Quantum Cryptography Alliance](https://pqca.org/blog/2025/post-quantum-cryptography-alliance-one-year-anniversary/)
 - January 30, 2025: Release of [oqs and oqs-sys 0.10.1 Rust crates](https://github.com/open-quantum-safe/liboqs-rust/releases/tag/v0.10.1)
 - January 24, 2025: Release of [liboqs-java 0.2.0](https://github.com/open-quantum-safe/liboqs-java/releases/tag/0.2.0)

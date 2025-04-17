@@ -30,6 +30,7 @@ All of our development takes place on our [GitHub](https://github.com/open-quant
 
 ## Recent updates
 
+- <b>April 17, 2025: Release of [liboqs version 0.13.0](https://github.com/open-quantum-safe/liboqs/releases/tag/0.13.0)</b>
 - April 10, 2025: [OQS community survey open for responses](https://linuxfoundation.surveymonkey.com/r/oqssurvey)
 - April 9, 2025: [Blog post about 1 year anniversary of Post-Quantum Cryptography Alliance](https://pqca.org/blog/2025/post-quantum-cryptography-alliance-one-year-anniversary/)
 - January 30, 2025: Release of [oqs and oqs-sys 0.10.1 Rust crates](https://github.com/open-quantum-safe/liboqs-rust/releases/tag/v0.10.1)

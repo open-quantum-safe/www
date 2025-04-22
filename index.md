@@ -33,6 +33,7 @@ All of our development takes place on our [GitHub](https://github.com/open-quant
 - <b>April 17, 2025: Release of [liboqs version 0.13.0](https://github.com/open-quantum-safe/liboqs/releases/tag/0.13.0)</b>
 - April 10, 2025: [OQS community survey open for responses](https://linuxfoundation.surveymonkey.com/r/oqssurvey)
 - April 9, 2025: [Blog post about 1 year anniversary of Post-Quantum Cryptography Alliance](https://pqca.org/blog/2025/post-quantum-cryptography-alliance-one-year-anniversary/)
+- April 3, 2025: Trail of Bits releases [public report on their 2024 security assessment of liboqs](https://github.com/trailofbits/publications/blob/master/reviews/2025-04-quantum-open-safe-liboqs-securityreview.pdf)
 - January 30, 2025: Release of [oqs and oqs-sys 0.10.1 Rust crates](https://github.com/open-quantum-safe/liboqs-rust/releases/tag/v0.10.1)
 - January 24, 2025: Release of [liboqs-java 0.2.0](https://github.com/open-quantum-safe/liboqs-java/releases/tag/0.2.0)
 - January 21, 2025: Release of [OQS-BoringSSL snapshot 2025-01](https://github.com/open-quantum-safe/boringssl/releases/tag/OQS-BoringSSL-snapshot-2025-01)

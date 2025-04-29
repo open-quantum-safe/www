@@ -30,6 +30,7 @@ All of our development takes place on our [GitHub](https://github.com/open-quant
 
 ## Recent updates
 
+- April 25, 2025: Release of [liboqs-java 0.3.0](https://github.com/open-quantum-safe/liboqs-java/releases/tag/0.3.0)
 - <b>April 17, 2025: Release of [liboqs version 0.13.0](https://github.com/open-quantum-safe/liboqs/releases/tag/0.13.0)</b>
 - April 10, 2025: [OQS community survey open for responses](https://linuxfoundation.surveymonkey.com/r/oqssurvey)
 - April 9, 2025: [Blog post about 1 year anniversary of Post-Quantum Cryptography Alliance](https://pqca.org/blog/2025/post-quantum-cryptography-alliance-one-year-anniversary/)

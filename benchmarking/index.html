@@ -5,20 +5,14 @@ nav_order: 7
 ---
 <h1>OQS algorithm performance visualizations</h1>
 
-<h2>Disclaimer</h2>
+<h2>Continuous benchmarking</h2>
 
-<p>These pages visualize measurements taken by the <b>now-defunct</b> <a href="https://github.com/open-quantum-safe/profiling">OQS profiling</a> project. This project is not currently maintained, and these measurements are not up to date. The data contained here are not representative of the current liboqs main branch, nor are they representative of the liboqs main branch at the time they were collected. The liboqs version and commit for which they were collected can be seen by viewing the raw data, which is linked on each page below.</p>
-
-<h2>Benchmarking</h2>
-
-<ol>
-<li><a href="visualization/speed_kem.html" target="_blank">KEM algorithms runtime</a> (liboqs speed_kem)</li>
-<li><a href="visualization/speed_sig.html" target="_blank">SIG algorithms runtime</a> (liboqs speed_sig)</li>
-<li><a href="visualization/mem_kem.html" target="_blank">KEM algorithms memory use</a> (liboqs test_kem)</li>
-<li><a href="visualization/mem_sig.html" target="_blank">SIG algorithms memory use</a> (liboqs test_mem_sig)</li>
-<li><a href="visualization/openssl_speed.html" target="_blank">KEM/SIG OpenSSL performance</a> (openssl speed)</li>
-<li><a href="visualization/handshakes.html" target="_blank">TLS handshakes performance</a> (openssl s_time)</li>
-</ol>
+<iframe 
+  src="https://pablo-gf.github.io/liboqs/dev/bench/" 
+  width="100%" 
+  height="1000" 
+  style="border: none;">
+</iframe>
 
 <h2>Additional information</h2>
 

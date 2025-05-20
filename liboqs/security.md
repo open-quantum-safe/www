@@ -28,3 +28,7 @@ The goal of these integration is to provide easy prototyping of quantum-resistan
 ## Notification
 
 When we are planning an update that fixes a high severity security issue, we will post an update on our website openquantumsafe.org indicating a planned release date and will notify those who have requested to be added to our notification list (oqs-security-annnounce@lists.pqca.org); [click here to sign up for the security notification list](https://lists.pqca.org/g/oqs-security-announce/). 
+
+## Security audits and reviews
+
+Trail of Bits carried out a review of portions of liboqs in 2024.  Their report can be found at [https://github.com/trailofbits/publications/blob/master/reviews/2025-04-quantum-open-safe-liboqs-securityreview.pdf](https://github.com/trailofbits/publications/blob/master/reviews/2025-04-quantum-open-safe-liboqs-securityreview.pdf).

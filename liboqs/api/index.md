@@ -16,4 +16,6 @@ Auto-generated documentation for the main header files and data structures neede
     - [OQS_KEM struct](oqskem): Object-oriented struct for working with KEMs
 - [sig.h](sig): Digital signature schemes
     - [OQS_SIG struct](oqssig): Object-oriented struct for working with digital signature schemes
+- [sig_stfl.h](sig_stfl): Stateful digital signature schemes
+    - [OQS_SIG_STFL_SECRET_KEY struct](oqssig_stfl_secret_key): Secret key data structure for stateful digital signature schemes
 - [rand.h](rand): Random number generator

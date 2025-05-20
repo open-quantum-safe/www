@@ -3,7 +3,6 @@ layout: default
 parent: C API documentation
 grand_parent: liboqs
 title: OQS_KEM struct
-nav_exclude: true
 ---
       
 <h1><span class="text-muted">struct</span> <b>OQS_KEM</b></h1>
@@ -70,6 +69,16 @@ nav_exclude: true
     <tr>
       <td class="text-right"><code><span class="text-muted">size_t</span></code></td>
       <td><code><b><a href="#struct_o_q_s___k_e_m_1a2c4950cde0f80a1db2918a426ce44c13">length_shared_secret</a></b><span class="text-muted"></span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">size_t</span></code></td>
+      <td><code><b><a href="#struct_o_q_s___k_e_m_1a7b13353aa58a23fcf237fbb64f8ab0e5">length_keypair_seed</a></b><span class="text-muted"></span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">OQS_STATUS(*</span></code></td>
+      <td><code><b><a href="#struct_o_q_s___k_e_m_1a871642e2e29b925d6d20df9d7357b447">keypair_derand</a></b><span class="text-muted">)(uint8_t *public_key, uint8_t *secret_key, const uint8_t *seed)</span></code></td>
     </tr>
   
     <tr>
@@ -211,7 +220,74 @@ nav_exclude: true
     <br>
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/kem/kem.h#L172" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/kem/kem.h#L161" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="struct_o_q_s___k_e_m_1a7b13353aa58a23fcf237fbb64f8ab0e5">length_keypair_seed</h3>
+    <div class="card-subtitle mb-2"><code>size_t <b>length_keypair_seed</b></code></div>
+    <div class="card-text">
+      
+<p>The length, in bytes, of seeds for derandomized keypair generation for this KEM. </p>
+        
+    </div>
+    
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/kem/kem.h#L175" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="struct_o_q_s___k_e_m_1a871642e2e29b925d6d20df9d7357b447">keypair_derand</h3>
+    <div class="card-subtitle mb-2"><code>OQS_STATUS(* <b>keypair_derand</b>)(uint8_t *public_key, uint8_t *secret_key, const uint8_t *seed)</code></div>
+    <div class="card-text">
+      
+<p>Derandomized keypair generation algorithm.</p>
+<p>Caller is responsible for allocating sufficient memory for <code>public_key</code> and <code>secret_key</code>, based on the <code>length_*</code> members in this object or the per-scheme compile-time macros <code>OQS_KEM_*_length_*</code>.</p>
+<p>
+
+</p>
+        
+    </div>
+    
+      <h4>Parameters</h4>
+      <table class="table mb-0">
+        
+          <tr>
+            <td class="text-right"><code class="text-muted"></code></td>
+            <td><code>public_key</code></td>
+            <td class="pb-0">
+<p>The public key represented as a byte string. </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted"></code></td>
+            <td><code>secret_key</code></td>
+            <td class="pb-0">
+<p>The secret key represented as a byte string. </p>
+</td>
+          </tr>
+        
+          <tr>
+            <td class="text-right"><code class="text-muted"></code></td>
+            <td><code>seed</code></td>
+            <td class="pb-0">
+<p>The input randomness represented as a byte string. </p>
+</td>
+          </tr>
+        
+      </table>
+    
+    
+      <h4>Returns</h4>
+      <div class="ml-5"><p>OQS_SUCCESS or OQS_ERROR </p>
+</div>
+    
+  </div>
+</div>
+    <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/kem/kem.h#L188" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="struct_o_q_s___k_e_m_1afcabcd83ecb1f34bca47aacc279e39c0">keypair</h3>
     <div class="card-subtitle mb-2"><code>OQS_STATUS(* <b>keypair</b>)(uint8_t *public_key, uint8_t *secret_key)</code></div>
     <div class="card-text">
@@ -255,7 +331,7 @@ nav_exclude: true
     <br>
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/kem/kem.h#L186" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/kem/kem.h#L202" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="struct_o_q_s___k_e_m_1a8aaaaa79f1763d9113274d1f29a5f0aa">encaps</h3>
     <div class="card-subtitle mb-2"><code>OQS_STATUS(* <b>encaps</b>)(uint8_t *ciphertext, uint8_t *shared_secret, const uint8_t *public_key)</code></div>
     <div class="card-text">
@@ -307,7 +383,7 @@ nav_exclude: true
     <br>
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/kem/kem.h#L200" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/kem/kem.h#L216" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="struct_o_q_s___k_e_m_1a829c4f103b2554e40652c5f02b2d592b">decaps</h3>
     <div class="card-subtitle mb-2"><code>OQS_STATUS(* <b>decaps</b>)(uint8_t *shared_secret, const uint8_t *ciphertext, const uint8_t *secret_key)</code></div>
     <div class="card-text">
@@ -357,4 +433,18 @@ nav_exclude: true
   </div>
 </div>
     <br>
-    
+
+
+
+      <br><br>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  </body>
+
+</html>

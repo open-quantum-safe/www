@@ -3,7 +3,6 @@ layout: default
 parent: C API documentation
 grand_parent: liboqs
 title: sig.h
-nav_exclude: true
 ---
       
 <h1><span class="text-muted">src/sig/</span><b>sig.h</b></h1>
@@ -48,7 +47,7 @@ nav_exclude: true
   <h2>Typedefs</h2>
   <table class="table"><tbody>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L266" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L317" target="_blank">[src]</a></small></div>
       <p><code><span class="text-muted">typedef struct OQS_SIG</span> <b>OQS_SIG</b></code></p>
       
 <p>Signature schemes object </p>
@@ -119,7 +118,7 @@ nav_exclude: true
   
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L140" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L188" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="sig_8h_1a6f114705b2da592ac99bb57a5ec25d52">OQS_SIG_alg_identifier</h3>
     <div class="card-subtitle mb-2"><code>OQS_API const char * <b>OQS_SIG_alg_identifier</b>(size_t i)</code></div>
     <div class="card-text">
@@ -155,7 +154,7 @@ nav_exclude: true
     <br>
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L150" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L198" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="sig_8h_1a26f926d5c6177a536ad696785aef1710">OQS_SIG_alg_count</h3>
     <div class="card-subtitle mb-2"><code>OQS_API int <b>OQS_SIG_alg_count</b>(void)</code></div>
     <div class="card-text">
@@ -177,7 +176,7 @@ nav_exclude: true
     <br>
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L158" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L206" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="sig_8h_1aa6a66d4a02d8e3fb81691ef4a7db9402">OQS_SIG_alg_is_enabled</h3>
     <div class="card-subtitle mb-2"><code>OQS_API int <b>OQS_SIG_alg_is_enabled</b>(const char *method_name)</code></div>
     <div class="card-text">
@@ -212,7 +211,7 @@ nav_exclude: true
     <br>
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L277" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L328" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="sig_8h_1a9d44f4c5b0624d411146162df1023ea2">OQS_SIG_new</h3>
     <div class="card-subtitle mb-2"><code>OQS_API OQS_SIG * <b>OQS_SIG_new</b>(const char *method_name)</code></div>
     <div class="card-text">
@@ -248,7 +247,7 @@ nav_exclude: true
     <br>
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L291" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L342" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="sig_8h_1ac5c527513c5c353ba90a1a9ee386458e">OQS_SIG_keypair</h3>
     <div class="card-subtitle mb-2"><code>OQS_API OQS_STATUS <b>OQS_SIG_keypair</b>(const OQS_SIG *sig, uint8_t *public_key, uint8_t *secret_key)</code></div>
     <div class="card-text">
@@ -300,7 +299,7 @@ nav_exclude: true
     <br>
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L308" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L359" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="sig_8h_1ab6fa805ef48e554fcbf6bbe5a92136da">OQS_SIG_sign</h3>
     <div class="card-subtitle mb-2"><code>OQS_API OQS_STATUS <b>OQS_SIG_sign</b>(const OQS_SIG *sig, uint8_t *signature, size_t *signature_len, const uint8_t *message, size_t message_len, const uint8_t *secret_key)</code></div>
     <div class="card-text">
@@ -376,7 +375,7 @@ nav_exclude: true
     <br>
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L327" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L378" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="sig_8h_1a8852fe0a9b003460b56f7b203045f043">OQS_SIG_sign_with_ctx_str</h3>
     <div class="card-subtitle mb-2"><code>OQS_API OQS_STATUS <b>OQS_SIG_sign_with_ctx_str</b>(const OQS_SIG *sig, uint8_t *signature, size_t *signature_len, const uint8_t *message, size_t message_len, const uint8_t *ctx_str, size_t ctx_str_len, const uint8_t *secret_key)</code></div>
     <div class="card-text">
@@ -468,7 +467,7 @@ nav_exclude: true
     <br>
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L340" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L391" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="sig_8h_1ada769c1d40aa64bb33e88938212a1711">OQS_SIG_verify</h3>
     <div class="card-subtitle mb-2"><code>OQS_API OQS_STATUS <b>OQS_SIG_verify</b>(const OQS_SIG *sig, const uint8_t *message, size_t message_len, const uint8_t *signature, size_t signature_len, const uint8_t *public_key)</code></div>
     <div class="card-text">
@@ -543,7 +542,7 @@ nav_exclude: true
     <br>
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L355" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L406" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="sig_8h_1a8cb7875203b8b4a5254682c0507c2e38">OQS_SIG_verify_with_ctx_str</h3>
     <div class="card-subtitle mb-2"><code>OQS_API OQS_STATUS <b>OQS_SIG_verify_with_ctx_str</b>(const OQS_SIG *sig, const uint8_t *message, size_t message_len, const uint8_t *signature, size_t signature_len, const uint8_t *ctx_str, size_t ctx_str_len, const uint8_t *public_key)</code></div>
     <div class="card-text">
@@ -634,7 +633,7 @@ nav_exclude: true
     <br>
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L362" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L413" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="sig_8h_1a3ab9ceb4859a721bec0b718c6b468685">OQS_SIG_free</h3>
     <div class="card-subtitle mb-2"><code>OQS_API void <b>OQS_SIG_free</b>(OQS_SIG *sig)</code></div>
     <div class="card-text">
@@ -1329,13 +1328,373 @@ nav_exclude: true
       
     </td></tr>
     <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L124" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_uov_ov_Is</b> 
+        
+        
+          <span class="text-muted">"OV-Is"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for OV-Is </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L126" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_uov_ov_Ip</b> 
+        
+        
+          <span class="text-muted">"OV-Ip"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for OV-Ip </p>
+        
+      
+    </td></tr>
+    <tr><td>
       <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L128" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_uov_ov_III</b> 
+        
+        
+          <span class="text-muted">"OV-III"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for OV-III </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L130" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_uov_ov_V</b> 
+        
+        
+          <span class="text-muted">"OV-V"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for OV-V </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L132" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_uov_ov_Is_pkc</b> 
+        
+        
+          <span class="text-muted">"OV-Is-pkc"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for OV-Is-pkc </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L134" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_uov_ov_Ip_pkc</b> 
+        
+        
+          <span class="text-muted">"OV-Ip-pkc"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for OV-Ip-pkc </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L136" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_uov_ov_III_pkc</b> 
+        
+        
+          <span class="text-muted">"OV-III-pkc"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for OV-III-pkc </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L138" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_uov_ov_V_pkc</b> 
+        
+        
+          <span class="text-muted">"OV-V-pkc"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for OV-V-pkc </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L140" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_uov_ov_Is_pkc_skc</b> 
+        
+        
+          <span class="text-muted">"OV-Is-pkc-skc"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for OV-Is-pkc-skc </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L142" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_uov_ov_Ip_pkc_skc</b> 
+        
+        
+          <span class="text-muted">"OV-Ip-pkc-skc"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for OV-Ip-pkc-skc </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L144" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_uov_ov_III_pkc_skc</b> 
+        
+        
+          <span class="text-muted">"OV-III-pkc-skc"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for OV-III-pkc-skc </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L146" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_uov_ov_V_pkc_skc</b> 
+        
+        
+          <span class="text-muted">"OV-V-pkc-skc"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for OV-V-pkc-skc </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L148" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_snova_SNOVA_24_5_4</b> 
+        
+        
+          <span class="text-muted">"SNOVA_24_5_4"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SNOVA_24_5_4 </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L150" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_snova_SNOVA_24_5_4_SHAKE</b> 
+        
+        
+          <span class="text-muted">"SNOVA_24_5_4_SHAKE"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SNOVA_24_5_4_SHAKE </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L152" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_snova_SNOVA_24_5_4_esk</b> 
+        
+        
+          <span class="text-muted">"SNOVA_24_5_4_esk"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SNOVA_24_5_4_esk </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L154" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_snova_SNOVA_24_5_4_SHAKE_esk</b> 
+        
+        
+          <span class="text-muted">"SNOVA_24_5_4_SHAKE_esk"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SNOVA_24_5_4_SHAKE_esk </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L156" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_snova_SNOVA_37_17_2</b> 
+        
+        
+          <span class="text-muted">"SNOVA_37_17_2"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SNOVA_37_17_2 </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L158" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_snova_SNOVA_25_8_3</b> 
+        
+        
+          <span class="text-muted">"SNOVA_25_8_3"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SNOVA_25_8_3 </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L160" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_snova_SNOVA_56_25_2</b> 
+        
+        
+          <span class="text-muted">"SNOVA_56_25_2"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SNOVA_56_25_2 </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L162" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_snova_SNOVA_49_11_3</b> 
+        
+        
+          <span class="text-muted">"SNOVA_49_11_3"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SNOVA_49_11_3 </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L164" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_snova_SNOVA_37_8_4</b> 
+        
+        
+          <span class="text-muted">"SNOVA_37_8_4"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SNOVA_37_8_4 </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L166" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_snova_SNOVA_24_5_5</b> 
+        
+        
+          <span class="text-muted">"SNOVA_24_5_5"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SNOVA_24_5_5 </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L168" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_snova_SNOVA_60_10_4</b> 
+        
+        
+          <span class="text-muted">"SNOVA_60_10_4"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SNOVA_60_10_4 </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L170" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_snova_SNOVA_29_6_5</b> 
+        
+        
+          <span class="text-muted">"SNOVA_29_6_5"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for SNOVA_29_6_5 </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L176" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_algs_length</b> 
         
         
-          <span class="text-muted">44</span>
+          <span class="text-muted">68</span>
         
       </code></p>
       
@@ -1344,3 +1703,18 @@ nav_exclude: true
       
     </td></tr>
 </tbody></table>
+
+
+
+      <br><br>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  </body>
+
+</html>

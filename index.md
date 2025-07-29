@@ -19,6 +19,14 @@ OQS consists of two main lines of work: [liboqs](liboqs), an open source C libra
 
 All of our development takes place on our [GitHub](https://github.com/open-quantum-safe) repositories.  We welcome new contributors interested in joining our [team](team).  Feel free to begin participating on GitHub or say hello on our [Discord server](https://discord.gg/qRfMantKwc) on the [#oqs-general channel](https://discord.com/channels/1202723482224295936/1203395992003678238).  We are grateful to the organizations that have supported and continue to support our work, and the academic, industry, public sector, and individual contributors who participate in the project.
 
+{: .new-title :}
+> Mentorships available
+> 
+> There are several mentorships available under the Linux Foundation's Mentorship program for OQS and other projects within the Post-Quantum Cryptography Alliance:
+>
+> - [Enhancing Constant-Time Analysis Tooling in liboqs](https://mentorship.lfx.linuxfoundation.org/project/aad7822e-9ae8-402d-aeb0-2663a6bd8039)
+> - [Contributing to first stable release of mldsa-native](https://mentorship.lfx.linuxfoundation.org/project/4202ff8f-c683-497b-8d06-d801d02943f0)
+
 ## Recent updates
 
 - <b>July 10, 2025: Release of [liboqs version 0.14.0](https://github.com/open-quantum-safe/liboqs/releases/tag/0.14.0)</b>

@@ -12,17 +12,14 @@ has_children: true
 
 ### NIST selection
 
+- [**HQC**](kem/hqc)
 - [**Kyber** (Round 3 version)](kem/kyber)
 - [**ML-KEM** (FIPS 203 version)](kem/ml-kem)
 
-### Round 4 candidates
-
-- [**Classic McEliece**](kem/classic_mceliece)
-- [**BIKE**](kem/bike)
-- [**HQC**](kem/hqc)
-
 ### Other algorithms
 
+- [**BIKE**](kem/bike)
+- [**Classic McEliece**](kem/classic_mceliece)
 - [**FrodoKEM**](kem/frodokem)
 - [**NTRU-Prime**](kem/ntruprime)
 

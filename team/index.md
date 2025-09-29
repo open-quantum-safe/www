@@ -20,23 +20,22 @@ The [OQS Technical Steering Committee](https://github.com/open-quantum-safe/tsc)
 
 - Norm Ashley <span class="text-grey-dk-000">(Cisco)</span>
 - [Michael Baentsch](https://baentsch.ch/) <span class="text-grey-dk-000">(independent contributor)</span>
-- Thomas Bailleux <span class="text-grey-dk-000">(independent contributor)</span>
 - [Vlad Gheorghiu](https://vsoftco.github.io) <span class="text-grey-dk-000">(softwareQ Inc.)</span>
 - [Basil Hess](https://research.ibm.com/people/basil-hess) <span class="text-grey-dk-000">(IBM Research)</span>
-- Brian Jarvis <span class="text-grey-dk-000">(AWS)</span>
 - [Christian Paquin](https://www.microsoft.com/en-us/research/people/cpaquin/) <span class="text-grey-dk-000">(Microsoft Research)</span>
 - [Douglas Stebila](https://www.douglas.stebila.ca/research/) <span class="text-grey-dk-000">(University of Waterloo)</span>
-- Spencer Wilson <span class="text-grey-dk-000">(University of Waterloo)</span>
 
 ## Contributors
 
 We are grateful to the many contributors to OQS over the years. Please see the list of contributors in [our projects on GitHub](https://github.com/open-quantum-safe/).
 
-## Past members of the core team
+## Past members
 
 The co-founders of the Open Quantum Safe project were [Michele Mosca](http://faculty.iqc.uwaterloo.ca/mmosca/) and [Douglas Stebila](https://www.douglas.stebila.ca/research/) at the University of Waterloo.
 
 Past members of the OQS core team include: Eric Crockett, John Schanck, Goutam Tamvada, and Thom Wiggers.
+
+Past members of the TSC include: Brian Jarvis, Spencer Wilson, Thomas Bailleux.
 
 ## Acknowledgements
 

@@ -1,7 +1,7 @@
 all:
 	git submodule update
 	bundle exec jekyll build
-	bash deploy_benchmarking.sh
+	#bash deploy_benchmarking.sh
 
 doxyjinj:
 	cd _doxygen_pretty && python3 doxyjinj.py struct_file.html ../_includes/liboqs/build/docs/xml/struct_o_q_s___k_e_m.xml 'https://github.com/open-quantum-safe/liboqs/tree/main/' > ../liboqs/api/oqskem.html

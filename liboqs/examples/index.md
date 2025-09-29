@@ -9,7 +9,7 @@ has_toc: false
 
 # Example code
 
-liboqs includes two example programs that perform key encapsulation and decapsulation using the Kyber post-quantum KEM and signing and verifying using the Dilithium post-quantum signature scheme. Copies of the examples can be found here:
+liboqs includes two example programs that perform key encapsulation and decapsulation using the ML-KEM post-quantum KEM and signing and verifying using the ML-DSA post-quantum signature scheme. Copies of the examples can be found here:
 
 - [Example of key encapsulation and decapsulation](kem)
 - [Example of signing and verification](sig)

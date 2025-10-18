@@ -27,7 +27,7 @@ All of our development takes place on our [GitHub](https://github.com/open-quant
 > 
 > We'd love to hear about how you're using OQS Provider, what features you'd like to see, and tell you more about getting involved.
 >
-> [Join on OQS Provider Community Call on Zoom](https://zoom-lfx.platform.linuxfoundation.org/meetings/pqca?view=week&occurrence=97026454777){: .btn .btn-green }
+> [Join OQS Provider Community Call on Zoom](https://zoom-lfx.platform.linuxfoundation.org/meetings/pqca?view=week&occurrence=97026454777){: .btn .btn-green }
 
 ## Recent updates
 

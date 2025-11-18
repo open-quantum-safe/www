@@ -4,6 +4,9 @@ parent: C API documentation
 grand_parent: liboqs
 title: common.h
 ---
+  <body>
+
+    <div class="container">
       
 <h1><span class="text-muted">src/common/</span><b>common.h</b></h1>
 
@@ -316,6 +319,11 @@ if (ret == OQS_SUCCESS) { ... }
     <tr>
       <td class="text-right"><code><span class="text-muted">void</span></code></td>
       <td><code><b><a href="#common_8h_1a5efdb0c410a5725f8072cfd74f47b4d8">OQS_MEM_aligned_free</a></b><span class="text-muted">(void *ptr)</span></code></td>
+    </tr>
+  
+    <tr>
+      <td class="text-right"><code><span class="text-muted">void</span></code></td>
+      <td><code><b><a href="#common_8h_1af24045b8ba9a18ef3b22970ed3a13c79">OQS_MEM_aligned_secure_free</a></b><span class="text-muted">(void *ptr, size_t len)</span></code></td>
     </tr>
   
 </table>
@@ -701,6 +709,21 @@ if (ret == OQS_SUCCESS) { ... }
   </div>
 </div>
     <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/common/common.h#L280" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="common_8h_1af24045b8ba9a18ef3b22970ed3a13c79">OQS_MEM_aligned_secure_free</h3>
+    <div class="card-subtitle mb-2"><code>void <b>OQS_MEM_aligned_secure_free</b>(void *ptr, size_t len)</code></div>
+    <div class="card-text">
+      
+<p>Free and zeroize memory allocated with OQS_MEM_aligned_alloc. </p>
+        
+    </div>
+    
+    
+  </div>
+</div>
+    <br>
 
 
 
@@ -791,5 +814,3 @@ if (ret == OQS_SUCCESS) { ... }
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
   </body>
-
-</html>

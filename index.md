@@ -30,9 +30,9 @@ All of our development takes place on our [GitHub](https://github.com/open-quant
 > [Join OQS Provider Community Call on Zoom](https://zoom-lfx.platform.linuxfoundation.org/meetings/pqca?view=week&occurrence=97026454777){: .btn .btn-green }
 
 ## Recent updates
-
+- **Nov 14, 2025: Release of [liboqs version 0.15.0](https://github.com/open-quantum-safe/liboqs/releases/tag/0.15.0)**
 - July 28, 2025: Release of [oqs-provider 0.10.0](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.10.0)
-- <b>July 10, 2025: Release of [liboqs version 0.14.0](https://github.com/open-quantum-safe/liboqs/releases/tag/0.14.0)</b>
+- **July 10, 2025: Release of [liboqs version 0.14.0](https://github.com/open-quantum-safe/liboqs/releases/tag/0.14.0)**
 - May 28, 2025: Release of [oqs-provider 0.9.0](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.9.0)
 - May 23, 2025: Release of [OQS-OpenSSH snapshot 2025-05](https://github.com/open-quantum-safe/openssh/releases/tag/OQS-OpenSSH-snapshot-2025-05)
 - May 1, 2025: Release of [oqs and oqs-sys 0.11.0 Rust crates](https://github.com/open-quantum-safe/liboqs-rust/releases/tag/v0.11.0)

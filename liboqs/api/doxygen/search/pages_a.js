@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['options_20for_20configuring_20liboqs_20builds_0',['Options for configuring liboqs builds',['../options-for-configuring-liboqs-builds.html',1,'']]],
+  ['oqs_5falgs_5fenabled_1',['OQS_ALGS_ENABLED',['../options-for-configuring-liboqs-builds.html#oQS_ALGS_ENABLED',1,'']]],
+  ['oqs_5fbuild_5ffuzz_5ftests_2',['OQS_BUILD_FUZZ_TESTS',['../options-for-configuring-liboqs-builds.html#oQS_BUILD_FUZZ_TESTS',1,'']]],
+  ['oqs_5fbuild_5fonly_5flib_3',['OQS_BUILD_ONLY_LIB',['../options-for-configuring-liboqs-builds.html#oQS_BUILD_ONLY_LIB',1,'']]],
+  ['oqs_5fdist_5fbuild_4',['OQS_DIST_BUILD',['../options-for-configuring-liboqs-builds.html#oQS_DIST_BUILD',1,'']]],
+  ['oqs_5fdlopen_5fopenssl_5',['OQS_DLOPEN_OPENSSL',['../options-for-configuring-liboqs-builds.html#oQS_DLOPEN_OPENSSL',1,'']]],
+  ['oqs_5fembedded_5fbuild_6',['OQS_EMBEDDED_BUILD',['../options-for-configuring-liboqs-builds.html#oQS_EMBEDDED_BUILD',1,'']]],
+  ['oqs_5fenable_5fkem_5falg_20oqs_5fenable_5fsig_5falg_20oqs_5fenable_5fsig_5fstfl_5falg_7',['OQS_ENABLE_KEM_ALG/OQS_ENABLE_SIG_ALG/OQS_ENABLE_SIG_STFL_ALG',['../options-for-configuring-liboqs-builds.html#oQS_ENABLE_KEM_ALGOQS_ENABLE_SIG_ALGOQS_ENABLE_SIG_STFL_ALG',1,'']]],
+  ['oqs_5fenable_5flibjade_5fkem_5falg_20oqs_5fenable_5flibjade_5fsig_5falg_8',['OQS_ENABLE_LIBJADE_KEM_ALG/OQS_ENABLE_LIBJADE_SIG_ALG',['../options-for-configuring-liboqs-builds.html#oQS_ENABLE_LIBJADE_KEM_ALGOQS_ENABLE_LIBJADE_SIG_ALG',1,'']]],
+  ['oqs_5fenable_5flibjade_5fsig_5falg_9',['OQS_ENABLE_LIBJADE_KEM_ALG/OQS_ENABLE_LIBJADE_SIG_ALG',['../options-for-configuring-liboqs-builds.html#oQS_ENABLE_LIBJADE_KEM_ALGOQS_ENABLE_LIBJADE_SIG_ALG',1,'']]],
+  ['oqs_5fenable_5fsig_5falg_20oqs_5fenable_5fsig_5fstfl_5falg_10',['OQS_ENABLE_KEM_ALG/OQS_ENABLE_SIG_ALG/OQS_ENABLE_SIG_STFL_ALG',['../options-for-configuring-liboqs-builds.html#oQS_ENABLE_KEM_ALGOQS_ENABLE_SIG_ALGOQS_ENABLE_SIG_STFL_ALG',1,'']]],
+  ['oqs_5fenable_5fsig_5fstfl_5falg_11',['OQS_ENABLE_KEM_ALG/OQS_ENABLE_SIG_ALG/OQS_ENABLE_SIG_STFL_ALG',['../options-for-configuring-liboqs-builds.html#oQS_ENABLE_KEM_ALGOQS_ENABLE_SIG_ALGOQS_ENABLE_SIG_STFL_ALG',1,'']]],
+  ['oqs_5fenable_5ftest_5fconstant_5ftime_12',['OQS_ENABLE_TEST_CONSTANT_TIME',['../options-for-configuring-liboqs-builds.html#oQS_ENABLE_TEST_CONSTANT_TIME',1,'']]],
+  ['oqs_5flibjade_5fbuild_13',['OQS_LIBJADE_BUILD',['../options-for-configuring-liboqs-builds.html#oQS_LIBJADE_BUILD',1,'']]],
+  ['oqs_5fminimal_5fbuild_14',['OQS_MINIMAL_BUILD',['../options-for-configuring-liboqs-builds.html#oQS_MINIMAL_BUILD',1,'']]],
+  ['oqs_5fopt_5ftarget_15',['OQS_OPT_TARGET',['../options-for-configuring-liboqs-builds.html#oQS_OPT_TARGET',1,'']]],
+  ['oqs_5fspeed_5fuse_5farm_5fpmu_16',['OQS_SPEED_USE_ARM_PMU',['../options-for-configuring-liboqs-builds.html#oQS_SPEED_USE_ARM_PMU',1,'']]],
+  ['oqs_5fstrict_5fwarnings_17',['OQS_STRICT_WARNINGS',['../options-for-configuring-liboqs-builds.html#oQS_STRICT_WARNINGS',1,'']]],
+  ['oqs_5fuse_5fcpufeature_5finstructions_18',['OQS_USE_CPUFEATURE_INSTRUCTIONS',['../options-for-configuring-liboqs-builds.html#oQS_USE_CPUFEATURE_INSTRUCTIONS',1,'']]],
+  ['oqs_5fuse_5fcupqc_19',['OQS_USE_CUPQC',['../options-for-configuring-liboqs-builds.html#oQS_USE_CUPQC',1,'']]],
+  ['oqs_5fuse_5ficicle_20',['OQS_USE_ICICLE',['../options-for-configuring-liboqs-builds.html#oQS_USE_ICICLE',1,'']]],
+  ['oqs_5fuse_5fopenssl_21',['OQS_USE_OPENSSL',['../options-for-configuring-liboqs-builds.html#oQS_USE_OPENSSL',1,'']]],
+  ['overview_22',['Overview',['../index.html#overview',1,'']]]
+];

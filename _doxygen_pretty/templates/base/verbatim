@@ -1,3 +1,0 @@
-<div class="ml-4 border p-2 bg-light">
-  <pre class="m-0">{{ t }}</pre>
-</div>

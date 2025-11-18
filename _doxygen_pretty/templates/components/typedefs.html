@@ -1,9 +1,0 @@
-<table class="table"><tbody>
-  {%- for t in file.typedefs() %}
-    <tr><td>
-      <div class="float-right"><small><a href="{{ srcbaseurl }}{{ t.src_filename() }}#L{{ t.src_linenumber() }}" target="_blank">[src]</a></small></div>
-      <p><code><span class="text-muted">typedef {{ t.type() }}</span> <b>{{ t.name() }}</b></code></p>
-      {{ t.description_detailed() }}
-    </td></tr>
-  {%- endfor %}
-</tbody></table>

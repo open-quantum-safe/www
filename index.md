@@ -19,16 +19,6 @@ OQS consists of two main lines of work: [liboqs](liboqs), an open source C libra
 
 All of our development takes place on our [GitHub](https://github.com/open-quantum-safe) repositories.  We welcome new contributors interested in joining our [team](team).  Feel free to begin participating on GitHub or say hello on our [Discord server](https://discord.gg/qRfMantKwc) on the [#oqs-general channel](https://discord.com/channels/1202723482224295936/1203395992003678238).  We are grateful to the organizations that have supported and continue to support our work, and the academic, industry, public sector, and individual contributors who participate in the project.
 
-{: .new-title :}
-> OQS Provider Community Call
-> {: .fs-5 }
->
-> Please join us for a community call about OQS Provider on <b>Thursday, October 23, 2025, from 15:30–16:30 UTC</b> ([convert to local time zone](https://www.timeanddate.com/worldclock/fixedtime.html?msg=OQS+Provider+Community+Call&iso=20251023T1530&p1=1440&ah=1)). 
-> 
-> We'd love to hear about how you're using OQS Provider, what features you'd like to see, and tell you more about getting involved.
->
-> [Join OQS Provider Community Call on Zoom](https://zoom-lfx.platform.linuxfoundation.org/meetings/pqca?view=week&occurrence=97026454777){: .btn .btn-green }
-
 ## Recent updates
 - **Nov 14, 2025: Release of [liboqs version 0.15.0](https://github.com/open-quantum-safe/liboqs/releases/tag/0.15.0)**
 - July 28, 2025: Release of [oqs-provider 0.10.0](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.10.0)

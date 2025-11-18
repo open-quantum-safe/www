@@ -1,9 +1,26 @@
----
-layout: default
-parent: C API documentation
-grand_parent: liboqs
-title: sig.h
----
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>sig.h</title>
+    
+    <style>
+    h3, h4 {
+      font-size: 125%;
+    }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="container">
       
 <h1><span class="text-muted">src/sig/</span><b>sig.h</b></h1>
 
@@ -47,7 +64,7 @@ title: sig.h
   <h2>Typedefs</h2>
   <table class="table"><tbody>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L317" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L630" target="_blank">[src]</a></small></div>
       <p><code><span class="text-muted">typedef struct OQS_SIG</span> <b>OQS_SIG</b></code></p>
       
 <p>Signature schemes object </p>
@@ -114,11 +131,16 @@ title: sig.h
       <td><code><b><a href="#sig_8h_1a3ab9ceb4859a721bec0b718c6b468685">OQS_SIG_free</a></b><span class="text-muted">(OQS_SIG *sig)</span></code></td>
     </tr>
   
+    <tr>
+      <td class="text-right"><code><span class="text-muted">OQS_API bool</span></code></td>
+      <td><code><b><a href="#sig_8h_1af8530b21ba0a476907cd940dac070fd7">OQS_SIG_supports_ctx_str</a></b><span class="text-muted">(const char *alg_name)</span></code></td>
+    </tr>
+  
 </table>
   
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L188" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L501" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="sig_8h_1a6f114705b2da592ac99bb57a5ec25d52">OQS_SIG_alg_identifier</h3>
     <div class="card-subtitle mb-2"><code>OQS_API const char * <b>OQS_SIG_alg_identifier</b>(size_t i)</code></div>
     <div class="card-text">
@@ -154,7 +176,7 @@ title: sig.h
     <br>
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L198" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L511" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="sig_8h_1a26f926d5c6177a536ad696785aef1710">OQS_SIG_alg_count</h3>
     <div class="card-subtitle mb-2"><code>OQS_API int <b>OQS_SIG_alg_count</b>(void)</code></div>
     <div class="card-text">
@@ -176,7 +198,7 @@ title: sig.h
     <br>
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L206" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L519" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="sig_8h_1aa6a66d4a02d8e3fb81691ef4a7db9402">OQS_SIG_alg_is_enabled</h3>
     <div class="card-subtitle mb-2"><code>OQS_API int <b>OQS_SIG_alg_is_enabled</b>(const char *method_name)</code></div>
     <div class="card-text">
@@ -211,7 +233,7 @@ title: sig.h
     <br>
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L328" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L641" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="sig_8h_1a9d44f4c5b0624d411146162df1023ea2">OQS_SIG_new</h3>
     <div class="card-subtitle mb-2"><code>OQS_API OQS_SIG * <b>OQS_SIG_new</b>(const char *method_name)</code></div>
     <div class="card-text">
@@ -247,7 +269,7 @@ title: sig.h
     <br>
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L342" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L655" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="sig_8h_1ac5c527513c5c353ba90a1a9ee386458e">OQS_SIG_keypair</h3>
     <div class="card-subtitle mb-2"><code>OQS_API OQS_STATUS <b>OQS_SIG_keypair</b>(const OQS_SIG *sig, uint8_t *public_key, uint8_t *secret_key)</code></div>
     <div class="card-text">
@@ -299,7 +321,7 @@ title: sig.h
     <br>
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L359" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L672" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="sig_8h_1ab6fa805ef48e554fcbf6bbe5a92136da">OQS_SIG_sign</h3>
     <div class="card-subtitle mb-2"><code>OQS_API OQS_STATUS <b>OQS_SIG_sign</b>(const OQS_SIG *sig, uint8_t *signature, size_t *signature_len, const uint8_t *message, size_t message_len, const uint8_t *secret_key)</code></div>
     <div class="card-text">
@@ -375,7 +397,7 @@ title: sig.h
     <br>
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L378" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L691" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="sig_8h_1a8852fe0a9b003460b56f7b203045f043">OQS_SIG_sign_with_ctx_str</h3>
     <div class="card-subtitle mb-2"><code>OQS_API OQS_STATUS <b>OQS_SIG_sign_with_ctx_str</b>(const OQS_SIG *sig, uint8_t *signature, size_t *signature_len, const uint8_t *message, size_t message_len, const uint8_t *ctx_str, size_t ctx_str_len, const uint8_t *secret_key)</code></div>
     <div class="card-text">
@@ -467,7 +489,7 @@ title: sig.h
     <br>
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L391" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L704" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="sig_8h_1ada769c1d40aa64bb33e88938212a1711">OQS_SIG_verify</h3>
     <div class="card-subtitle mb-2"><code>OQS_API OQS_STATUS <b>OQS_SIG_verify</b>(const OQS_SIG *sig, const uint8_t *message, size_t message_len, const uint8_t *signature, size_t signature_len, const uint8_t *public_key)</code></div>
     <div class="card-text">
@@ -542,7 +564,7 @@ title: sig.h
     <br>
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L406" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L719" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="sig_8h_1a8cb7875203b8b4a5254682c0507c2e38">OQS_SIG_verify_with_ctx_str</h3>
     <div class="card-subtitle mb-2"><code>OQS_API OQS_STATUS <b>OQS_SIG_verify_with_ctx_str</b>(const OQS_SIG *sig, const uint8_t *message, size_t message_len, const uint8_t *signature, size_t signature_len, const uint8_t *ctx_str, size_t ctx_str_len, const uint8_t *public_key)</code></div>
     <div class="card-text">
@@ -633,7 +655,7 @@ title: sig.h
     <br>
     <div class="card">
   <div class="card-body">
-    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L413" target="_blank">[src]</a></small></div>
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L726" target="_blank">[src]</a></small></div>
     <h3 class="card-title" id="sig_8h_1a3ab9ceb4859a721bec0b718c6b468685">OQS_SIG_free</h3>
     <div class="card-subtitle mb-2"><code>OQS_API void <b>OQS_SIG_free</b>(OQS_SIG *sig)</code></div>
     <div class="card-text">
@@ -661,6 +683,41 @@ title: sig.h
   </div>
 </div>
     <br>
+    <div class="card">
+  <div class="card-body">
+    <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L734" target="_blank">[src]</a></small></div>
+    <h3 class="card-title" id="sig_8h_1af8530b21ba0a476907cd940dac070fd7">OQS_SIG_supports_ctx_str</h3>
+    <div class="card-subtitle mb-2"><code>OQS_API bool <b>OQS_SIG_supports_ctx_str</b>(const char *alg_name)</code></div>
+    <div class="card-text">
+      
+<p>Indicates whether the specified signature algorithm supports signing with a context string.</p>
+<p>
+
+</p>
+        
+    </div>
+    
+      <h4>Parameters</h4>
+      <table class="table mb-0">
+        
+          <tr>
+            <td class="text-right"><code class="text-muted">const char *</code></td>
+            <td><code>alg_name</code></td>
+            <td class="pb-0">
+<p>Name of the desired algorithm; one of the names in <code>OQS_SIG_algs</code>. </p>
+</td>
+          </tr>
+        
+      </table>
+    
+    
+      <h4>Returns</h4>
+      <div class="ml-5"><p>true if the algorithm supports context string signing, false otherwise. </p>
+</div>
+    
+  </div>
+</div>
+    <br>
 
 
 
@@ -669,51 +726,6 @@ title: sig.h
   <table class="table"><tbody>
     <tr><td>
       <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L36" target="_blank">[src]</a></small></div>
-      <p><code>
-        <span class="text-muted">#define</span> 
-        <b>OQS_SIG_alg_dilithium_2</b> 
-        
-        
-          <span class="text-muted">"Dilithium2"</span>
-        
-      </code></p>
-      
-<p>Algorithm identifier for Dilithium2 </p>
-        
-      
-    </td></tr>
-    <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L38" target="_blank">[src]</a></small></div>
-      <p><code>
-        <span class="text-muted">#define</span> 
-        <b>OQS_SIG_alg_dilithium_3</b> 
-        
-        
-          <span class="text-muted">"Dilithium3"</span>
-        
-      </code></p>
-      
-<p>Algorithm identifier for Dilithium3 </p>
-        
-      
-    </td></tr>
-    <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L40" target="_blank">[src]</a></small></div>
-      <p><code>
-        <span class="text-muted">#define</span> 
-        <b>OQS_SIG_alg_dilithium_5</b> 
-        
-        
-          <span class="text-muted">"Dilithium5"</span>
-        
-      </code></p>
-      
-<p>Algorithm identifier for Dilithium5 </p>
-        
-      
-    </td></tr>
-    <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L42" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_ml_dsa_44</b> 
@@ -728,7 +740,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L44" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L38" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_ml_dsa_65</b> 
@@ -743,7 +755,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L46" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L40" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_ml_dsa_87</b> 
@@ -758,7 +770,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L48" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L42" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_falcon_512</b> 
@@ -773,7 +785,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L50" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L44" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_falcon_1024</b> 
@@ -788,7 +800,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L52" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L46" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_falcon_padded_512</b> 
@@ -803,7 +815,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L54" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L48" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_falcon_padded_1024</b> 
@@ -818,7 +830,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L56" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L50" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_sphincs_sha2_128f_simple</b> 
@@ -833,7 +845,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L58" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L52" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_sphincs_sha2_128s_simple</b> 
@@ -848,7 +860,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L60" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L54" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_sphincs_sha2_192f_simple</b> 
@@ -863,7 +875,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L62" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L56" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_sphincs_sha2_192s_simple</b> 
@@ -878,7 +890,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L64" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L58" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_sphincs_sha2_256f_simple</b> 
@@ -893,7 +905,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L66" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L60" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_sphincs_sha2_256s_simple</b> 
@@ -908,7 +920,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L68" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L62" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_sphincs_shake_128f_simple</b> 
@@ -923,7 +935,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L70" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L64" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_sphincs_shake_128s_simple</b> 
@@ -938,7 +950,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L72" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L66" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_sphincs_shake_192f_simple</b> 
@@ -953,7 +965,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L74" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L68" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_sphincs_shake_192s_simple</b> 
@@ -968,7 +980,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L76" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L70" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_sphincs_shake_256f_simple</b> 
@@ -983,7 +995,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L78" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L72" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_sphincs_shake_256s_simple</b> 
@@ -998,7 +1010,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L80" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L74" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_mayo_1</b> 
@@ -1013,7 +1025,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L82" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L76" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_mayo_2</b> 
@@ -1028,7 +1040,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L84" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L78" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_mayo_3</b> 
@@ -1043,7 +1055,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L86" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L80" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_mayo_5</b> 
@@ -1058,7 +1070,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L88" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L82" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_cross_rsdp_128_balanced</b> 
@@ -1073,7 +1085,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L90" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L84" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_cross_rsdp_128_fast</b> 
@@ -1088,7 +1100,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L92" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L86" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_cross_rsdp_128_small</b> 
@@ -1103,7 +1115,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L94" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L88" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_cross_rsdp_192_balanced</b> 
@@ -1118,7 +1130,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L96" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L90" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_cross_rsdp_192_fast</b> 
@@ -1133,7 +1145,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L98" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L92" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_cross_rsdp_192_small</b> 
@@ -1148,7 +1160,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L100" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L94" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_cross_rsdp_256_balanced</b> 
@@ -1163,7 +1175,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L102" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L96" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_cross_rsdp_256_fast</b> 
@@ -1178,7 +1190,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L104" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L98" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_cross_rsdp_256_small</b> 
@@ -1193,7 +1205,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L106" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L100" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_cross_rsdpg_128_balanced</b> 
@@ -1208,7 +1220,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L108" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L102" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_cross_rsdpg_128_fast</b> 
@@ -1223,7 +1235,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L110" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L104" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_cross_rsdpg_128_small</b> 
@@ -1238,7 +1250,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L112" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L106" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_cross_rsdpg_192_balanced</b> 
@@ -1253,7 +1265,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L114" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L108" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_cross_rsdpg_192_fast</b> 
@@ -1268,7 +1280,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L116" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L110" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_cross_rsdpg_192_small</b> 
@@ -1283,7 +1295,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L118" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L112" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_cross_rsdpg_256_balanced</b> 
@@ -1298,7 +1310,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L120" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L114" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_cross_rsdpg_256_fast</b> 
@@ -1313,7 +1325,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L122" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L116" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_cross_rsdpg_256_small</b> 
@@ -1328,7 +1340,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L124" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L118" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_uov_ov_Is</b> 
@@ -1343,7 +1355,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L126" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L120" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_uov_ov_Ip</b> 
@@ -1358,7 +1370,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L128" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L122" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_uov_ov_III</b> 
@@ -1373,7 +1385,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L130" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L124" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_uov_ov_V</b> 
@@ -1388,7 +1400,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L132" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L126" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_uov_ov_Is_pkc</b> 
@@ -1403,7 +1415,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L134" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L128" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_uov_ov_Ip_pkc</b> 
@@ -1418,7 +1430,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L136" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L130" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_uov_ov_III_pkc</b> 
@@ -1433,7 +1445,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L138" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L132" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_uov_ov_V_pkc</b> 
@@ -1448,7 +1460,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L140" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L134" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_uov_ov_Is_pkc_skc</b> 
@@ -1463,7 +1475,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L142" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L136" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_uov_ov_Ip_pkc_skc</b> 
@@ -1478,7 +1490,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L144" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L138" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_uov_ov_III_pkc_skc</b> 
@@ -1493,7 +1505,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L146" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L140" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_uov_ov_V_pkc_skc</b> 
@@ -1508,7 +1520,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L148" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L142" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_snova_SNOVA_24_5_4</b> 
@@ -1523,7 +1535,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L150" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L144" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_snova_SNOVA_24_5_4_SHAKE</b> 
@@ -1538,7 +1550,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L152" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L146" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_snova_SNOVA_24_5_4_esk</b> 
@@ -1553,7 +1565,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L154" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L148" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_snova_SNOVA_24_5_4_SHAKE_esk</b> 
@@ -1568,7 +1580,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L156" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L150" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_snova_SNOVA_37_17_2</b> 
@@ -1583,7 +1595,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L158" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L152" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_snova_SNOVA_25_8_3</b> 
@@ -1598,7 +1610,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L160" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L154" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_snova_SNOVA_56_25_2</b> 
@@ -1613,7 +1625,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L162" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L156" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_snova_SNOVA_49_11_3</b> 
@@ -1628,7 +1640,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L164" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L158" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_snova_SNOVA_37_8_4</b> 
@@ -1643,7 +1655,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L166" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L160" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_snova_SNOVA_24_5_5</b> 
@@ -1658,7 +1670,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L168" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L162" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_snova_SNOVA_60_10_4</b> 
@@ -1673,7 +1685,7 @@ title: sig.h
       
     </td></tr>
     <tr><td>
-      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L170" target="_blank">[src]</a></small></div>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L164" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_alg_snova_SNOVA_29_6_5</b> 
@@ -1688,13 +1700,2368 @@ title: sig.h
       
     </td></tr>
     <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L168" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_pure_sha2_128s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_PURE_SHA2_128S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_pure_sha2_128s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L170" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_pure_sha2_128f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_PURE_SHA2_128F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_pure_sha2_128f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L172" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_pure_sha2_192s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_PURE_SHA2_192S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_pure_sha2_192s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L174" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_pure_sha2_192f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_PURE_SHA2_192F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_pure_sha2_192f </p>
+        
+      
+    </td></tr>
+    <tr><td>
       <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L176" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_pure_sha2_256s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_PURE_SHA2_256S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_pure_sha2_256s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L178" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_pure_sha2_256f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_PURE_SHA2_256F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_pure_sha2_256f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L180" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_pure_shake_128s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_PURE_SHAKE_128S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_pure_shake_128s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L182" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_pure_shake_128f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_PURE_SHAKE_128F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_pure_shake_128f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L184" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_pure_shake_192s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_PURE_SHAKE_192S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_pure_shake_192s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L186" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_pure_shake_192f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_PURE_SHAKE_192F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_pure_shake_192f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L188" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_pure_shake_256s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_PURE_SHAKE_256S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_pure_shake_256s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L190" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_pure_shake_256f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_PURE_SHAKE_256F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_pure_shake_256f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L192" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_224_prehash_sha2_128s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_224_PREHASH_SHA2_128S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_224_prehash_sha2_128s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L194" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_224_prehash_sha2_128f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_224_PREHASH_SHA2_128F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_224_prehash_sha2_128f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L196" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_224_prehash_sha2_192s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_224_PREHASH_SHA2_192S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_224_prehash_sha2_192s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L198" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_224_prehash_sha2_192f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_224_PREHASH_SHA2_192F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_224_prehash_sha2_192f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L200" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_224_prehash_sha2_256s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_224_PREHASH_SHA2_256S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_224_prehash_sha2_256s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L202" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_224_prehash_sha2_256f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_224_PREHASH_SHA2_256F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_224_prehash_sha2_256f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L204" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_224_prehash_shake_128s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_224_PREHASH_SHAKE_128S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_224_prehash_shake_128s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L206" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_224_prehash_shake_128f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_224_PREHASH_SHAKE_128F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_224_prehash_shake_128f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L208" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_224_prehash_shake_192s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_224_PREHASH_SHAKE_192S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_224_prehash_shake_192s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L210" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_224_prehash_shake_192f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_224_PREHASH_SHAKE_192F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_224_prehash_shake_192f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L212" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_224_prehash_shake_256s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_224_PREHASH_SHAKE_256S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_224_prehash_shake_256s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L214" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_224_prehash_shake_256f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_224_PREHASH_SHAKE_256F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_224_prehash_shake_256f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L216" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_256_prehash_sha2_128s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_256_PREHASH_SHA2_128S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_256_prehash_sha2_128s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L218" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_256_prehash_sha2_128f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_256_PREHASH_SHA2_128F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_256_prehash_sha2_128f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L220" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_256_prehash_sha2_192s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_256_PREHASH_SHA2_192S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_256_prehash_sha2_192s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L222" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_256_prehash_sha2_192f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_256_PREHASH_SHA2_192F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_256_prehash_sha2_192f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L224" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_256_prehash_sha2_256s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_256_PREHASH_SHA2_256S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_256_prehash_sha2_256s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L226" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_256_prehash_sha2_256f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_256_PREHASH_SHA2_256F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_256_prehash_sha2_256f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L228" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_256_prehash_shake_128s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_256_PREHASH_SHAKE_128S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_256_prehash_shake_128s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L230" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_256_prehash_shake_128f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_256_PREHASH_SHAKE_128F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_256_prehash_shake_128f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L232" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_256_prehash_shake_192s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_256_PREHASH_SHAKE_192S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_256_prehash_shake_192s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L234" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_256_prehash_shake_192f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_256_PREHASH_SHAKE_192F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_256_prehash_shake_192f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L236" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_256_prehash_shake_256s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_256_PREHASH_SHAKE_256S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_256_prehash_shake_256s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L238" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_256_prehash_shake_256f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_256_PREHASH_SHAKE_256F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_256_prehash_shake_256f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L240" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_384_prehash_sha2_128s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_384_PREHASH_SHA2_128S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_384_prehash_sha2_128s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L242" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_384_prehash_sha2_128f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_384_PREHASH_SHA2_128F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_384_prehash_sha2_128f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L244" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_384_prehash_sha2_192s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_384_PREHASH_SHA2_192S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_384_prehash_sha2_192s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L246" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_384_prehash_sha2_192f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_384_PREHASH_SHA2_192F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_384_prehash_sha2_192f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L248" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_384_prehash_sha2_256s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_384_PREHASH_SHA2_256S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_384_prehash_sha2_256s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L250" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_384_prehash_sha2_256f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_384_PREHASH_SHA2_256F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_384_prehash_sha2_256f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L252" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_384_prehash_shake_128s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_384_PREHASH_SHAKE_128S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_384_prehash_shake_128s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L254" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_384_prehash_shake_128f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_384_PREHASH_SHAKE_128F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_384_prehash_shake_128f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L256" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_384_prehash_shake_192s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_384_PREHASH_SHAKE_192S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_384_prehash_shake_192s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L258" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_384_prehash_shake_192f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_384_PREHASH_SHAKE_192F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_384_prehash_shake_192f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L260" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_384_prehash_shake_256s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_384_PREHASH_SHAKE_256S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_384_prehash_shake_256s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L262" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_384_prehash_shake_256f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_384_PREHASH_SHAKE_256F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_384_prehash_shake_256f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L264" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_prehash_sha2_128s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_PREHASH_SHA2_128S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_prehash_sha2_128s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L266" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_prehash_sha2_128f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_PREHASH_SHA2_128F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_prehash_sha2_128f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L268" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_prehash_sha2_192s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_PREHASH_SHA2_192S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_prehash_sha2_192s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L270" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_prehash_sha2_192f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_PREHASH_SHA2_192F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_prehash_sha2_192f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L272" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_prehash_sha2_256s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_PREHASH_SHA2_256S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_prehash_sha2_256s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L274" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_prehash_sha2_256f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_PREHASH_SHA2_256F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_prehash_sha2_256f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L276" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_prehash_shake_128s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_PREHASH_SHAKE_128S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_prehash_shake_128s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L278" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_prehash_shake_128f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_PREHASH_SHAKE_128F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_prehash_shake_128f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L280" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_prehash_shake_192s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_PREHASH_SHAKE_192S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_prehash_shake_192s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L282" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_prehash_shake_192f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_PREHASH_SHAKE_192F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_prehash_shake_192f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L284" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_prehash_shake_256s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_PREHASH_SHAKE_256S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_prehash_shake_256s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L286" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_prehash_shake_256f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_PREHASH_SHAKE_256F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_prehash_shake_256f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L288" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_224_prehash_sha2_128s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_224_PREHASH_SHA2_128S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_224_prehash_sha2_128s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L290" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_224_prehash_sha2_128f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_224_PREHASH_SHA2_128F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_224_prehash_sha2_128f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L292" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_224_prehash_sha2_192s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_224_PREHASH_SHA2_192S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_224_prehash_sha2_192s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L294" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_224_prehash_sha2_192f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_224_PREHASH_SHA2_192F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_224_prehash_sha2_192f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L296" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_224_prehash_sha2_256s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_224_PREHASH_SHA2_256S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_224_prehash_sha2_256s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L298" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_224_prehash_sha2_256f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_224_PREHASH_SHA2_256F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_224_prehash_sha2_256f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L300" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_224_prehash_shake_128s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_224_PREHASH_SHAKE_128S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_224_prehash_shake_128s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L302" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_224_prehash_shake_128f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_224_PREHASH_SHAKE_128F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_224_prehash_shake_128f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L304" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_224_prehash_shake_192s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_224_PREHASH_SHAKE_192S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_224_prehash_shake_192s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L306" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_224_prehash_shake_192f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_224_PREHASH_SHAKE_192F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_224_prehash_shake_192f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L308" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_224_prehash_shake_256s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_224_PREHASH_SHAKE_256S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_224_prehash_shake_256s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L310" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_224_prehash_shake_256f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_224_PREHASH_SHAKE_256F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_224_prehash_shake_256f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L312" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_256_prehash_sha2_128s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_256_PREHASH_SHA2_128S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_256_prehash_sha2_128s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L314" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_256_prehash_sha2_128f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_256_PREHASH_SHA2_128F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_256_prehash_sha2_128f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L316" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_256_prehash_sha2_192s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_256_PREHASH_SHA2_192S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_256_prehash_sha2_192s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L318" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_256_prehash_sha2_192f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_256_PREHASH_SHA2_192F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_256_prehash_sha2_192f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L320" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_256_prehash_sha2_256s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_256_PREHASH_SHA2_256S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_256_prehash_sha2_256s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L322" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_256_prehash_sha2_256f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_256_PREHASH_SHA2_256F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_256_prehash_sha2_256f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L324" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_256_prehash_shake_128s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_256_PREHASH_SHAKE_128S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_256_prehash_shake_128s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L326" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_256_prehash_shake_128f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_256_PREHASH_SHAKE_128F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_256_prehash_shake_128f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L328" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_256_prehash_shake_192s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_256_PREHASH_SHAKE_192S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_256_prehash_shake_192s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L330" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_256_prehash_shake_192f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_256_PREHASH_SHAKE_192F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_256_prehash_shake_192f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L332" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_256_prehash_shake_256s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_256_PREHASH_SHAKE_256S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_256_prehash_shake_256s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L334" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha2_512_256_prehash_shake_256f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA2_512_256_PREHASH_SHAKE_256F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha2_512_256_prehash_shake_256f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L336" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_224_prehash_sha2_128s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_224_PREHASH_SHA2_128S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_224_prehash_sha2_128s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L338" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_224_prehash_sha2_128f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_224_PREHASH_SHA2_128F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_224_prehash_sha2_128f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L340" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_224_prehash_sha2_192s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_224_PREHASH_SHA2_192S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_224_prehash_sha2_192s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L342" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_224_prehash_sha2_192f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_224_PREHASH_SHA2_192F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_224_prehash_sha2_192f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L344" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_224_prehash_sha2_256s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_224_PREHASH_SHA2_256S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_224_prehash_sha2_256s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L346" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_224_prehash_sha2_256f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_224_PREHASH_SHA2_256F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_224_prehash_sha2_256f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L348" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_224_prehash_shake_128s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_224_PREHASH_SHAKE_128S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_224_prehash_shake_128s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L350" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_224_prehash_shake_128f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_224_PREHASH_SHAKE_128F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_224_prehash_shake_128f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L352" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_224_prehash_shake_192s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_224_PREHASH_SHAKE_192S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_224_prehash_shake_192s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L354" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_224_prehash_shake_192f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_224_PREHASH_SHAKE_192F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_224_prehash_shake_192f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L356" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_224_prehash_shake_256s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_224_PREHASH_SHAKE_256S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_224_prehash_shake_256s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L358" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_224_prehash_shake_256f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_224_PREHASH_SHAKE_256F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_224_prehash_shake_256f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L360" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_256_prehash_sha2_128s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_256_PREHASH_SHA2_128S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_256_prehash_sha2_128s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L362" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_256_prehash_sha2_128f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_256_PREHASH_SHA2_128F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_256_prehash_sha2_128f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L364" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_256_prehash_sha2_192s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_256_PREHASH_SHA2_192S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_256_prehash_sha2_192s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L366" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_256_prehash_sha2_192f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_256_PREHASH_SHA2_192F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_256_prehash_sha2_192f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L368" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_256_prehash_sha2_256s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_256_PREHASH_SHA2_256S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_256_prehash_sha2_256s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L370" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_256_prehash_sha2_256f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_256_PREHASH_SHA2_256F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_256_prehash_sha2_256f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L372" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_256_prehash_shake_128s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_256_PREHASH_SHAKE_128S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_256_prehash_shake_128s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L374" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_256_prehash_shake_128f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_256_PREHASH_SHAKE_128F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_256_prehash_shake_128f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L376" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_256_prehash_shake_192s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_256_PREHASH_SHAKE_192S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_256_prehash_shake_192s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L378" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_256_prehash_shake_192f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_256_PREHASH_SHAKE_192F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_256_prehash_shake_192f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L380" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_256_prehash_shake_256s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_256_PREHASH_SHAKE_256S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_256_prehash_shake_256s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L382" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_256_prehash_shake_256f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_256_PREHASH_SHAKE_256F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_256_prehash_shake_256f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L384" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_384_prehash_sha2_128s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_384_PREHASH_SHA2_128S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_384_prehash_sha2_128s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L386" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_384_prehash_sha2_128f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_384_PREHASH_SHA2_128F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_384_prehash_sha2_128f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L388" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_384_prehash_sha2_192s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_384_PREHASH_SHA2_192S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_384_prehash_sha2_192s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L390" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_384_prehash_sha2_192f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_384_PREHASH_SHA2_192F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_384_prehash_sha2_192f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L392" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_384_prehash_sha2_256s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_384_PREHASH_SHA2_256S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_384_prehash_sha2_256s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L394" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_384_prehash_sha2_256f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_384_PREHASH_SHA2_256F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_384_prehash_sha2_256f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L396" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_384_prehash_shake_128s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_384_PREHASH_SHAKE_128S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_384_prehash_shake_128s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L398" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_384_prehash_shake_128f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_384_PREHASH_SHAKE_128F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_384_prehash_shake_128f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L400" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_384_prehash_shake_192s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_384_PREHASH_SHAKE_192S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_384_prehash_shake_192s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L402" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_384_prehash_shake_192f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_384_PREHASH_SHAKE_192F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_384_prehash_shake_192f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L404" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_384_prehash_shake_256s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_384_PREHASH_SHAKE_256S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_384_prehash_shake_256s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L406" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_384_prehash_shake_256f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_384_PREHASH_SHAKE_256F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_384_prehash_shake_256f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L408" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_512_prehash_sha2_128s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_512_PREHASH_SHA2_128S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_512_prehash_sha2_128s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L410" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_512_prehash_sha2_128f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_512_PREHASH_SHA2_128F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_512_prehash_sha2_128f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L412" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_512_prehash_sha2_192s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_512_PREHASH_SHA2_192S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_512_prehash_sha2_192s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L414" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_512_prehash_sha2_192f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_512_PREHASH_SHA2_192F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_512_prehash_sha2_192f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L416" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_512_prehash_sha2_256s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_512_PREHASH_SHA2_256S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_512_prehash_sha2_256s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L418" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_512_prehash_sha2_256f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_512_PREHASH_SHA2_256F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_512_prehash_sha2_256f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L420" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_512_prehash_shake_128s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_512_PREHASH_SHAKE_128S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_512_prehash_shake_128s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L422" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_512_prehash_shake_128f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_512_PREHASH_SHAKE_128F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_512_prehash_shake_128f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L424" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_512_prehash_shake_192s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_512_PREHASH_SHAKE_192S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_512_prehash_shake_192s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L426" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_512_prehash_shake_192f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_512_PREHASH_SHAKE_192F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_512_prehash_shake_192f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L428" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_512_prehash_shake_256s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_512_PREHASH_SHAKE_256S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_512_prehash_shake_256s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L430" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_sha3_512_prehash_shake_256f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHA3_512_PREHASH_SHAKE_256F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_sha3_512_prehash_shake_256f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L432" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_shake_128_prehash_sha2_128s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHAKE_128_PREHASH_SHA2_128S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_shake_128_prehash_sha2_128s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L434" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_shake_128_prehash_sha2_128f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHAKE_128_PREHASH_SHA2_128F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_shake_128_prehash_sha2_128f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L436" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_shake_128_prehash_sha2_192s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHAKE_128_PREHASH_SHA2_192S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_shake_128_prehash_sha2_192s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L438" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_shake_128_prehash_sha2_192f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHAKE_128_PREHASH_SHA2_192F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_shake_128_prehash_sha2_192f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L440" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_shake_128_prehash_sha2_256s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHAKE_128_PREHASH_SHA2_256S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_shake_128_prehash_sha2_256s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L442" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_shake_128_prehash_sha2_256f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHAKE_128_PREHASH_SHA2_256F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_shake_128_prehash_sha2_256f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L444" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_shake_128_prehash_shake_128s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHAKE_128_PREHASH_SHAKE_128S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_shake_128_prehash_shake_128s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L446" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_shake_128_prehash_shake_128f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHAKE_128_PREHASH_SHAKE_128F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_shake_128_prehash_shake_128f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L448" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_shake_128_prehash_shake_192s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHAKE_128_PREHASH_SHAKE_192S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_shake_128_prehash_shake_192s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L450" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_shake_128_prehash_shake_192f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHAKE_128_PREHASH_SHAKE_192F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_shake_128_prehash_shake_192f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L452" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_shake_128_prehash_shake_256s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHAKE_128_PREHASH_SHAKE_256S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_shake_128_prehash_shake_256s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L454" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_shake_128_prehash_shake_256f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHAKE_128_PREHASH_SHAKE_256F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_shake_128_prehash_shake_256f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L456" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_shake_256_prehash_sha2_128s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHAKE_256_PREHASH_SHA2_128S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_shake_256_prehash_sha2_128s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L458" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_shake_256_prehash_sha2_128f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHAKE_256_PREHASH_SHA2_128F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_shake_256_prehash_sha2_128f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L460" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_shake_256_prehash_sha2_192s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHAKE_256_PREHASH_SHA2_192S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_shake_256_prehash_sha2_192s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L462" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_shake_256_prehash_sha2_192f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHAKE_256_PREHASH_SHA2_192F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_shake_256_prehash_sha2_192f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L464" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_shake_256_prehash_sha2_256s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHAKE_256_PREHASH_SHA2_256S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_shake_256_prehash_sha2_256s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L466" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_shake_256_prehash_sha2_256f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHAKE_256_PREHASH_SHA2_256F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_shake_256_prehash_sha2_256f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L468" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_shake_256_prehash_shake_128s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHAKE_256_PREHASH_SHAKE_128S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_shake_256_prehash_shake_128s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L470" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_shake_256_prehash_shake_128f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHAKE_256_PREHASH_SHAKE_128F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_shake_256_prehash_shake_128f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L472" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_shake_256_prehash_shake_192s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHAKE_256_PREHASH_SHAKE_192S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_shake_256_prehash_shake_192s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L474" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_shake_256_prehash_shake_192f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHAKE_256_PREHASH_SHAKE_192F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_shake_256_prehash_shake_192f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L476" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_shake_256_prehash_shake_256s</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHAKE_256_PREHASH_SHAKE_256S"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_shake_256_prehash_shake_256s </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L478" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_alg_slh_dsa_shake_256_prehash_shake_256f</b> 
+        
+        
+          <span class="text-muted">"SLH_DSA_SHAKE_256_PREHASH_SHAKE_256F"</span>
+        
+      </code></p>
+      
+<p>Algorithm identifier for slh_dsa_shake_256_prehash_shake_256f </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L484" target="_blank">[src]</a></small></div>
+      <p><code>
+        <span class="text-muted">#define</span> 
+        <b>OQS_SIG_SLH_DSA_algs_length</b> 
+        
+        
+          <span class="text-muted">156</span>
+        
+      </code></p>
+      
+<p>Number of algorithm identifiers above. </p>
+        
+      
+    </td></tr>
+    <tr><td>
+      <div class="float-right"><small><a href="https://github.com/open-quantum-safe/liboqs/tree/main/src/sig/sig.h#L489" target="_blank">[src]</a></small></div>
       <p><code>
         <span class="text-muted">#define</span> 
         <b>OQS_SIG_algs_length</b> 
         
         
-          <span class="text-muted">68</span>
+          <span class="text-muted">65 + OQS_SIG_SLH_DSA_algs_length</span>
         
       </code></p>
       

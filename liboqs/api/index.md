@@ -7,15 +7,8 @@ has_children: true
 has_toc: false
 ---
 
-# C API documentation
+## liboqs C API documentation
 
-Auto-generated documentation for the main header files and data structures needed by applications using liboqs is available as follows:
+<br>
 
-- [common.h](common): Utility functions for use in liboqs.
-- [kem.h](kem): Key encapsulation mechanisms
-    - [OQS_KEM struct](oqskem): Object-oriented struct for working with KEMs
-- [sig.h](sig): Digital signature schemes
-    - [OQS_SIG struct](oqssig): Object-oriented struct for working with digital signature schemes
-- [sig_stfl.h](sig_stfl): Stateful digital signature schemes
-    - [OQS_SIG_STFL_SECRET_KEY struct](oqssig_stfl_secret_key): Secret key data structure for stateful digital signature schemes
-- [rand.h](rand): Random number generator
+[Open Doxygen API documentation for liboqs]({{ "/liboqs/api/doxygen/index.html" | relative_url }}){:target="_blank"}{:.btn}{:.btn-purple}

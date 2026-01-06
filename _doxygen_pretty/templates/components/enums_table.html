@@ -1,6 +1,0 @@
-{%- for e in file.enums() %}
-  <code>
-    <span class="text-muted">enum </span><b><a href="#{{ e.uniqid() }}">{{ e.name() }}</a></b>
-  </code>
-  {% if not(loop.last) %}<br>{% endif %}
-{%- endfor %}

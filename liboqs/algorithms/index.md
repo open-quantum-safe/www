@@ -38,7 +38,6 @@ has_toc: false
 ### NIST selections
 
 - [**Falcon**](sig/falcon)
-- [**SPHINCS+**](sig/sphincs)
 
 ### NIST PQ signatures on-ramp
 

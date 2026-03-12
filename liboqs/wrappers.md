@@ -23,4 +23,3 @@ The following third-party language-specific wrappers have been made available by
 
 - [Dart](https://github.com/djx-y-z/liboqs_dart) by Mikhail Polovov
 - [PHP](https://github.com/Muzosh/liboqs-php) by Petr Muzikant
-- [Python](https://github.com/alraddady/alkindi) by Khalid Alraddady

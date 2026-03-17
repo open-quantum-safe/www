@@ -22,23 +22,6 @@ liboqs has been used in the following external projects:
 - <a href="https://github.com/strongX509/docker/tree/master/pq-strongswan">strongSwan: Post-Quantum IKEv2 demo</a>
 - <a href="https://newsroom.ibm.com/2020-11-30-IBM-Cloud-Delivers-Quantum-Safe-Cryptography-and-Hyper-Protect-Crypto-Services-to-Help-Protect-Data-in-the-Hybrid-Era">IBM Cloud</a>
 - <a href="https://github.com/hannestschofenig/mbedtls">mbedTLS</a>
-- wolfSSL:
-  - <a href="https://www.wolfssl.com/nist-announces-post-quantum-algorithm-standardization/">NIST Announces Post-Quantum Algorithm Standardization</a>
-  - <a href="https://www.wolfssl.com/end-summer-post-quantum-round/">End of Summer Post-Quantum Round Up</a>
-  - <a href="https://www.wolfssl.com/wolfssl-liboqs-integration/">wolfSSL liboqs integration</a>
-  - <a href="https://www.wolfssl.com/hybrid-post-quantum-groups-tls-1-3/">wolfSSL hybrid post-quantum groups in TLS 1.3</a>
-  - <a href="https://www.wolfssl.com/post-quantum-curl/">wolfSSL post-quantum cURL</a>
-  - <a href="https://www.wolfssl.com/integration-falcon-signature-scheme-wolfssl/">Integration of the Falcon signature scheme into wolfSSL</a>
-  - <a href="https://www.wolfssl.com/post-quantum-research-results-pq-wolfssl-team/">Post-quantum research results from the pq-wolfssl team</a>
-  - <a href="https://www.wolfssl.com/open-quantum-safe-wolfssl-joint-wireshark-integration/">Open Quantum Safe and wolfSSL Joint Wireshark Integration</a>
-  - <a href="https://www.wolfssl.com/post-quantum-performance-research-results/">Post-Quantum Performance Research Results</a>
-  - <a href="https://qiita.com/kj1/items/8531feac2f3a56e6d6d9">Trying Post-Quantum Cryptography with TLS (Part 1: Key Exchange) (Japanese)</a>
-  - <a href="https://qiita.com/kj1/items/f311c0eb2baf049b3cc3">Trying Post-Quantum Cryptography with TLS (Part 2: Authentication) (Japanese)</a>
-  - <a href="https://www.wolfssl.com/post-quantum-goodies-wolfssl-5-1-1-falcon/">Post-Quantum Goodies in wolfSSL 5.1.1: FALCON</a>
-  - <a href="https://www.youtube.com/watch?v=0gveI0_9HYo">Post-quantum demo of wolfSSL</a>
-  - <a href="https://www.wolfssl.com/post-quantum-tls-1-3-key-establishment-comes-stm32-cortex-m4/">Post-Quantum TLS 1.3 Key Establishment comes to STM32 Cortex M4</a> (<a href="https://www.youtube.com/watch?v=OK6MKXYiVBY">Youtube video</a>)
-  - <a href="https://www.wolfssl.com/post-quantum-ssh-v2-0-wolfssh/">Post-Quantum SSH v2.0 with wolfSSH</a>
-  - <a href="https://www.wolfssl.com/wolfmqtt-post-quantum-kyber-falcon/">wolfMQTT with Post-Quantum KYBER and FALCON</a>
 - <a href="https://lists.freebsd.org/pipermail/dev-commits-ports-main/2021-September/018107.html">FreeBSD</a>
 - <a href="https://tracker.debian.org/pkg/liboqs">Debian</a>
 - Igor Barshteyn:
@@ -58,3 +41,29 @@ liboqs has been used in the following external projects:
   - <a href="https://github.com/embetrix/meta-oqs">meta-oqs</a>: oqs support for embedded Linux (<a href="https://github.com/embetrix/meta-oqs/blob/scarthgap/README.md">README</a>, <a href="https://github.com/embetrix/meta-oqs/blob/scarthgap/GUIDES.md">Guides</a>)
 
 If you're using liboqs, please get in touch and we'll add you to the list!
+
+## Former users
+
+<details markdown="block">
+<summary>Click here to see an archive of former users of OQS.</summary>
+
+- wolfSSL:
+  - <a href="https://www.wolfssl.com/nist-announces-post-quantum-algorithm-standardization/">NIST Announces Post-Quantum Algorithm Standardization</a>
+  - <a href="https://www.wolfssl.com/end-summer-post-quantum-round/">End of Summer Post-Quantum Round Up</a>
+  - <a href="https://www.wolfssl.com/wolfssl-liboqs-integration/">wolfSSL liboqs integration</a>
+  - <a href="https://www.wolfssl.com/hybrid-post-quantum-groups-tls-1-3/">wolfSSL hybrid post-quantum groups in TLS 1.3</a>
+  - <a href="https://www.wolfssl.com/post-quantum-curl/">wolfSSL post-quantum cURL</a>
+  - <a href="https://www.wolfssl.com/integration-falcon-signature-scheme-wolfssl/">Integration of the Falcon signature scheme into wolfSSL</a>
+  - <a href="https://www.wolfssl.com/post-quantum-research-results-pq-wolfssl-team/">Post-quantum research results from the pq-wolfssl team</a>
+  - <a href="https://www.wolfssl.com/open-quantum-safe-wolfssl-joint-wireshark-integration/">Open Quantum Safe and wolfSSL Joint Wireshark Integration</a>
+  - <a href="https://www.wolfssl.com/post-quantum-performance-research-results/">Post-Quantum Performance Research Results</a>
+  - <a href="https://qiita.com/kj1/items/8531feac2f3a56e6d6d9">Trying Post-Quantum Cryptography with TLS (Part 1: Key Exchange) (Japanese)</a>
+  - <a href="https://qiita.com/kj1/items/f311c0eb2baf049b3cc3">Trying Post-Quantum Cryptography with TLS (Part 2: Authentication) (Japanese)</a>
+  - <a href="https://www.wolfssl.com/post-quantum-goodies-wolfssl-5-1-1-falcon/">Post-Quantum Goodies in wolfSSL 5.1.1: FALCON</a>
+  - <a href="https://www.youtube.com/watch?v=0gveI0_9HYo">Post-quantum demo of wolfSSL</a>
+  - <a href="https://www.wolfssl.com/post-quantum-tls-1-3-key-establishment-comes-stm32-cortex-m4/">Post-Quantum TLS 1.3 Key Establishment comes to STM32 Cortex M4</a> (<a href="https://www.youtube.com/watch?v=OK6MKXYiVBY">Youtube video</a>)
+  - <a href="https://www.wolfssl.com/post-quantum-ssh-v2-0-wolfssh/">Post-Quantum SSH v2.0 with wolfSSH</a>
+  - <a href="https://www.wolfssl.com/wolfmqtt-post-quantum-kyber-falcon/">wolfMQTT with Post-Quantum KYBER and FALCON</a>
+  - <a href="https://www.wolfssl.com/deprecation-notice-liboqs-integration/">wolfSSL deprecation notice for liboqs
+
+</details>

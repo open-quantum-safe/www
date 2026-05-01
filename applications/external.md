@@ -39,6 +39,7 @@ liboqs has been used in the following external projects:
 - SoftIron: <a href="https://blog.softiron.com/engineering/quantum-computers-are-coming-for-your-data-time-to-panic/">post-quantum cryptography</a> in <a href="https://softiron.com/resources/softiron-launches-worlds-first-post-quantum-safe-virtualization-and-private-cloud-solutions-with-q4-2024-updates/">virtualization and private cloud</a>
 - Embetrix:
   - <a href="https://github.com/embetrix/meta-oqs">meta-oqs</a>: oqs support for embedded Linux (<a href="https://github.com/embetrix/meta-oqs/blob/scarthgap/README.md">README</a>, <a href="https://github.com/embetrix/meta-oqs/blob/scarthgap/GUIDES.md">Guides</a>)
+- [Rosenpass](https://github.com/rosenpass/rosenpass)
 
 If you're using liboqs, please get in touch and we'll add you to the list!
 

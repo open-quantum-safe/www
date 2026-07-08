@@ -13,7 +13,7 @@ Security reports for liboqs will be handled in accordance with the [OQS security
 
 ## Reporting security bugs
 
-If you think you have found a security bug in OQS software, please send email to security@openquantumsafe.org or submit a security disclosure on Github for [liboqs](https://github.com/open-quantum-safe/liboqs/security) or [oqs-provider](https://github.com/open-quantum-safe/oqs-provider/security).  
+If you think you have found a security bug in OQS software, please submit a security disclosure on GitHub for [liboqs](https://github.com/open-quantum-safe/liboqs/security) or [oqs-provider](https://github.com/open-quantum-safe/oqs-provider/security).  
 
 We do not run a bug bounty program.
 
@@ -24,10 +24,6 @@ We do aim to create reliable, secure software implementing post-quantum cryptogr
 Note that a cryptanalytic flaw in an algorithm may result in an algorithm being temporarily removed until its creators issue a fix, or permanently removed if broken.
 
 The goal of these integration is to provide easy prototyping of quantum-resistant cryptography and should not be considered "production quality".  Please see more about [limitations of our prototype software](../about#limitations).
-
-## Notification
-
-When we are planning an update that fixes a high severity security issue, we will post an update on our website openquantumsafe.org indicating a planned release date and will notify those who have requested to be added to our notification list (oqs-security-annnounce@lists.pqca.org); [click here to sign up for the security notification list](https://lists.pqca.org/g/oqs-security-announce/). 
 
 ## Security audits and reviews
 

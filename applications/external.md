@@ -40,6 +40,9 @@ liboqs has been used in the following external projects:
 - Embetrix:
   - <a href="https://github.com/embetrix/meta-oqs">meta-oqs</a>: oqs support for embedded Linux (<a href="https://github.com/embetrix/meta-oqs/blob/scarthgap/README.md">README</a>, <a href="https://github.com/embetrix/meta-oqs/blob/scarthgap/GUIDES.md">Guides</a>)
 - [Rosenpass](https://github.com/rosenpass/rosenpass)
+- <a href="https://www.vesvault.com">VESvault</a>:
+  - <a href="https://github.com/vesvault/libVES.c">libVES.c</a>: end-to-end encryption / key exchange library in C, with the `ves` CLI — ML-KEM-768 via liboqs as the default key algorithm
+  - <a href="https://github.com/vesvault/libVES">libVES.js</a>: the same library for browser and Node (npm `libves`), with liboqs compiled to WebAssembly embedded in the package
 
 If you're using liboqs, please get in touch and we'll add you to the list!
 

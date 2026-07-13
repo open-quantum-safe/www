@@ -69,6 +69,7 @@ var NAVTREE =
       [ "OQS_ENABLE_TEST_CONSTANT_TIME", "options-for-configuring-liboqs-builds.html#oQS_ENABLE_TEST_CONSTANT_TIME", null ],
       [ "OQS_STRICT_WARNINGS", "options-for-configuring-liboqs-builds.html#oQS_STRICT_WARNINGS", null ],
       [ "OQS_EMBEDDED_BUILD", "options-for-configuring-liboqs-builds.html#oQS_EMBEDDED_BUILD", null ],
+      [ "OQS_MEMOPT_BUILD", "options-for-configuring-liboqs-builds.html#oQS_MEMOPT_BUILD", null ],
       [ "OQS_LIBJADE_BUILD", "options-for-configuring-liboqs-builds.html#oQS_LIBJADE_BUILD", null ],
       [ "OQS_ENABLE_LIBJADE_KEM_ALG/OQS_ENABLE_LIBJADE_SIG_ALG", "options-for-configuring-liboqs-builds.html#oQS_ENABLE_LIBJADE_KEM_ALGOQS_ENABLE_LIBJADE_SIG_ALG", null ],
       [ "OQS_BUILD_FUZZ_TESTS", "options-for-configuring-liboqs-builds.html#oQS_BUILD_FUZZ_TESTS", null ]
@@ -104,10 +105,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "aes__ops_8h.html",
-"sig_8h.html#a57207e06fb4c8c1401104f3b6f1cd066",
-"struct_o_q_s___a_e_s__callbacks.html#a7d5d60f6bc62119363e68568160a9b2f"
+"sig_8h.html#a46929706ed2248204094794de5c35dca",
+"sig__stfl_8h.html#ae3e063b8cd1013067aa84b78aca989c7"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronization';
-var SYNCOFFMSG = 'click to enable panel synchronization';
-var LISTOFALLMEMBERS = 'List of all members';
+const SYNCONMSG = 'click to disable panel synchronization';
+const SYNCOFFMSG = 'click to enable panel synchronization';
+const LISTOFALLMEMBERS = 'List of all members';

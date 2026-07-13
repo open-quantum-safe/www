@@ -1,7 +1,9 @@
 var common_8h =
 [
+    [ "IGNORE_UNUSED_FUNC", "common_8h.html#a40145918b898afc42270868925d73b70", null ],
     [ "OQS_API", "common_8h.html#a63a8270bf853669651b654aa1a700f62", null ],
     [ "OQS_EXIT_IF_NULLPTR", "common_8h.html#abb4477a04df674a7cfe4b385d9bf062d", null ],
+    [ "OQS_MEM_BLACK_BOX", "common_8h.html#a29de173b537fc26e8d15f604782825fc", null ],
     [ "SIZE_T_TO_INT_OR_EXIT", "common_8h.html#a743a9d9db303d012b3240f00f8d0d646", null ],
     [ "OQS_CPU_EXT", "common_8h.html#a30dcade5b6c22570e059174037346282", null ],
     [ "OQS_STATUS", "common_8h.html#a7682cde206b02be2addea22bb31cf7fc", [

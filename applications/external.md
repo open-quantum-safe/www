@@ -43,6 +43,7 @@ liboqs has been used in the following external projects:
 - <a href="https://www.vesvault.com">VESvault</a>:
   - <a href="https://github.com/vesvault/libVES.c">libVES.c</a>: end-to-end encryption / key exchange library in C, with the `ves` CLI — ML-KEM-768 via liboqs as the default key algorithm
   - <a href="https://github.com/vesvault/libVES">libVES.js</a>: the same library for browser and Node (npm `libves`), with liboqs compiled to WebAssembly embedded in the package
+  - <a href="https://github.com/vesvault/subtlepq">subtlepq</a>: post-quantum polyfill for the Web Cryptography API (npm `subtlepq`) — ML-KEM and ML-DSA per the WICG modern-algos draft, powered by a minimal liboqs WebAssembly build (75 KB for all six ML-KEM/ML-DSA parameter sets)
 
 If you're using liboqs, please get in touch and we'll add you to the list!
 

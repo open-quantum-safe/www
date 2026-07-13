@@ -43,6 +43,7 @@ has_toc: false
 
 - [**CROSS**](sig/cross)
 - [**MAYO**](sig/mayo)
+- [**MQOM**](sig/mqom)
 - [**SNOVA**](sig/snova)
 - [**UOV**](sig/uov)
 

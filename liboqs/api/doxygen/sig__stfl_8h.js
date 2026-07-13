@@ -81,6 +81,7 @@ var sig__stfl_8h =
     [ "OQS_SIG_STFL_alg_identifier", "sig__stfl_8h.html#aea5c4e31e0e6d33937e676e6c9ee66b1", null ],
     [ "OQS_SIG_STFL_alg_is_enabled", "sig__stfl_8h.html#a6048469b5bcc9baabf2d1b16d4f9d544", null ],
     [ "OQS_SIG_STFL_free", "sig__stfl_8h.html#a13f693e3f75a569b703c5c33730c9e4d", null ],
+    [ "OQS_SIG_STFL_keygen_and_sign_supported", "sig__stfl_8h.html#a2ca0fa8f920e98853820213fe2d3ba01", null ],
     [ "OQS_SIG_STFL_keypair", "sig__stfl_8h.html#a1e3cdade2d967a38e6016d9c0467e09f", null ],
     [ "OQS_SIG_STFL_new", "sig__stfl_8h.html#a3246ae3bd723c319adc81d897e85b983", null ],
     [ "OQS_SIG_STFL_SECRET_KEY_deserialize", "sig__stfl_8h.html#a6e9087c9d955efcc27db2095b37f8a84", null ],

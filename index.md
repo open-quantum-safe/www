@@ -22,8 +22,8 @@ All of our development takes place on our [GitHub](https://github.com/open-quant
 ## Recent updates
 - August 11, 2026: Release of [liboqs-go 0.16.0](https://github.com/open-quantum-safe/liboqs-go/releases/tag/v0.16.0)
 - July 23, 2026: Release of [liboqs-python 0.16.0](https://github.com/open-quantum-safe/liboqs-python/releases/tag/0.16.0)
-- **Jul 9, 2026: Release of [liboqs version 0.16.0](https://github.com/open-quantum-safe/liboqs/releases/tag/0.16.0)**
-- **Nov 14, 2025: Release of [liboqs version 0.15.0](https://github.com/open-quantum-safe/liboqs/releases/tag/0.15.0)**
+- **July 9, 2026: Release of [liboqs version 0.16.0](https://github.com/open-quantum-safe/liboqs/releases/tag/0.16.0)**
+- **November 14, 2025: Release of [liboqs version 0.15.0](https://github.com/open-quantum-safe/liboqs/releases/tag/0.15.0)**
 - July 28, 2025: Release of [oqs-provider 0.10.0](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.10.0)
 - **July 10, 2025: Release of [liboqs version 0.14.0](https://github.com/open-quantum-safe/liboqs/releases/tag/0.14.0)**
 - May 28, 2025: Release of [oqs-provider 0.9.0](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.9.0)

@@ -20,6 +20,7 @@ OQS consists of two main lines of work: [liboqs](liboqs), an open source C libra
 All of our development takes place on our [GitHub](https://github.com/open-quantum-safe) repositories.  We welcome new contributors interested in joining our [team](team).  Feel free to begin participating on GitHub or say hello on our [Discord server](https://discord.gg/qRfMantKwc) on the [#oqs-general channel](https://discord.com/channels/1202723482224295936/1203395992003678238).  We are grateful to the organizations that have supported and continue to support our work, and the academic, industry, public sector, and individual contributors who participate in the project.
 
 ## Recent updates
+- October 8, 2026: Release of [oqs-provider 0.12.0](https://github.com/open-quantum-safe/oqs-provider/releases/tag/0.12.0)
 - August 11, 2026: Release of [liboqs-go 0.16.0](https://github.com/open-quantum-safe/liboqs-go/releases/tag/v0.16.0)
 - July 23, 2026: Release of [liboqs-python 0.16.0](https://github.com/open-quantum-safe/liboqs-python/releases/tag/0.16.0)
 - **July 9, 2026: Release of [liboqs version 0.16.0](https://github.com/open-quantum-safe/liboqs/releases/tag/0.16.0)**
